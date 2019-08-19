@@ -5,141 +5,140 @@
   "image": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_530/https://kolabsit.com/wp-content/uploads/2019/07/function-javascript-kolabsit.jpeg",
   "section": [
     {
-      "index": 1,
-      "title": "Get Started",
+      "index": 6,
+      "title": "Numbers and Dates",
       "total": 14,
       "data": [
         {
           "index": 1,
-          "type": 0,
-          "content": "Selamat Datang di Javascript Course, javascript adalah bahasa pemrograman yang sangat berkembang pesat. Yap, Saat ini penggunaan JavaScript hampir selalu ada di setiap web modern. \nJavaScript biasanya untuk membuat berbagai aplikasi yang dapat berinteraksi dengan user, seperti validasi form HTML, games, kalkulator, fitur chatting, dll. \nOke ayo kita mulai dengan menampilkan sesuatu di konsol :",
-          "code": [
-            "var part1 = `Hello World !!! Kita sekarang belajar `;",
-            "var part2 = `Javascript`;",
-            "__.__(part1 + part2);"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Hello World !!! Kita sekarang belajar  Javascript"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Yeaaay, kamu telah berhasil membuat script yang menampilkan text, tapi sebelum itu apa kamu tahu apa yang dinamakan Script ?",
-          "question": "Tanda __ dapat diganti dengan ?",
-          "choice": [
-            {
-              "index": 1,
-              "text": "log"
-            },
-            {
-              "index": 2,
-              "text": "console"
-            }
-          ],
-          "answer": "21"
-        },
-        {
-          "index": 2,
           "type": 1,
-          "content": "Script adalah program yang berjalan bersama halaman web. Mereka berjalan bersama di Web Browser dan membuat halaman web menjadi lebih dinamis dan powerful.\n Kali ini, waktunya kita coba memasukan script ke halaman web dan kuy beritahu alam semesta apa yang akan kita lakukan !",
+          "content": "Mari kita bicara lebih banyak tentang Numbers! kita tidak akan masuk jauh ke Math tetapi, ternyata, mereka memiliki properties dan method juga",
           "code": [
-            "<!doctypye html>",
-            "<html>",
-            "<body>",
-            " <script>",
-            "var part1 = \"Hello World !, Saat ini kita belajar \" ;",
-            "var part2 = \"Javascript\" ;",
-            "__.__( part1 + part2 ) ;",
-            "</script> ",
-            "</body>",
-            "</html>"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": "Hello world !, Saat ini kita belajar Javascript"
-            }
-          ],
-          "note": "Fantastic ! Sekarang kita sudah membuat niat kita diawal dengan sangat jelas, Siap untuk menyelam lebih dalam.",
-          "question": "Tanda __ dapat diganti dengan ?",
-          "choice": [
-            {
-              "index": 1,
-              "text": "console.log"
-            },
-            {
-              "index": 2,
-              "text": "document.write"
-            }
-          ],
-          "answer": "2"
-        },
-        {
-          "index": 3,
-          "type": 1,
-          "content": "Variable, Yuk berkenalan sedikit dengan variable, jadi variable itu mudahnya adalah sebuah tempat / wadah atau sebuah container yang akan membantu kita. Kalau masih bingung nggak apa apa kita akan lanjutkan penjelasannya di section selanjutnya. \nKita bisa membuat variable dengan keyword var dan sebuah nama atau identitas. Selanjutnya kita akan memberikan sebuah nilai dengan tanda = .",
-          "code": [
-            "var name = \"Robin\" ;",
             "var age = 42;",
-            "console.log(_);"
+            "var height = 1.72;",
+            "console.log(typeof __);"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "Robin"
+              "text": "number"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Sudah sadar bukan ? name  dan age adalah variable yang mengandung informasi atau data. Dan ketika kita masukan variable tersebut kedalam console.log() baru deh ketahuan isinya apa.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Bagus! seperti yang telah kita lihat, hanya ada satu tipe number di Javascript: Number",
+          "question": "Untuk mengisi kekosongan yang ada diatas, pilih jawaban yang ada dibawah;",
           "choice": [
             {
               "index": 1,
-              "text": "name"
+              "text": "age"
             },
             {
               "index": 2,
-              "text": "weight"
+              "text": "'age'"
             }
           ],
           "answer": "1"
         },
         {
-          "index": 4,
-          "type": 1,
-          "content": "Masih seputar variable, sebuah nama dari variable harus unik dan sebaiknya diawali dengan huruf kecil. Tapi beberapa kata tidak bisa digunakan sebagai nama dari variable. Ayo kita cari tahu apa yang bakal terjadi kalau kita melanggar aturan !",
-          "code": ["var _ ;"],
+          "index": 2,
+          "type": 0,
+          "content": "Ketika kita mencoba menggunakan nilai tipe data yang berbeda, Javascript mencoba mengubahnya menjadi tipe data tertentu",
+          "code": [
+            "var number = '10' + 10;",
+            "__.__(__);"
+          ],
           "output": [
             {
               "type": "script.js",
-              "text": "Uncaught SyntaxError : Unexpected token function"
+              "text": "1010"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Whooaa, message yang sangat aneh bukan ? oke berarti kita nggak boleh menggunakan keyword ini untuk membuat sebuah variable.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Lihat! Hasil automatic type conversions ini tidak selalu seperti yang kita harapkan.",
+          "question": "Untuk mengisi kekosongan yang ada diatas, coba urutkan pilihan yang ada dibawah;",
           "choice": [
             {
               "index": 1,
-              "text": "variable"
+              "text": "number"
             },
             {
               "index": 2,
-              "text": "var"
+              "text": "log"
+            },
+            {
+              "index": 3,
+              "text": "console"
+            }
+          ],
+          "answer": "321"
+        },
+        {
+          "index": 3,
+          "type": 0,
+          "content": "Konsep lain dari javascript adalah NaN, yang memberi tahu kita bahwa nilainya bukan angka (Not a Number). tapi mengapa NaN itu berguna? mari kita ke coba pecahkan pertanyaan ini dengan eksperimen lain",
+          "code": [
+            "var number = 20 / 'Luffy';",
+            "__.__(__);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "NaN"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nah! sementara kita dapat membaginya dengan '12', mencoba melakukan aritmatika dengan non-numerik-string seperti 'Luffy' akan menghasilkan NaN",
+          "question": "Untuk mengisi kekosongan yang ada diatas, coba urutkan pilihan yang ada dibawah;",
+          "choice": [
+            {
+              "index": 1,
+              "text": "number"
+            },
+            {
+              "index": 2,
+              "text": "log"
+            },
+            {
+              "index": 3,
+              "text": "console"
+            }
+          ],
+          "answer": "321"
+        },
+        {
+          "index": 4,
+          "type": 1,
+          "content": "kita bisa mengubah string numerik menjadi angka baik dengan menggunakan parseInt() untuk seluruh angka atau parseFloat() untuk angka pecahan.",
+          "code": ["var s = '__';", "var price1 = parseInt(s);", "var price2 = parseFloat(s);", "console.log(price1 + ' ' + price2);"],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "49 49.99"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Lihat! String ini dapat berisi karakter non-numerik selama mereka memulainya dengan angka",
+          "question": "Untuk mengisi kekosongan yang ada diatas, pilih jawaban yang ada dibawah;",
+          "choice": [
+            {
+              "index": 1,
+              "text": "$49.99"
+            },
+            {
+              "index": 2,
+              "text": "49.99 USD"
             }
           ],
           "answer": "2"
@@ -147,31 +146,40 @@
         {
           "index": 5,
           "type": 1,
-          "content": "Sebenernya banyak cara untuk menampilkan data di Javascript. Dicourse ini kita akan menggunakan browser console dan aktual webpages.",
+          "content": "kita dapat menggunakan metode Math.round() untuk membulatkan angka ke atas atau ke bawah.",
           "code": [
-            "console.log(\"Nextbyte\") ;",
-            "document._(\"Yo Broo! Sahabat Nextbyte Gaes \") ;"
+            "var pi = 3.141592653589793;",
+            "var number = Math.__(pi);",
+            "console.log(\"Pi is now \" + number);"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "Nextbyte"
+              "text": "Pi is now 3"
             },
             {
               "type": "browser",
-              "text": "Yo Broo! Sahabat Nextbyte Gaes"
+              "text": ""
             }
           ],
-          "note": "Yaps, kita bisa menempatkan apapun di dalam console.log dan akan tertampilkan di browser console. Dan apapun yang kita tulis di document.write akan tertampil di halaman web.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Fantastis! selalu ingat bahwa nilai di bawah 0,5 akan dibulatkan ke bawah, dan dari 0,5 ke atas akan dibulatkan ke atas",
+          "question": "Untuk mengisi kekosongan yang ada diatas, pilih jawaban yang ada dibawah;",
           "choice": [
             {
               "index": 1,
-              "text": "log"
+              "text": "random"
             },
             {
               "index": 2,
-              "text": "write"
+              "text": "round"
+            },
+            {
+              "index": 3,
+              "text": "max"
+            },
+            {
+              "index": 4,
+              "text": "min"
             }
           ],
           "answer": "2"
@@ -179,65 +187,60 @@
         {
           "index": 6,
           "type": 0,
-          "content": "Masih banyak type data saat penggunaan variable, kita sudah bertemu dengan tipe data strings yang terdiri daii beberapa karakter. Sekali lagi ayo kita buat sebuah varible string yuk !",
+          "content": "Matematika adalah objek yang berisi beberapa constant seperti Math.PI dan method seperti Math.random() yang membantu kita memecahkan masalah matematika",
           "code": ["  _ _  _ \"Nextbyte\" ;", "console.log(name) ;"],
           "output": [
             {
               "type": "script.js",
-              "text": "Nextbyte"
+              "text": "3.141592653589793 \n 0.6398065438287117"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Nice, String dapat menampung banyak karakter ataupun beragam karakter selama itu ada di antara single atau double quotes .",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Yeah! Math.PI adalah konstanta, variabel yang tidak dapat diubah, dan Math.random() menghasilkan angka acak antara 0 dan 1",
+          "question": "Untuk mengisi kekosongan yang ada diatas, pilih jawaban yang ada dibawah;",
           "choice": [
             {
               "index": 1,
-              "text": "var"
+              "text": "PI"
             },
             {
               "index": 2,
-              "text": "="
-            },
-            {
-              "index": 3,
-              "text": "name"
+              "text": "Math"
             }
           ],
-          "answer": "132"
+          "answer": "21"
         },
         {
           "index": 7,
           "type": 1,
-          "content": "Apa kamu ingat dengan Variable Age? itu membuktikan bahwa kita bisa mengisi variable dengan nomor juga, atau kita sebut type data number. Oke yuk kita coba !",
+          "content": "Objek lain, Date, memungkinkan kita bekerja dengan tanggal dan waktu. apa yang berbeda antara Date dan Math adalah kita menggunakan keyword new untuk membuat instance",
           "code": [
-            "var name = \"Nextbyte\" ;",
-            "var age = _ ;",
-            "console.log(age) ;"
+            "var date = __ Date('1985-10-21');",
+            "ocument.write(date);"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "42"
+              "text": ""
             },
             {
               "type": "browser",
-              "text": ""
+              "text": "Mon Oct 21 1985 00:00:00 GMT"
             }
           ],
-          "note": "Sipp, Kita bisa mengisi dengan variable dengan nomer berapapun kok, bisa juga di isi dengan decimal point .",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Hore! Date terdiri dari satu tahun, satu bulan, satu hari, satu jam, satu menit, satu detik, dan milidetik",
+          "question": "Untuk mengisi kekosongan yang ada diatas, pilih jawaban yang ada dibawah;",
           "choice": [
             {
               "index": 1,
-              "text": "42"
+              "text": "typeof"
             },
             {
               "index": 2,
-              "text": 42
+              "text": "new"
             }
           ],
           "answer": "2"
@@ -245,114 +248,164 @@
         {
           "index": 8,
           "type": 1,
-          "content": "Oh iya apa kamu memperhatikan bagaimana kita menaruh semicolon atau tanda \" ; \" di akhir di setiap baris yang telah kita tulis ? Secara basic semicolon adalah tanda dimana akhir dari statemenet .",
+          "content": "Karena Date itu objek, dia memiliki banyak method yang membantu kita menggunakannya. Mari kita bangun sendiri Date string",
           "code": [
-            "var name ;",
-            "_ ",
-            "name = \"Nextbyte\" ;",
-            "age = 42 ;",
-            "console.log(name) ;",
-            "console.log(age) ;"
+            "var date = new Date('1985-10-21');",
+            "var year = date.getFullYear();",
+            "var month = date.getMonth() + 1;",
+            "var day = date.__;",
+            "console.log(year + '/' + month + '/'' + day);"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "Nextbyte"
+              "text": "1985/10/21"
             },
             {
               "type": "browser",
-              "text": "42"
+              "text": ""
             }
           ],
-          "note": "Bagus,  kecuali kalau kamu menulis multiple statement di dalam satu baris, semicolon itu optional. Namun menulisnya adalah good practice.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Hmm! ada apa dengan +1? oke, getMounth() mengembalikan bulan sebagai angka yang dimulai dengan 0. begitu pula getDay() dengan hari (senin-minggu)",
+          "question": "Untuk mengisi kekosongan yang ada diatas, pilih jawaban yang ada dibawah;",
           "choice": [
             {
               "index": 1,
-              "text": "var age"
+              "text": "getDay()"
             },
             {
               "index": 2,
-              "text": "var age ;"
+              "text": "getDate()"
             }
           ],
           "answer": "2"
         },
         {
           "index": 9,
-          "type": 1,
-          "content": "Bagaimana jika kalau kita ingin menyampaikan pada siapapun yang melihat script yang telah kita tulis ? Coba deh cek yang ada dibawah ini.",
+          "type": 0,
+          "content": "Kita dapat menggunakan Date ini dalam beberapa cara. misalnya, kita dapat mengubah, membandingkan, dan menampilkannya",
           "code": [
-            "/* Script by you */",
-            "name = \"Nextbyte\" ;",
-            "var age = 42 ;",
-            "console.log(_) ;"
+            "var d1 = new Date(1985, 10, 21);",
+            "var d2 = new Date(d1.getTime());",
+            "__.__(2015);",
+            "",
+            "if (d1 < d2) {",
+            "console.log(d1.toDateString() + \" is \"less\" then \" + d2.toDateString());",
+            "} else {",
+            "console.log(d1.toDateString() + \" isn't \"greater\" then \" + d2.toDateString());",
+            "}"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "Nextbyte"
+              "text": "Mon Oct 21 1985 is \"less\" then Wed Oct 21 2015"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Yaps, kita dapat menyediakan comments! Comment bisa berisi apapun itu, kenapa ? Karena dia bakal nggak di peduliin sama browser.\n Single-line comment diawali dengan // sampai akhir dari baris. Multi-line comment diawali dengan /* dan diakhir dengan */",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Hey! apakah Anda memperhatikan bagaimana kita membuat d1 dan d2? method getTime() mengembalikan waktu dalam milidetik mulai 1 Januari 1970",
+          "question": "Untuk mengisi kekosongan yang ada diatas, coba urutkan pilihan yang ada dibawah;",
           "choice": [
             {
               "index": 1,
-              "text": "name"
+              "text": "setFullYear"
             },
             {
               "index": 2,
-              "text": "comment"
+              "text": "d2"
             }
           ],
-          "answer": "1"
+          "answer": "21"
         },
         {
           "index": 10,
-          "type": 2,
-          "content": "Oke, saatnya kita melihat apakah kamu mengingat tentang Javascript dan scripts : ",
-          "code": [],
+          "type": 1,
+          "content": "Apa yang akan ditampilkan cuplikan kode ini di console?",
+          "code": [
+            "var number = 5 * 'Surprise';",
+            "console.log(number);"
+          ],
           "output": [
             {
               "type": "script.js",
-              "text": ""
+              "text": "NaN"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Sempurna ! Javascript adalah bahasa pemrogaman untuk web. Script biasanya berjalan bersama web page untuk membuat mereka lebih dinamis dan powerful.",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
+          "note": "Kerja Bagus! Perkalian dan pembagian dengan hasil string non-numerik dalam NaN, yang merupakan singkatan Not a Number",
+          "question": "Untuk mengisi kekosongan yang ada diatas,pilih jawaban yang ada dibawah;",
           "choice": [
             {
               "index": 1,
-              "text": "Script membuat web menjadi dinamis dan powerful"
+              "text": "5Surprise"
             },
             {
               "index": 2,
-              "text": "Javascript adalah bahasa pemrograman untuk WEB"
+              "text": "SurpriseSurpriseSurpriseSurpriseSurprise"
             },
             {
               "index": 3,
-              "text": "Javascript tidak bisa digunakan dengan HTML"
+              "text": "NaN"
             },
             {
               "index": 4,
-              "text": "Script adalah program yang berjalan di web browser"
+              "text": "undefined"
             }
           ],
-          "answer": "124"
+          "answer": "3"
         },
         {
           "index": 11,
+          "type": 1,
+          "content": "Dapatkah Anda menemukan kesalaha dalam cuplikan kode berikut ini.",
+          "code": [
+            "var order = \"Give me 12.3 lbs of MCIntosh apples\";",
+            "var number = parseFloat(order);",
+            "if (typeof number == 'number'){",
+            "console.log(number);",
+            "}"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "itu dia! metode parseFloat() mengembalikan NaN jika string yang diterimanya tidak dimulai dengan numerik.",
+          "question": "Untuk mengisi kekosongan yang ada diatas,pilih jawaban yang ada dibawah;",
+          "choice": [
+            {
+              "index": 1,
+              "text": "parseFloat tidak bisa dengan string"
+            },
+            {
+              "index": 2,
+              "text": "order tidak dimulai dengan angka jadi parseFloat() mengembalikan NaN"
+            },
+            {
+              "index": 3,
+              "text": "parseFloat tidak bisa dengan desimal"
+            },
+            {
+              "index": 4,
+              "text": "Kita tidak bisa menggunakan typeof pada Number"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 12,
           "type": 2,
-          "content": "Sekarang apasih itu variable dan kenapa variable itu berguna ?",
+          "content": "Bisakah Anda mengurutkan baris ini untuk menampilkan angka acak antara 0 dan 10?",
           "code": [],
           "output": [
             {
@@ -364,106 +417,73 @@
               "text": ""
             }
           ],
-          "note": "Naaaah ! Variable adalah tempat / container  untuk type data yang berbeda-beda dan memiliki identitas yang unik. Semicolons \" ; \" adalah tanda dari akhir sebuah statement.",
+          "note": "Sempurna! kita mendeklarasikan acak dan memberikan nilai acak antara 0 dan 1. lalu kalikan dengan 10. bulatkan dan tampilkan di console",
+          "question": "",
+          "choice": [
+            {
+              "index": 1,
+              "text": "random = Math.round(random);"
+            },
+            {
+              "index": 2,
+              "text": "random *= 10;"
+            },
+            {
+              "index": 3,
+              "text": "random = Math.random();"
+            },
+            {
+              "index": 4,
+              "text": "var random;"
+            },
+            {
+              "index": 5,
+              "text": "console.log(random);"
+            }
+          ],
+          "answer": "43215"
+        },
+        {
+          "index": 13,
+          "type": 2,
+          "content": "Apa yang benar tentang objek Date?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Kerja bagus! Date instance, yang kita buat dengan yang new, mewakili tanggal dan waktu tertentu dan memiliki method seperti setTime() yang membantu kita",
           "question": "Pilih salah satu atau lebih jawaban yang benar : ",
           "choice": [
             {
               "index": 1,
-              "text": "Variable menggunakan identitas yang unik"
+              "text": "Sebuah instance dari objek Date mewakili tanggal dan waktu tertentu"
             },
             {
               "index": 2,
-              "text": "Variable harus mengandung semicolons"
+              "text": "Date mengandung Math constant/property dan Math method"
             },
             {
               "index": 3,
-              "text": "Variable adalah tempat untuk data"
+              "text": "Object Date memiliki Instance method yang membantu kami bekerja dengannya"
             },
             {
               "index": 4,
-              "text": "Variable dapat menerima type data yang berbeda-beda"
+              "text": "Kitai membuat instance dengan keyword new"
             }
           ],
           "answer": "134"
         },
         {
-          "index": 12,
-          "type": 1,
-          "content": "Bagaimana caranya kalau kita ingin membuat variable yang berisi string ?",
-          "code": [],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Mantap ! kita membuat variable dengan menggunakan keyword var dan membuat identitas / nama selanjutnya kita memberikan nilai dengan menggunakan tanda  = .",
-          "question": "Pilih salah satu jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "x = \"Robin\" ;"
-            },
-            {
-              "index": 2,
-              "text": "var age = 42 ;"
-            },
-            {
-              "index": 3,
-              "text": "console.log(\"Nextbyte\") ;"
-            },
-            {
-              "index": 4,
-              "text": "var name = \"Nextbyte\" ;"
-            }
-          ],
-          "answer": "4"
-        },
-        {
-          "index": 13,
-          "type": 2,
-          "content": "Apa sih comment itu ?",
-          "code": [],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Niceee ! Comment tidak dianggap oleh browser dan oleh karena itu comment hanya alat untuk membantu kita dan pembaca script yang lain agar dapat memahami apa yang kita tulis.",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "Bisa single-line maupun multiple-line"
-            },
-            {
-              "index": 2,
-              "text": "Membuat comment dengan keyword var"
-            },
-            {
-              "index": 3,
-              "text": "Tidak dianggap oleh browser"
-            },
-            {
-              "index": 4,
-              "text": "Untuk menampilkan data di web page"
-            }
-          ],
-          "answer": "13"
-        },
-        {
           "index": 14,
           "type": 2,
-          "content": "Apa sih comment itu ?",
+          "content": "Pernyataan manakah yang membuat instance objek Date?",
           "code": [],
           "output": [
             {
@@ -475,27 +495,27 @@
               "text": ""
             }
           ],
-          "note": "Yapss ! Number dapat berisikan semua angka, bilangan bulat maupun bilangan decimal. Hanya string yang di tulis diantara quotes atau tanda kutip",
+          "note": "Ya! Kita menggunakan keyword new, objek Dtae dan nilai opsional dalam tanda kurung yang mengikuti Tanggal untuk membuat turunannya.",
           "question": "Pilih salah satu atau lebih jawaban yang benar : ",
           "choice": [
             {
               "index": 1,
-              "text": "Tidak dapat digunakan dengan console.log"
+              "text": "new Date(1985, 9, 21);"
             },
             {
               "index": 2,
-              "text": "Dapat berisi semua angka, seperti 5."
+              "text": "new Date('1985-10-21');"
             },
             {
               "index": 3,
-              "text": "Dapat memiliki nilai decimal atau decimal point, seperti 5.0"
+              "text": "Date('1985-10-21');"
             },
             {
               "index": 4,
-              "text": "Dapat di tulis diantara single or double quotes"
+              "text": "new Date();"
             }
           ],
-          "answer": "23"
+          "answer": "124"
         }
       ]
     }
