@@ -411,7 +411,7 @@
         {
           "index": 12,
           "type": 2,
-          "content": "Statement mana yang memberikan nilai g menjadi \"Hallo Nexbtyte!\"  ?",
+          "content": "Jawaban yang benar tentang parameter dan argument",
           "code": [],
           "output": [
             {
@@ -423,27 +423,27 @@
               "text": ""
             }
           ],
-          "note": "Luar Biasa ! kita dapat menggunkan replace() atau slice() , atau kalau pingin lebih simple tinggal masukan saja Hallo Nextbyte! ke dalam g",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
+          "note": "Fantastis! parameter adalah variable sementara dan memiliki nama/alias, dan Argumet adalah nilai sebenarnya ketika dimasukan kedalam function ketika diapnggil",
+          "question": "Boleh pilih lebih dari satu",
           "choice": [
             {
               "index": 1,
-              "text": "g = \"Hello Nextbyte!\" ;"
+              "text": "Argumet adalah nilai sebenarnya ketika dimasukan kedalam function ketika diapnggil"
             },
             {
               "index": 2,
-              "text": "g = g.replace(\"World\", \"Nextbyte\") ;"
+              "text": "Parameter memiliki nama/alias"
             },
             {
               "index": 3,
-              "text": "g = g.slice(0,5) ;\n g += \"Nextbyte!\" ;"
+              "text": "Argumen adalah bagian dari function definition"
             },
             {
               "index": 4,
-              "text": "g += \"Nextbyte!\" ;"
+              "text": "parameter adalah variable sementara yang diguanakan didalam function"
             }
           ],
-          "answer": "123"
+          "answer": "124"
         }
       ]
     }
