@@ -277,7 +277,7 @@
         {
           "index": 9,
           "type": 2,
-          "content": "Coba tebak dari beberapa statement yang ada dibawah ini mana yang benar tentang string ?",
+          "content": "Bisakah kamu mengurutkan baris kode berikut, menjadi function yang mengubah string menjadi array",
           "code": [],
           "output": [
             {
@@ -289,32 +289,44 @@
               "text": ""
             }
           ],
-          "note": "Jawaban yang bagus ! String terdiri dari urutan character yang kita buat diantara quotes. Oh iya length itu bukan lah method tapi property.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Bagus! Kita memulai dengan mendefinisikan function, membuat variable c dan mengulang nilainya, dan mengubahnya. Kemudian me-return ke array",
+          "question": "",
           "choice": [
             {
               "index": 1,
-              "text": "Kita menggunakan string untuk operator matematika"
+              "text": "retrun c;"
             },
             {
               "index": 2,
-              "text": "Membuat string diantara single atau double quotes"
+              "text": "}"
             },
             {
               "index": 3,
-              "text": "Method length() mengembalikan jumlah karakter yang ada di suatu string"
+              "text": "for (int i = 0; i < a.length; i++) {"
             },
             {
               "index": 4,
-              "text": "String terdiri dari urutan berbagai character"
+              "text": "function convert(a) {"
+            },
+            {
+              "index": 5,
+              "text": "c.push(parseInt(a[i]));"
+            },
+            {
+              "index": 6,
+              "text": "{"
+            },
+            {
+              "index": 7,
+              "text": "var c = [];"
             }
           ],
-          "answer": "24"
+          "answer": "4735216"
         },
         {
           "index": 10,
           "type": 2,
-          "content": "Diantara banyak statement dibawah mana statement untuk membuat string ?",
+          "content": "Mana yang termasuk mendefinisikan function?",
           "code": [],
           "output": [
             {
@@ -326,35 +338,43 @@
               "text": ""
             }
           ],
-          "note": "Sepertinya kamu sudah menguasainya ! Kita membuat string diantara single atau double quotes. Jika kita ingin menggunakan quotes diantara string kita bisa menggunakan escape character",
-          "question": "Urutkan jawaban dengan benar : ",
+          "note": "Benar! Kita bisa menggunakan functin declaration atau function definition",
+          "question": "Boleh pilih lebih dari satu",
           "choice": [
             {
               "index": 1,
-              "text": "var name = \"\";"
+              "text": [
+                "function add(a, b){",
+                "return a + b;",
+                "}"
+              ]
             },
             {
               "index": 2,
-              "text": "var string ;"
+              "text": "add(10, 10);"
             },
             {
               "index": 3,
-              "text": "var venue = 'Nextbyte\\'s Cafe' ;"
+              "text": "var add = function(){return a + b};"
             },
             {
               "index": 4,
-              "text": "var quote = \"Hello World!\" - Nextbyte\";"
+              "text": "var a = add();"
             }
           ],
           "answer": "13"
         },
         {
           "index": 11,
-          "type": 2,
-          "content": "Statement mana yang menggabungkan / menambahkan s1  dan s2 ?",
+          "type": 1,
+          "content": "Apa masalah pada kode berikut?",
           "code": [
-            "var s1 = \"Hallo Dunia ! Namaku \" ;",
-            "var s2 = \"Joe\" ;"
+            "function calculatorPeriphery(){",
+            "var result = 2 * r * Math.PI;",
+            "return result;",
+            "console.log(result);",
+            "}",
+            "var p = calculatorPeriphery(5.5);"
           ],
           "output": [
             {
@@ -366,27 +386,27 @@
               "text": ""
             }
           ],
-          "note": "Nice sekali ! Kamu dapat menggunakan method concat() atau assignment operators untuk menambahkan atau menggabungkan string.",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
+          "note": "Itu dia! karena return membuat function menghentikan eksekusi, console.log() tidak bisa dijangkau",
+          "question": "Pilih salah satu;",
           "choice": [
             {
               "index": 1,
-              "text": "var s = s1.substr(s2) ;"
+              "text": "Math.PI tidak bisa diakses didalam function"
             },
             {
               "index": 2,
-              "text": "s1 += s2 ;"
+              "text": "calculatorPeriphery() tidak menerima desimal"
             },
             {
               "index": 3,
-              "text": "var s = s1.concat(s2) ;"
+              "text": "console.log() tidak bisa dijangkau"
             },
             {
               "index": 4,
-              "text": "var s = s1 + s2 ;"
+              "text": "calculatorPeriphery() tidak dapat dimasukan dam variable"
             }
           ],
-          "answer": "234"
+          "answer": "3"
         },
         {
           "index": 12,
@@ -424,51 +444,6 @@
             }
           ],
           "answer": "123"
-        },
-        {
-          "index": 13,
-          "type": 0,
-          "content": " Coba tampilkan \"NEXTBYTE GENERATIONS\" dengan mengurutkan pilihan yang ada dibawah  ?",
-          "code": [],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "NEXTBYTE GENERATIONS"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Nice ! Kita dapat membuat name dan menggunakan concat() untuk menambahkan data. Selanjutnya menggunakan if statement untuk menngkonversi name menjadi uppercase letter lalu tutup if statement dan terakhir menggunkan console.log() untuk nenampilkan data akhir.",
-          "question": "Pilih salah satu jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "var name = \"Nextbyte\" ;"
-            },
-            {
-              "index": 2,
-              "text": "name = name.concat(\"generations\") ;"
-            },
-            {
-              "index": 3,
-              "text": "console.log(name) ;"
-            },
-            {
-              "index": 4,
-              "text": "}"
-            },
-            {
-              "index": 5,
-              "text": "name = name.toUpperCase() ;"
-            },
-            {
-              "index": 6,
-              "text": "if (name.length > 5) {"
-            }
-          ],
-          "answer": "126543"
         }
       ]
     }
