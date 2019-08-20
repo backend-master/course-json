@@ -1785,6 +1785,479 @@
           "answer": "83614572"
         }
       ]
+    },
+    {
+      "index": 5,
+      "title": "Strings",
+      "total": 13,
+      "data": [
+        {
+          "index": 1,
+          "type": 1,
+          "content": " String itu lebih powerful dari apa yang kita pikirkan. Penasarankan ? ayo kita lihat lebih dalam tetang String. \nKita sudah tahu kalau kita dapat menggabungkan String dengan tanda operator + . Dan ini adalah adalah cara lain untuk menggabungkan",
+          "code": [
+            "var part1 = \"Dunia harus tahu \" ;",
+            "var part2 = \"Nextbyte\" ;",
+            "var s = part1._(part2) ;",
+            "console.log(s)"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "Dunia harus tahu Nextbyte"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Begitu dong ! jika kita ingin menggabungkan string kita bisa menggunkan method concat() sebagai gantinya dari operator +",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "+"
+            },
+            {
+              "index": 2,
+              "text": "concat"
+            }
+          ],
+          "answer": "concat"
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "content": "String juga mempunyai properti length untuk memberitahu berapa  banyak character yang dia punya.",
+          "code": [
+            "var part1 = \"Dunia harus tahu \" ;",
+            "var part2 = \"Nextbyte\" ;",
+            "var s = part1 + part2 ;",
+            "console.log(s.__)"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "25"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nice ! apapun yang ada diantara tanda kutip / quotation mark, meskipun itu adalah space / spasi, bakalan di hitung sebagai karakter",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "length"
+            },
+            {
+              "index": 2,
+              "text": "length()"
+            },
+            {
+              "index": 3,
+              "text": "if"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 3,
+          "type": 1,
+          "content": "Ketika kita menggunakan double quotes untuk membuat string, kita tidak dapat menggunakan double quotes lagi diantara string tersebut. Ketika kita menggunakan singe quotes, kita tidak bisa menggunakan apostropes / tanda baca kutip '",
+          "code": [
+            "var quotes1 = \"Nextbyte's Coffee\" ;",
+            "var quotes2 = '\"Nextbyte know when to start - Nextbyte\"' ;",
+            "console.log(__)",
+            "console.log(quotes2)"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "SyntaxError : Unexpected String"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Kalian lihat kan ? Kita pasti akan dapat error kalau menuliskan string yang mengandung tanda kutip dua \" diantara tanda kutip satu ' seperti di quotes2 . Dan apa yang lebih buruk dari itu adalah error .",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "quotes1"
+            },
+            {
+              "index": 2,
+              "text": "quotes2"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "index": 4,
+          "type": 1,
+          "content": "Cara yang lebih bagus untuk menghadapi masalah ini adalah menyelipkan tanda \\ sebelum tanda kutip atau quotes di antara isi string. Cara ini biasa kita sebut escaping.",
+          "code": [
+            "var quotes1 = \"\" ;",
+            "var quotes2 = '\\\"Nextbyte know when to start - Nextbyte\\\"' ;",
+            "console.log(quotes1)",
+            "console.log(quotes2)"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "Nextbyte's Coffee\n\"Nextbyte know when to start - Nextbyte\""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Oke Sipp ! dengan tanda \\ atau escape character, kita dapat menggunakan tanda kutip di dalam string. ",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "Nextbyte's Coffee"
+            },
+            {
+              "index": 2,
+              "text": "Nextbyte\\'s Coffee"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 5,
+          "type": 0,
+          "content": "Dengan menggunakan method slice(), kita dapat mengeluarkan bagian dari string loh.",
+          "code": [
+            "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
+            "console.log(_._(5,9));"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "kamu"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Yaps ! Angka yang kita tulis di method slice() adalah posisi start dan posisi end dari string yang akan kita extract. \nOiyaa kamu tahu nggak kalau kita menggunakan negative value maka posisi yang di hitung akan dimulai di akhir dari string",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "slice"
+            },
+            {
+              "index": 2,
+              "text": "s"
+            }
+          ],
+          "answer": "21"
+        },
+        {
+          "index": 6,
+          "type": 0,
+          "content": "Method substr() hampir sama dengan method slice(). Bedanya adalah di nilai kedua yang kita inputkan berguna untuk menentukan panjang spesifik dari bagian string yang ingin kita ekstrak. ",
+          "code": [
+            "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
+            "console.log(_._(5));"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "kamu yang disana ! Namaku Nextbyte."
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nicee ! Sekali lagi, angka yang kedua itu optional. Jika kita tidak menulisnya maka bagian bagian string akan ditampilkan sampai ke ujung string asli.",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "s"
+            },
+            {
+              "index": 2,
+              "text": "substr()"
+            }
+          ],
+          "answer": "12"
+        },
+        {
+          "index": 7,
+          "type": 0,
+          "content": "Kita juga bisa menggunakan method replace() untuk mencari dan mengganti kemunculan string yang ada didalam string tersebut. \n Oke untuk lebih jelas lagi ayo coba kita takluk kan yang satu ini :",
+          "code": [
+            "var g1 = \"Hallo Dunia ! .\" ;",
+            "var g2 = _._(\"Dunia\", \"Kamu\") ;",
+            "console.log(g2);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "Hallo Kamu !"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nah sekarang kalian tahu kan ? replace() akan mencari nilai yang di inputkan dan akan menggantikan-nya.",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "replace"
+            },
+            {
+              "index": 2,
+              "text": "g1"
+            }
+          ],
+          "answer": "21"
+        },
+        {
+          "index": 8,
+          "type": 1,
+          "content": "Kita bisa membuat string menjadi huruf kecil semua atau lowercase letter dengan menggunakan toLowerCase() . Dan juga nantinya ada cara untuk mengubah huruf menjadi besar semua atau uppercase letter. \nAyo kita rubah semua huruf menjadi uppercase yuk !",
+          "code": [
+            "var g1 = \"Hallo Dunia ! .\" ;",
+            "var g2 = g1._ ;",
+            "console.log(g2);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "HALLO DUNIA ! ."
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nice bukan ? Tidak ada yang lebih baik dari pada salam dengan uppercase letter hehe",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "toLowerCase()"
+            },
+            {
+              "index": 2,
+              "text": "toUpperCase()"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 9,
+          "type": 2,
+          "content": "Coba tebak dari beberapa statement yang ada dibawah ini mana yang benar tentang string ?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Jawaban yang bagus ! String terdiri dari urutan character yang kita buat diantara quotes. Oh iya length itu bukan lah method tapi property.",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "Kita menggunakan string untuk operator matematika"
+            },
+            {
+              "index": 2,
+              "text": "Membuat string diantara single atau double quotes"
+            },
+            {
+              "index": 3,
+              "text": "Method length() mengembalikan jumlah karakter yang ada di suatu string"
+            },
+            {
+              "index": 4,
+              "text": "String terdiri dari urutan berbagai character"
+            }
+          ],
+          "answer": "24"
+        },
+        {
+          "index": 10,
+          "type": 2,
+          "content": "Diantara banyak statement dibawah mana statement untuk membuat string ?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Sepertinya kamu sudah menguasainya ! Kita membuat string diantara single atau double quotes. Jika kita ingin menggunakan quotes diantara string kita bisa menggunakan escape character",
+          "question": "Urutkan jawaban dengan benar : ",
+          "choice": [
+            {
+              "index": 1,
+              "text": "var name = \"\";"
+            },
+            {
+              "index": 2,
+              "text": "var string ;"
+            },
+            {
+              "index": 3,
+              "text": "var venue = 'Nextbyte\\'s Cafe' ;"
+            },
+            {
+              "index": 4,
+              "text": "var quote = \"Hello World!\" - Nextbyte\";"
+            }
+          ],
+          "answer": "13"
+        },
+        {
+          "index": 11,
+          "type": 2,
+          "content": "Statement mana yang menggabungkan / menambahkan s1  dan s2 ?",
+          "code": [
+            "var s1 = \"Hallo Dunia ! Namaku \" ;",
+            "var s2 = \"Joe\" ;"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nice sekali ! Kamu dapat menggunakan method concat() atau assignment operators untuk menambahkan atau menggabungkan string.",
+          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
+          "choice": [
+            {
+              "index": 1,
+              "text": "var s = s1.substr(s2) ;"
+            },
+            {
+              "index": 2,
+              "text": "s1 += s2 ;"
+            },
+            {
+              "index": 3,
+              "text": "var s = s1.concat(s2) ;"
+            },
+            {
+              "index": 4,
+              "text": "var s = s1 + s2 ;"
+            }
+          ],
+          "answer": "234"
+        },
+        {
+          "index": 12,
+          "type": 2,
+          "content": "Statement mana yang memberikan nilai g menjadi \"Hallo Nexbtyte!\"  ?",
+          "code": ["var g = \"Hallo Dunia !\" ;"],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Luar Biasa ! kita dapat menggunkan replace() atau slice() , atau kalau pingin lebih simple tinggal masukan saja Hallo Nextbyte! ke dalam g",
+          "question": "Urutkan jawaban dengan benar : ",
+          "choice": [
+            {
+              "index": 1,
+              "text": "g = \"Hello Nextbyte!\" ;"
+            },
+            {
+              "index": 2,
+              "text": "g = g.replace(\"World\", \"Nextbyte\") ;"
+            },
+            {
+              "index": 3,
+              "text": "g = g.slice(0,5) ; \ng += \"Nextbyte!\" ;"
+            },
+            {
+              "index": 4,
+              "text": "g += \"Nextbyte!\" ;"
+            }
+          ],
+          "answer": "123"
+        },
+        {
+          "index": 13,
+          "type": 0,
+          "content": "Tolong dong tampilin \"NEXTBYTE GENERATIONS\" dengan mengurutkan pilihan yang ada dibawah  ?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nice ! Kita dapat membuat name dan menggunakan concat() untuk menambahkan data. Selanjutnya menggunakan if statement untuk menngkonversi name menjadi uppercase letter lalu tutup if statement dan terakhir menggunkan console.log() untuk nenampilkan data akhir.",
+          "question": "Urutkan statement yang ada dibawah :",
+          "choice": [
+            {
+              "index": 1,
+              "text": "1. var name = \"Nextbyte\" ;"
+            },
+            {
+              "index": 2,
+              "text": "2. name = name.concat(\"generations\") ;"
+            },
+            {
+              "index": 3,
+              "text": "3. console.log(name) ;"
+            },
+            {
+              "index": 4,
+              "text": "4. }"
+            },
+            {
+              "index": 5,
+              "text": "5. name = name.toUpperCase() ;"
+            },
+            {
+              "index": 6,
+              "text": "6. if (name.length > 5) {"
+            }
+          ],
+          "answer": "126543"
+        }
+      ]
     }
   ]
 }
