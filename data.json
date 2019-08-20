@@ -5,271 +5,315 @@
   "image": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_530/https://kolabsit.com/wp-content/uploads/2019/07/function-javascript-kolabsit.jpeg",
   "section": [
     {
-      "index": 9,
+      "index": 8,
       "title": "Functions",
       "total": 12,
       "data": [
         {
           "index": 1,
           "type": 0,
-          "content": "Untuk lebih singkat, functions adalah code block yang melakukan tugas yang spesifik. Tapi kenapa dia berguna ?",
+          "content": "Sesuatu yang kita ingin hindari ketika menulis code dan alasan yang sderhana adalah barisan kode yang melakukan tindakan yang sangat mirip / berulang",
           "code": [
-            "var r = 12 ;",
-            "var luasLingkaran = r * r * _._ ;",
+            "var numbers _ [3, 7, 14, 15, 22, 41];",
+            "numbers[0]++;",
+            "numbers[1]++;",
+            "numbers[2]++;",
+            "numbers[3]++;",
+            "numbers[4]++;",
+            "numbers[5]++;",
             "console.log(_)"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "452.3893421169302"
+              "text": "[4, 8, 15, 16, 23, 42]"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Bukan kah masuk akal kalau kita menuliskan kode setiap saat ketika kita ingin menghitung luas lingkaran ? Yaah tidak juga sih, disitulah functions akan lebih berguna dan efisien.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Sangat membuang-buang waktu! bagaimana kita bisa menyingkirkan kode mubazir ini?",
+          "question": "Pilih urutan jawaban yang benar;",
           "choice": [
             {
               "index": 1,
-              "text": "luasLingkaran"
+              "text": "numbers"
             },
             {
               "index": 2,
-              "text": "PI"
-            },
-            {
-              "index": 3,
-              "text": "Math"
+              "text": "="
             }
           ],
-          "answer": "321"
+          "answer": "21"
         },
         {
           "index": 2,
           "type": 1,
-          "content": "Dan untuk membuat sebuah fungsi, kita cukup menggunkan kata kunci functions, nama yang unik untuk nama fungsi serta sepasang tanda kurung (). Sekali saja kita sudah membuatnya kita bisa menggunakan fungsi tersebut kapanpun yang kita inginkan.",
-          "code": ["_ sayHello() {", "console.log(\"Hello Nextbyte\");", "}"],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Sesimpel itu loh ! Apapun yang kita tulis diantara tanda kurung ini {} , akan menjadi bagian dari fungsi tersebut. Tapi kenapa kok nggak muncul apa apa ya di console ?",
-          "question": "Tanda __ dapat diganti dengan ?",
-          "choice": [
-            {
-              "index": 1,
-              "text": "var"
-            },
-            {
-              "index": 2,
-              "text": "function"
-            }
-          ],
-          "answer": "2"
-        },
-        {
-          "index": 3,
-          "type": 1,
-          "content": "Oh iyaa, kalau kita sudah membuat sebuah fungsi kita harus memanggilnya agar fungsi itu jalan.",
+          "content": "Ya, tentu saja: kita bisa menggunakan perulangan untuk mengulangi sebuah nilai sebanyak yang kita ingin",
           "code": [
-            "function sayHello() {",
-            "console.log(\"Hello Nextbyte\");",
+            "var s = '';",
+            "for(var i = 0; i < __; i++){",
+            "s += i;",
             "}",
-            "__"
+            "console.log(s);"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "Hello Nextbyte"
+              "text": "01234"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Akhirnya tampil juga, kita bisa menggunkan fungsi tersebut dengan memanggil nama-nya di ikuti dengan tanda kurung ().",
+          "note": "Lihat? Pada tanda kurung setelah keyword for, kita isi dengan control variable, condition dan cara untuk membuat kondisi false pada saat yang sama",
           "question": "Tanda __ dapat diganti dengan ?",
           "choice": [
             {
               "index": 1,
-              "text": "sayHello()"
+              "text": 5
             },
             {
               "index": 2,
-              "text": "sayHello"
+              "text": "five"
             }
           ],
           "answer": "1"
         },
         {
-          "index": 4,
+          "index": 3,
           "type": 1,
-          "content": "Apa kamu ingat ketika kita memasukan code seperti console.log(\"Hello Nextbyte\") di dalam fungsi ? ternyata kita bisa memodifikasi output-an apa yang kita inginkan dengan menambahkan parameters di dalam fungsi kita.",
+          "content": "Kenapa kita tidak menggunakan perulangan untuk increment sebuah nilai dalam suatu ",
           "code": [
-            "function luasLingkaran(radius) {",
-            "var result = radius * radius * Math.Pi",
-            "console.log(result)",
+            "var numbers = [3, 7, 14, 15, 22, 41];",
+            "for(var i = 0; i < __; i++){",
+            "numbers[i]++;",
             "}",
-            "luasLingkaran(__) ;"
+            "console.log(numbers);"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "314.1592653589793"
+              "text": "[4, 8, 15, 16, 23, 42]"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Kalian lihat kan ? Parameter adalah temporary variables atau variable sementara, dia akan menampung nilai berapapun yang akan kita inputkan dan akan di proses di dalam fungsi tersebut.",
+          "note": "Fantastis! perulangan berawal dari 0 dan berulang sampai i tidak kurang dari numbers.length.",
           "question": "Tanda __ dapat diganti dengan ?",
           "choice": [
             {
               "index": 1,
-              "text": "\"sepuluh\""
+              "text": 10
             },
             {
               "index": 2,
-              "text": 10
+              "text": "numbers.length"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 4,
+          "type": 1,
+          "content": "Ada cara yang lain intuk melakukan perulangan dengan for menggunakan in keyword.",
+          "code": [
+            "var things = ['raindrops', 'roses', 'whiskers', 'kittens'];",
+            "for( thing in things ){",
+            "console.log(_);",
+            "}"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ["raindrops", "roses", "whiskers", "kittens"]
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Lihat? Setiap kali loop berjalan, thing memiliki nomor index yang berbeda dari array things",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "things"
+            },
+            {
+              "index": 2,
+              "text": "things[thing]"
             }
           ],
           "answer": "2"
         },
         {
           "index": 5,
-          "type": 0,
-          "content": "Dengan menggunakan method slice(), kita dapat mengeluarkan bagian dari string loh.",
+          "type": 1,
+          "content": "while loop, jenis lain dari perulangan/loop, mengulang nilai tertentu selama kondisinya adalah true",
           "code": [
-            "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
-            "console.log(_._(5,9));"
+            "var numbers = [3, 7, 14, 15, 22, 41];",
+            "var i = 0;",
+            "__ (i < numbers.length){",
+            "numbers[i]++;",
+            "i++;",
+            "}",
+            "console.log(numbers);"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "kamu"
+              "text": "[4, 8, 15, 16, 23, 42]"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Yaps ! Angka yang kita tulis di method slice() adalah posisi start dan posisi end dari string yang akan kita extract. \nOiyaa kamu tahu nggak kalau kita menggunakan negative value maka posisi yang di hitung akan dimulai di akhir dari string",
+          "note": "Cantik! Kita menggunaka while keyword untuk membuat peulangan whlie. sebagai sebuah perulangan, ini tak memiliki control variable, kita perlu memastikan bahwa kondisinya menjadi false.",
           "question": "Tanda __ dapat diganti dengan urutan ?",
           "choice": [
             {
               "index": 1,
-              "text": "slice"
+              "text": "if"
             },
             {
               "index": 2,
-              "text": "s"
+              "text": "for"
+            },
+            {
+              "index": 4,
+              "text": "while"
             }
           ],
-          "answer": "21"
+          "answer": "3"
         },
         {
           "index": 6,
-          "type": 0,
-          "content": "Method substr() hampir sama dengan method slice(). Bedanya adalah di nilai kedua yang kita inputkan berguna untuk menentukan panjang spesifik dari bagian string yang ingin kita ekstrak.",
+          "type": 1,
+          "content": "Variasi lain dari while loop adalah do-while-loop, yang mana, secara mengejutkan, menggunakan keyword do dan while",
           "code": [
-            "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
-            "console.log(_._(5));"
+            "var numbers = [3, 7, 14, 15, 22, 41];",
+            "var i = 0;",
+            "do {",
+            "numbers[i]++;",
+            "i++;",
+            "}",
+            "while(i < __);"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "Ini dia digit !"
+              "text": "[4, 8, 15, 16, 23, 42]"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Nicee ! Sekali lagi, angka yang kedua itu optional. Jika kita tidak menulisnya maka bagian bagian string akan ditampilkan sampai ke ujung string asli.",
-          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "note": "Lihat? do-while-loop berjalan setidaknya sekali, bahkan juka kondisinya adalah false. Itu karena perulangan terjadi sebelum mengecek kondisinya.",
+          "question": "Tanda _ dapat diisi dengan: ",
           "choice": [
             {
               "index": 1,
-              "text": "s"
+              "text": "numbers.size"
             },
             {
               "index": 2,
-              "text": "substr()"
+              "text": "numbers.length"
             }
           ],
-          "answer": "12"
+          "answer": "2"
         },
         {
           "index": 7,
           "type": 0,
-          "content": "Kita juga bisa menggunakan method replace() untuk mencari dan mengganti kemunculan string yang ada didalam string tersebut. \nOke untuk lebih jelas lagi ayo coba kita takluk kan yang satu ini :",
+          "content": "Terkadang, kita harus menhentikan perulangan segera, dalam hal tersebut kita bisa menggunakan keyword break",
           "code": [
-            "var g1 = \"Hallo Dunia ! .\" ;",
-            "var g2 = _._(\"Dunia\", \"Kamu\") ;",
-            "console.log(g2);"
+            "for (var i = 0; i < 5; i++) {",
+            "if (i == 1) {",
+            "__:",
+            "}",
+            "console.log('Counting to ' + i);",
+            "}"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "Hallo Kamu !"
+              "text": "Counting to 0"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Nah sekarang kalian tahu kan ? replace() akan mencari nilai yang di inputkan dan akan menggantikan-nya.",
+          "note": "Kerja bagus! loop mengecek kondisi pada if statement setiap kali terjadi perulangan. Ketika kondisi terpenuhi, maka perulangan akan berhenti.",
           "question": "Tanda __ dapat diganti dengan urutan ?",
           "choice": [
             {
               "index": 1,
-              "text": "replace"
+              "text": "k"
             },
             {
               "index": 2,
-              "text": "g1"
+              "text": "r"
+            },
+            {
+              "index": 3,
+              "text": "e"
+            },
+            {
+              "index": 4,
+              "text": "a"
+            },
+            {
+              "index": 5,
+              "text": "b"
             }
           ],
-          "answer": "21"
+          "answer": "52341"
         },
         {
           "index": 8,
           "type": 1,
-          "content": "Kita bisa membuat string menjadi huruf kecil semua atau lowercase letter dengan menggunakan toLowerCase() . Dan juga nantinya ada cara untuk mengubah huruf menjadi besar semua atau uppercase letter. \nAyo kita rubah semua huruf menjadi uppercase yuk !",
+          "content": "Secara alternatif, jika kita ingin untuk melewatkan perulangan tertentu dan melanjutkanya, kita bisa gunakan continue.",
           "code": [
-            "var g1 = \"Hallo Dunia ! .\" ;",
-            "var g2 = g1._ ;",
-            "console.log(g2);"
+            "for (var i = 0; i < 5; i++) {",
+            "if (i == 1) {",
+            "continue;",
+            "}",
+            "console.log('Counting to ' + __);",
+            "}"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "HALLO DUNIA ! ."
+              "text": [ 
+                "Counting to 0",
+                "Counting to 2",
+                "Counting to 3",
+                "Counting to 4"
+              ]
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Nice bukan ? Tidak ada yang lebih baik dari pada salam dengan uppercase letter hehe",
+          "note": "Keren! continue keyword sangat berguna jika kita ingin melwati  perulangan tertentu dan melanjutkanya",
           "question": "Tanda __ dapat diganti dengan ?",
           "choice": [
             {
               "index": 1,
-              "text": "toLowerCase()"
+              "text": "x"
             },
             {
               "index": 2,
-              "text": "toUpperCase()"
+              "text": "i"
             }
           ],
           "answer": "2"
@@ -277,7 +321,7 @@
         {
           "index": 9,
           "type": 2,
-          "content": "Coba tebak dari beberapa statement yang ada dibawah ini mana yang benar tentang string ?",
+          "content": "Manakah pernyataan tentang loop yang benar?",
           "code": [],
           "output": [
             {
@@ -289,32 +333,32 @@
               "text": ""
             }
           ],
-          "note": "Jawaban yang bagus ! String terdiri dari urutan character yang kita buat diantara quotes. Oh iya length itu bukan lah method tapi property.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Kamu benar! Loop dapat mengulang sebuah ilai, walaupun berbeda tipe data.",
+          "question": "Boleh pilih lebih dari satu",
           "choice": [
             {
               "index": 1,
-              "text": "Kita menggunakan string untuk operator matematika"
+              "text": "Dapat mengulang baris kode sebanyak yang kita mau"
             },
             {
               "index": 2,
-              "text": "Membuat string diantara single atau double quotes"
+              "text": "Hanya memiliki satu jenis perulangan"
             },
             {
               "index": 3,
-              "text": "Method length() mengembalikan jumlah karakter yang ada di suatu string"
+              "text": "Dapat menjalankan kode dengan tipe data yang berbeda"
             },
             {
               "index": 4,
-              "text": "String terdiri dari urutan berbagai character"
+              "text": "Membuat kode menjadi lebih panjang dari yang dibutuhkan"
             }
           ],
-          "answer": "24"
+          "answer": "13"
         },
         {
           "index": 10,
           "type": 2,
-          "content": "Diantara banyak statement dibawah mana statement untuk membuat string ?",
+          "content": "Bisakah kamu mengurutkanya dengan benar terkait dengan do-while loop?",
           "code": [],
           "output": [
             {
@@ -331,30 +375,38 @@
           "choice": [
             {
               "index": 1,
-              "text": "var name = \"\";"
+              "text": "do {"
             },
             {
               "index": 2,
-              "text": "var string ;"
+              "text": "i++;"
             },
             {
               "index": 3,
-              "text": "var venue = 'Nextbyte\\'s Cafe' ;"
+              "text": "}"
             },
             {
               "index": 4,
-              "text": "var quote = \"Hello World!\" - Nextbyte\";"
+              "text": "while(i < 10);"
+            },
+            {
+              "index": 5,
+              "text": "var i = 0;"
             }
           ],
-          "answer": "13"
+          "answer": "51234"
         },
         {
           "index": 11,
-          "type": 2,
-          "content": "Statement mana yang menggabungkan / menambahkan s1  dan s2 ?",
+          "type": 1,
+          "content": "Manakah dari kode berikut yang akan muncul di console?",
           "code": [
-            "var s1 = \"Hallo Dunia ! Namaku \" ;",
-            "var s2 = \"Joe\" ;"
+            "var numbers = [2.0, 4.0, 7.5, 8.0, 11.5, 21.0];",
+            "var i = 0;",
+            "while (i < numbers.length) {",
+            "numbers[i] = numbers[i] * 2;",
+            "}",
+            "console.log(numbers);"
           ],
           "output": [
             {
@@ -366,32 +418,32 @@
               "text": ""
             }
           ],
-          "note": "Nice sekali ! Kamu dapat menggunakan method concat() atau assignment operators untuk menambahkan atau menggabungkan string.",
+          "note": "Sempurna! while-loop mengkalikan setiap number di variable numbers. sebuah array dengan nilai desimal.",
           "question": "Pilih salah satu atau lebih jawaban yang benar : ",
           "choice": [
             {
               "index": 1,
-              "text": "var s = s1.substr(s2) ;"
+              "text": "NaN"
             },
             {
               "index": 2,
-              "text": "s1 += s2 ;"
+              "text": "[2.0, 4.0, 7.5, 8.0, 11.5, 21.0]"
             },
             {
               "index": 3,
-              "text": "var s = s1.concat(s2) ;"
+              "text": "[4, 8, 15, 16, 23, 42]"
             },
             {
               "index": 4,
-              "text": "var s = s1 + s2 ;"
+              "text": "[4.0, 8.0, 15.0, 16.0, 23.0 , 42.0]"
             }
           ],
-          "answer": "234"
+          "answer": "4"
         },
         {
           "index": 12,
           "type": 2,
-          "content": "Statement mana yang memberikan nilai g menjadi \"Hallo Nexbtyte!\"  ?",
+          "content": "Keyword manakah yang dapat memberhentikan perulangan atau melewati perulangan?",
           "code": [],
           "output": [
             {
@@ -403,72 +455,68 @@
               "text": ""
             }
           ],
-          "note": "Luar Biasa ! kita dapat menggunkan replace() atau slice() , atau kalau pingin lebih simple tinggal masukan saja Hallo Nextbyte! ke dalam g",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
+          "note": "Kerja bagus! Saat break keyword mengganggu perulangan, sedangkan continue akan melewati perulangan",
+          "question": "Pilih jawaban yang benar, boleh lebih dari satu:",
           "choice": [
             {
               "index": 1,
-              "text": "g = \"Hello Nextbyte!\" ;"
+              "text": "default"
             },
             {
               "index": 2,
-              "text": "g = g.replace(\"World\", \"Nextbyte\") ;"
+              "text": "continue"
             },
             {
               "index": 3,
-              "text": "g = g.slice(0,5) ;\n g += \"Nextbyte!\" ;"
+              "text": "switch"
             },
             {
               "index": 4,
-              "text": "g += \"Nextbyte!\" ;"
+              "text": "break"
             }
           ],
-          "answer": "123"
+          "answer": "24"
         },
         {
           "index": 13,
-          "type": 0,
-          "content": " Coba tampilkan \"NEXTBYTE GENERATIONS\" dengan mengurutkan pilihan yang ada dibawah  ?",
+          "type": 2,
+          "content": "Bisakah kamu melakukan perulanagn pada friends array. Kemudian mengeluarkan semua nilai dari array tersebut?",
           "code": [],
           "output": [
             {
               "type": "script.js",
-              "text": "NEXTBYTE GENERATIONS"
+              "text": ""
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Nice ! Kita dapat membuat name dan menggunakan concat() untuk menambahkan data. Selanjutnya menggunakan if statement untuk menngkonversi name menjadi uppercase letter lalu tutup if statement dan terakhir menggunkan console.log() untuk nenampilkan data akhir.",
+          "note": "Keren! Kita mendeklarasikan friends array dan menjalankan while-loop. didalam loop, kita membuat friend",
           "question": "Pilih salah satu jawaban yang benar : ",
           "choice": [
             {
               "index": 1,
-              "text": "var name = \"Nextbyte\" ;"
-            },
-            {
-              "index": 2,
-              "text": "name = name.concat(\"generations\") ;"
-            },
-            {
-              "index": 3,
-              "text": "console.log(name) ;"
-            },
-            {
-              "index": 4,
               "text": "}"
             },
             {
-              "index": 5,
-              "text": "name = name.toUpperCase() ;"
+              "index": 2,
+              "text": "var friend = friends.pop();"
             },
             {
-              "index": 6,
-              "text": "if (name.length > 5) {"
+              "index": 3,
+              "text": "var friends = ['Jane', 'Daria', 'Finn', 'Jake']"
+            },
+            {
+              "index": 4,
+              "text": "console.log(friend);"
+            },
+            {
+              "index": 5,
+              "text": "while(friends.length > 0) {"
             }
           ],
-          "answer": "126543"
+          "answer": "35241"
         }
       ]
     }
