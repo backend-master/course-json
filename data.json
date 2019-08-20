@@ -2812,10 +2812,7 @@
           "index": 2,
           "type": 1,
           "content": "Seperti yang telah kita lihat, kita membuat Array ketika menetapkan nilai dalam tanda kurung siku (brackets) ke variabel. kita juga bisa menggunakan brackets kosong untuk membuat array kosong",
-          "code": [
-            "var things = __;",
-            "console.log(things);"
-          ],
+          "code": ["var things = __;", "console.log(things);"],
           "output": [
             {
               "type": "script.js",
@@ -2877,7 +2874,7 @@
           "type": 1,
           "content": "Array adalah objek juga, yang berarti mereka memiliki banyak method. Mari kita gunakan method untuk mengubah array menjadi string, oke?",
           "code": [
-            "var things = ['raindrops', 'roses', 'whiskers', 'kittens'];", 
+            "var things = ['raindrops', 'roses', 'whiskers', 'kittens'];",
             "console.log(things.__);"
           ],
           "output": [
@@ -2941,7 +2938,7 @@
           "type": 1,
           "content": "Kita tidak hanya dapat mengakses nilai melalui indeksnya, kita juga dapat mengubah dan bahkan menambahkan nilai dengan angka indeks",
           "code": [
-            "var things = ['raindrops', 'roses', 'whiskers', 'kittens'];", 
+            "var things = ['raindrops', 'roses', 'whiskers', 'kittens'];",
             "things[__] = 'kettles';",
             "console.log(things);"
           ],
@@ -3399,6 +3396,1334 @@
             }
           ],
           "answer": "254316"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "title": "Loops",
+      "total": 12,
+      "data": [
+        {
+          "index": 1,
+          "type": 0,
+          "content": "Sesuatu yang kita ingin hindari ketika menulis code dan alasan yang sderhana adalah barisan kode yang melakukan tindakan yang sangat mirip / berulang",
+          "code": [
+            "var numbers _ [3, 7, 14, 15, 22, 41];",
+            "numbers[0]++;",
+            "numbers[1]++;",
+            "numbers[2]++;",
+            "numbers[3]++;",
+            "numbers[4]++;",
+            "numbers[5]++;",
+            "console.log(_)"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "[4, 8, 15, 16, 23, 42]"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Sangat membuang-buang waktu! bagaimana kita bisa menyingkirkan kode mubazir ini?",
+          "question": "Pilih urutan jawaban yang benar;",
+          "choice": [
+            {
+              "index": 1,
+              "text": "numbers"
+            },
+            {
+              "index": 2,
+              "text": "="
+            }
+          ],
+          "answer": "21"
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "content": "Ya, tentu saja: kita bisa menggunakan perulangan untuk mengulangi sebuah nilai sebanyak yang kita ingin",
+          "code": [
+            "var s = '';",
+            "for(var i = 0; i < __; i++){",
+            "s += i;",
+            "}",
+            "console.log(s);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "01234"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Lihat? Pada tanda kurung setelah keyword for, kita isi dengan control variable, condition dan cara untuk membuat kondisi false pada saat yang sama",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": 5
+            },
+            {
+              "index": 2,
+              "text": "five"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "index": 3,
+          "type": 1,
+          "content": "Kenapa kita tidak menggunakan perulangan untuk increment sebuah nilai dalam suatu ",
+          "code": [
+            "var numbers = [3, 7, 14, 15, 22, 41];",
+            "for(var i = 0; i < __; i++){",
+            "numbers[i]++;",
+            "}",
+            "console.log(numbers);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "[4, 8, 15, 16, 23, 42]"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Fantastis! perulangan berawal dari 0 dan berulang sampai i tidak kurang dari numbers.length.",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": 10
+            },
+            {
+              "index": 2,
+              "text": "numbers.length"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 4,
+          "type": 1,
+          "content": "Ada cara yang lain intuk melakukan perulangan dengan for menggunakan in keyword.",
+          "code": [
+            "var things = ['raindrops', 'roses', 'whiskers', 'kittens'];",
+            "for( thing in things ){",
+            "console.log(_);",
+            "}"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ["raindrops", "roses", "whiskers", "kittens"]
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Lihat? Setiap kali loop berjalan, thing memiliki nomor index yang berbeda dari array things",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "things"
+            },
+            {
+              "index": 2,
+              "text": "things[thing]"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 5,
+          "type": 1,
+          "content": "while loop, jenis lain dari perulangan/loop, mengulang nilai tertentu selama kondisinya adalah true",
+          "code": [
+            "var numbers = [3, 7, 14, 15, 22, 41];",
+            "var i = 0;",
+            "__ (i < numbers.length){",
+            "numbers[i]++;",
+            "i++;",
+            "}",
+            "console.log(numbers);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "[4, 8, 15, 16, 23, 42]"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Cantik! Kita menggunaka while keyword untuk membuat peulangan whlie. sebagai sebuah perulangan, ini tak memiliki control variable, kita perlu memastikan bahwa kondisinya menjadi false.",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "if"
+            },
+            {
+              "index": 2,
+              "text": "for"
+            },
+            {
+              "index": 4,
+              "text": "while"
+            }
+          ],
+          "answer": "3"
+        },
+        {
+          "index": 6,
+          "type": 1,
+          "content": "Variasi lain dari while loop adalah do-while-loop, yang mana, secara mengejutkan, menggunakan keyword do dan while",
+          "code": [
+            "var numbers = [3, 7, 14, 15, 22, 41];",
+            "var i = 0;",
+            "do {",
+            "numbers[i]++;",
+            "i++;",
+            "}",
+            "while(i < __);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "[4, 8, 15, 16, 23, 42]"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Lihat? do-while-loop berjalan setidaknya sekali, bahkan juka kondisinya adalah false. Itu karena perulangan terjadi sebelum mengecek kondisinya.",
+          "question": "Tanda _ dapat diisi dengan: ",
+          "choice": [
+            {
+              "index": 1,
+              "text": "numbers.size"
+            },
+            {
+              "index": 2,
+              "text": "numbers.length"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 7,
+          "type": 0,
+          "content": "Terkadang, kita harus menhentikan perulangan segera, dalam hal tersebut kita bisa menggunakan keyword break",
+          "code": [
+            "for (var i = 0; i < 5; i++) {",
+            "if (i == 1) {",
+            "__:",
+            "}",
+            "console.log('Counting to ' + i);",
+            "}"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "Counting to 0"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Kerja bagus! loop mengecek kondisi pada if statement setiap kali terjadi perulangan. Ketika kondisi terpenuhi, maka perulangan akan berhenti.",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "k"
+            },
+            {
+              "index": 2,
+              "text": "r"
+            },
+            {
+              "index": 3,
+              "text": "e"
+            },
+            {
+              "index": 4,
+              "text": "a"
+            },
+            {
+              "index": 5,
+              "text": "b"
+            }
+          ],
+          "answer": "52341"
+        },
+        {
+          "index": 8,
+          "type": 1,
+          "content": "Secara alternatif, jika kita ingin untuk melewatkan perulangan tertentu dan melanjutkanya, kita bisa gunakan continue.",
+          "code": [
+            "for (var i = 0; i < 5; i++) {",
+            "if (i == 1) {",
+            "continue;",
+            "}",
+            "console.log('Counting to ' + __);",
+            "}"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": [
+                "Counting to 0",
+                "Counting to 2",
+                "Counting to 3",
+                "Counting to 4"
+              ]
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Keren! continue keyword sangat berguna jika kita ingin melwati  perulangan tertentu dan melanjutkanya",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "x"
+            },
+            {
+              "index": 2,
+              "text": "i"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 9,
+          "type": 2,
+          "content": "Manakah pernyataan tentang loop yang benar?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Kamu benar! Loop dapat mengulang sebuah ilai, walaupun berbeda tipe data.",
+          "question": "Boleh pilih lebih dari satu",
+          "choice": [
+            {
+              "index": 1,
+              "text": "Dapat mengulang baris kode sebanyak yang kita mau"
+            },
+            {
+              "index": 2,
+              "text": "Hanya memiliki satu jenis perulangan"
+            },
+            {
+              "index": 3,
+              "text": "Dapat menjalankan kode dengan tipe data yang berbeda"
+            },
+            {
+              "index": 4,
+              "text": "Membuat kode menjadi lebih panjang dari yang dibutuhkan"
+            }
+          ],
+          "answer": "13"
+        },
+        {
+          "index": 10,
+          "type": 2,
+          "content": "Bisakah kamu mengurutkanya dengan benar terkait dengan do-while loop?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Sepertinya kamu sudah menguasainya ! Kita membuat string diantara single atau double quotes. Jika kita ingin menggunakan quotes diantara string kita bisa menggunakan escape character",
+          "question": "Urutkan jawaban dengan benar : ",
+          "choice": [
+            {
+              "index": 1,
+              "text": "do {"
+            },
+            {
+              "index": 2,
+              "text": "i++;"
+            },
+            {
+              "index": 3,
+              "text": "}"
+            },
+            {
+              "index": 4,
+              "text": "while(i < 10);"
+            },
+            {
+              "index": 5,
+              "text": "var i = 0;"
+            }
+          ],
+          "answer": "51234"
+        },
+        {
+          "index": 11,
+          "type": 1,
+          "content": "Manakah dari kode berikut yang akan muncul di console?",
+          "code": [
+            "var numbers = [2.0, 4.0, 7.5, 8.0, 11.5, 21.0];",
+            "var i = 0;",
+            "while (i < numbers.length) {",
+            "numbers[i] = numbers[i] * 2;",
+            "}",
+            "console.log(numbers);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Sempurna! while-loop mengkalikan setiap number di variable numbers. sebuah array dengan nilai desimal.",
+          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
+          "choice": [
+            {
+              "index": 1,
+              "text": "NaN"
+            },
+            {
+              "index": 2,
+              "text": "[2.0, 4.0, 7.5, 8.0, 11.5, 21.0]"
+            },
+            {
+              "index": 3,
+              "text": "[4, 8, 15, 16, 23, 42]"
+            },
+            {
+              "index": 4,
+              "text": "[4.0, 8.0, 15.0, 16.0, 23.0 , 42.0]"
+            }
+          ],
+          "answer": "4"
+        },
+        {
+          "index": 12,
+          "type": 2,
+          "content": "Keyword manakah yang dapat memberhentikan perulangan atau melewati perulangan?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Kerja bagus! Saat break keyword mengganggu perulangan, sedangkan continue akan melewati perulangan",
+          "question": "Pilih jawaban yang benar, boleh lebih dari satu:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "default"
+            },
+            {
+              "index": 2,
+              "text": "continue"
+            },
+            {
+              "index": 3,
+              "text": "switch"
+            },
+            {
+              "index": 4,
+              "text": "break"
+            }
+          ],
+          "answer": "24"
+        },
+        {
+          "index": 13,
+          "type": 2,
+          "content": "Bisakah kamu melakukan perulanagn pada friends array. Kemudian mengeluarkan semua nilai dari array tersebut?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Keren! Kita mendeklarasikan friends array dan menjalankan while-loop. didalam loop, kita membuat friend",
+          "question": "Pilih salah satu jawaban yang benar : ",
+          "choice": [
+            {
+              "index": 1,
+              "text": "}"
+            },
+            {
+              "index": 2,
+              "text": "var friend = friends.pop();"
+            },
+            {
+              "index": 3,
+              "text": "var friends = ['Jane', 'Daria', 'Finn', 'Jake']"
+            },
+            {
+              "index": 4,
+              "text": "console.log(friend);"
+            },
+            {
+              "index": 5,
+              "text": "while(friends.length > 0) {"
+            }
+          ],
+          "answer": "35241"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "title": "Functions",
+      "total": 12,
+      "data": [
+        {
+          "index": 1,
+          "type": 0,
+          "content": "Untuk lebih singkat, functions adalah code block yang melakukan tugas yang spesifik. Tapi kenapa dia berguna ?",
+          "code": [
+            "var r = 12 ;",
+            "var luasLingkaran = r * r * _._ ;",
+            "console.log(_)"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "452.3893421169302"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Bukan kah masuk akal kalau kita menuliskan kode setiap saat ketika kita ingin menghitung luas lingkaran ? Yaah tidak juga sih, disitulah functions akan lebih berguna dan efisien.",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "luasLingkaran"
+            },
+            {
+              "index": 2,
+              "text": "PI"
+            },
+            {
+              "index": 3,
+              "text": "Math"
+            }
+          ],
+          "answer": "321"
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "content": "Dan untuk membuat sebuah fungsi, kita cukup menggunkan kata kunci functions, nama yang unik untuk nama fungsi serta sepasang tanda kurung (). Sekali saja kita sudah membuatnya kita bisa menggunakan fungsi tersebut kapanpun yang kita inginkan.",
+          "code": ["_ sayHello() {", "console.log(\"Hello Nextbyte\");", "}"],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Sesimpel itu loh ! Apapun yang kita tulis diantara tanda kurung ini {} , akan menjadi bagian dari fungsi tersebut. Tapi kenapa kok nggak muncul apa apa ya di console ?",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "var"
+            },
+            {
+              "index": 2,
+              "text": "function"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 3,
+          "type": 1,
+          "content": "Oh iyaa, kalau kita sudah membuat sebuah fungsi kita harus memanggilnya agar fungsi itu jalan.",
+          "code": [
+            "function sayHello() {",
+            "console.log(\"Hello Nextbyte\");",
+            "}",
+            "__"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "Hello Nextbyte"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Akhirnya tampil juga, kita bisa menggunkan fungsi tersebut dengan memanggil nama-nya di ikuti dengan tanda kurung ().",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "sayHello()"
+            },
+            {
+              "index": 2,
+              "text": "sayHello"
+            }
+          ],
+          "answer": "1"
+        },
+        {
+          "index": 4,
+          "type": 1,
+          "content": "Apa kamu ingat ketika kita memasukan code seperti console.log(\"Hello Nextbyte\") di dalam fungsi ? ternyata kita bisa memodifikasi output-an apa yang kita inginkan dengan menambahkan parameters di dalam fungsi kita.",
+          "code": [
+            "function luasLingkaran(radius) {",
+            "var result = radius * radius * Math.Pi",
+            "console.log(result)",
+            "}",
+            "luasLingkaran(__) ;"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "314.1592653589793"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Kalian lihat kan ? Parameter adalah temporary variables atau variable sementara, dia akan menampung nilai berapapun yang akan kita inputkan dan akan di proses di dalam fungsi tersebut.",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "\"sepuluh\""
+            },
+            {
+              "index": 2,
+              "text": 10
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 5,
+          "type": 0,
+          "content": "Dengan menggunakan method slice(), kita dapat mengeluarkan bagian dari string loh.",
+          "code": [
+            "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
+            "console.log(_._(5,9));"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "kamu"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Yaps ! Angka yang kita tulis di method slice() adalah posisi start dan posisi end dari string yang akan kita extract. \nOiyaa kamu tahu nggak kalau kita menggunakan negative value maka posisi yang di hitung akan dimulai di akhir dari string",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "slice"
+            },
+            {
+              "index": 2,
+              "text": "s"
+            }
+          ],
+          "answer": "21"
+        },
+        {
+          "index": 6,
+          "type": 0,
+          "content": "Method substr() hampir sama dengan method slice(). Bedanya adalah di nilai kedua yang kita inputkan berguna untuk menentukan panjang spesifik dari bagian string yang ingin kita ekstrak.",
+          "code": [
+            "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
+            "console.log(_._(5));"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "Ini dia digit !"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nicee ! Sekali lagi, angka yang kedua itu optional. Jika kita tidak menulisnya maka bagian bagian string akan ditampilkan sampai ke ujung string asli.",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "s"
+            },
+            {
+              "index": 2,
+              "text": "substr()"
+            }
+          ],
+          "answer": "12"
+        },
+        {
+          "index": 7,
+          "type": 0,
+          "content": "Kita juga bisa menggunakan method replace() untuk mencari dan mengganti kemunculan string yang ada didalam string tersebut. \nOke untuk lebih jelas lagi ayo coba kita takluk kan yang satu ini :",
+          "code": [
+            "var g1 = \"Hallo Dunia ! .\" ;",
+            "var g2 = _._(\"Dunia\", \"Kamu\") ;",
+            "console.log(g2);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "Hallo Kamu !"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nah sekarang kalian tahu kan ? replace() akan mencari nilai yang di inputkan dan akan menggantikan-nya.",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "replace"
+            },
+            {
+              "index": 2,
+              "text": "g1"
+            }
+          ],
+          "answer": "21"
+        },
+        {
+          "index": 8,
+          "type": 1,
+          "content": "Kita bisa membuat string menjadi huruf kecil semua atau lowercase letter dengan menggunakan toLowerCase() . Dan juga nantinya ada cara untuk mengubah huruf menjadi besar semua atau uppercase letter. \nAyo kita rubah semua huruf menjadi uppercase yuk !",
+          "code": [
+            "var g1 = \"Hallo Dunia ! .\" ;",
+            "var g2 = g1._ ;",
+            "console.log(g2);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "HALLO DUNIA ! ."
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nice bukan ? Tidak ada yang lebih baik dari pada salam dengan uppercase letter hehe",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "toLowerCase()"
+            },
+            {
+              "index": 2,
+              "text": "toUpperCase()"
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 9,
+          "type": 2,
+          "content": "Bisakah kamu mengurutkan baris kode berikut, menjadi function yang mengubah string menjadi array",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Bagus! Kita memulai dengan mendefinisikan function, membuat variable c dan mengulang nilainya, dan mengubahnya. Kemudian me-return ke array",
+          "question": "",
+          "choice": [
+            {
+              "index": 1,
+              "text": "retrun c;"
+            },
+            {
+              "index": 2,
+              "text": "}"
+            },
+            {
+              "index": 3,
+              "text": "for (int i = 0; i < a.length; i++) {"
+            },
+            {
+              "index": 4,
+              "text": "function convert(a) {"
+            },
+            {
+              "index": 5,
+              "text": "c.push(parseInt(a[i]));"
+            },
+            {
+              "index": 6,
+              "text": "{"
+            },
+            {
+              "index": 7,
+              "text": "var c = [];"
+            }
+          ],
+          "answer": "4735216"
+        },
+        {
+          "index": 10,
+          "type": 2,
+          "content": "Mana yang termasuk mendefinisikan function?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Benar! Kita bisa menggunakan functin declaration atau function definition",
+          "question": "Boleh pilih lebih dari satu",
+          "choice": [
+            {
+              "index": 1,
+              "text": ["function add(a, b){", "return a + b;", "}"]
+            },
+            {
+              "index": 2,
+              "text": "add(10, 10);"
+            },
+            {
+              "index": 3,
+              "text": "var add = function(){return a + b};"
+            },
+            {
+              "index": 4,
+              "text": "var a = add();"
+            }
+          ],
+          "answer": "13"
+        },
+        {
+          "index": 11,
+          "type": 1,
+          "content": "Apa masalah pada kode berikut?",
+          "code": [
+            "function calculatorPeriphery(){",
+            "var result = 2 * r * Math.PI;",
+            "return result;",
+            "console.log(result);",
+            "}",
+            "var p = calculatorPeriphery(5.5);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Itu dia! karena return membuat function menghentikan eksekusi, console.log() tidak bisa dijangkau",
+          "question": "Pilih salah satu;",
+          "choice": [
+            {
+              "index": 1,
+              "text": "Math.PI tidak bisa diakses didalam function"
+            },
+            {
+              "index": 2,
+              "text": "calculatorPeriphery() tidak menerima desimal"
+            },
+            {
+              "index": 3,
+              "text": "console.log() tidak bisa dijangkau"
+            },
+            {
+              "index": 4,
+              "text": "calculatorPeriphery() tidak dapat dimasukan dam variable"
+            }
+          ],
+          "answer": "3"
+        },
+        {
+          "index": 12,
+          "type": 2,
+          "content": "Statement mana yang memberikan nilai g menjadi \"Hallo Nexbtyte!\"  ?",
+          "code": [],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Luar Biasa ! kita dapat menggunkan replace() atau slice() , atau kalau pingin lebih simple tinggal masukan saja Hallo Nextbyte! ke dalam g",
+          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
+          "choice": [
+            {
+              "index": 1,
+              "text": "g = \"Hello Nextbyte!\" ;"
+            },
+            {
+              "index": 2,
+              "text": "g = g.replace(\"World\", \"Nextbyte\") ;"
+            },
+            {
+              "index": 3,
+              "text": "g = g.slice(0,5) ;\n g += \"Nextbyte!\" ;"
+            },
+            {
+              "index": 4,
+              "text": "g += \"Nextbyte!\" ;"
+            }
+          ],
+          "answer": "123"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "title": "Object",
+      "total": 13,
+      "data": [
+        {
+          "index": 1,
+          "type": 1,
+          "content": "Sebelumnya, kita telah belajar banyak tantang variable dan array. Tapi, kenapa kita butuh object? Mari kita membahasnya. Apakah anda ingat variabel name, age dan height?",
+          "code": [
+            "var name = \"Robin\";",
+            "var age = 42;",
+            "var height = 1.72;",
+            "console.log(_);"
+          ],
+          "output": ["\"Robin\""],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "weight"
+            },
+            {
+              "index": 1,
+              "text": "name"
+            }
+          ],
+          "answer": "2",
+          "note": "Seharusnya semua variabel diatas bisa menjadi satu bukan? Tapi bagaimana jika kita ingin membuat variabel name, age dan heigth untuk orang yang berbeda?"
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "content": "Object adalah variabel yang memiliki berbagai value atau properties. Kita dapat membuat object dengan sepasang kurung kurawal {}  atau bisa disebut literal object.",
+          "code": ["var person = _;", "person)};"],
+          "output": ["object"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "[]"
+            },
+            {
+              "index": 2,
+              "text": "{}"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Tapi, bukankah array juga memiliki beberapa value?"
+        },
+        {
+          "index": 3,
+          "type": 1,
+          "content": "Dibandingkan dengan array, object memilki kelebihan yang penting: yaitu sebuah nama.",
+          "code": [
+            "var person = {name: \"Joe\", age: 42, height: 1.72}",
+            "console._(person);"
+          ],
+          "output": ["{name: \"Joe\",, age: 42, height: 1.72}"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "out"
+            },
+            {
+              "index": 2,
+              "text": "log"
+            }
+          ],
+          "answer": "2",
+          "note": "Kita talah membuat properti diatas dengan nama dan value yang dipisahkan dengan titik dua. Setiap properti kemudian dipisahkan dengan koma."
+        },
+        {
+          "index": 4,
+          "type": 1,
+          "content": "Kita dapat menggunakan nama untuk mengakses value.",
+          "code": [
+            "var person  = {",
+            "name: \"Robin\",",
+            "age: 42,",
+            "heigth: 1.72",
+            "};",
+            "console.log(_);"
+          ],
+          "output": "Robin",
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "person[0]"
+            },
+            {
+              "index": 2,
+              "text": "person.name"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Kita dapat mengakses value dengan menggunakan tanda kurung  atau dengan titik."
+        },
+        {
+          "index": 5,
+          "type": 1,
+          "content": "Kita dapat mengganti value dalam sebuh properti dengan cara memasukan sebuah value yang berbeda.",
+          "code": [
+            "var person  = {",
+            "name: \"Robin\",",
+            "age: 42,",
+            "heigth: 1.72",
+            "};",
+            "person._ = 58.0",
+            "console.log(person);"
+          ],
+          "output": ["{name: \"Robin\", age: 58.0, height: 1.72}"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "weight"
+            },
+            {
+              "index": 2,
+              "text": "age"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Tidak hanya mengubah perperti kita juga dapat menambah properti pada object dengan memasukan nama baru beserta dengan value."
+        },
+        {
+          "index": 6,
+          "type": 1,
+          "content": "Bagaimana jika kita ingin menghapus sebuah properti? KIta dapat menggunakan sebuah kata kunci untuk menghapusnya.",
+          "code": [
+            "var person  = {",
+            "name: \"Robin\",",
+            "age: 42,",
+            "heigth: 1.72",
+            "};",
+            "_ person.height;",
+            "console.log(person);"
+          ],
+          "output": ["{name: \"Robin\", age: 58.0}"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "return"
+            },
+            {
+              "index": 2,
+              "text": "delete"
+            }
+          ],
+          "answer": "2",
+          "note": "Benar! Kata delete menghapus sepasang nama-value yang membentuk sebuah properti."
+        },
+        {
+          "index": 7,
+          "type": 1,
+          "content": "method adalah sebuah fungsi yang sebuah object dan dapat melakukan suatu aksi kepada object itu sendiri.",
+          "code": [
+            "var person  = {",
+            "name: \"Robin\",",
+            "age: 42,",
+            "heigth: 1.72,",
+            "speak: function(){",
+            "consolog.log(\"Halo, saya \" + this.name + \"!\")",
+            "}",
+            "};",
+            "person._"
+          ],
+          "output": "Halo, saya robin",
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "speak"
+            },
+            {
+              "index": 2,
+              "text": "speak()"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Kita dapat membuat sebuah method dengan memasukan sebuah fungsi kedalam properti dan dapat menggunkannya seperti fungsi biasa. Kata this menunjuk pada object itu sendiri."
+        },
+        {
+          "index": 8,
+          "type": 1,
+          "content": "Bagaimana jika kita ingin membuat object lebih dari satu dengan properti dan method yang sama tetapi dengan value yang berbeda?",
+          "code": [
+            "function Person(name, age, height){",
+            "this,name = name;",
+            "this.age = age;,",
+            "this.height = height",
+            "this.speak = function(){",
+            "consolog.log(\"Halo, saya \" + this.name + \"!\")",
+            "}",
+            "};",
+            "var p1 = _ Person(\"Robin\", 42, 1.72);",
+            "console.log(p1.name);"
+          ],
+          "output": ["Robin"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "delete"
+            },
+            {
+              "index": 2,
+              "text": "return"
+            },
+            {
+              "index": 3,
+              "text": "new"
+            }
+          ],
+          "answer": "3",
+          "note": "Benar! dengan membuat fungsi konstruktor, kita dapat menggunakan kata new   untuk membuat berbagai object sesuai dengan keinginan kita."
+        },
+        {
+          "index": 9,
+          "type": 2,
+          "question": "Manakah pernyataan tentang object yang benar?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "Dapat memiliki method ."
+            },
+            {
+              "index": 2,
+              "text": "Variabel yang memiliki properti."
+            },
+            {
+              "index": 3,
+              "text": "Kita membuatnya dengan literal array, sepasang tanda kurung."
+            },
+            {
+              "index": 4,
+              "text": "Ketika sudah dibuat, kita tidak dapat mengubah objek."
+            }
+          ],
+          "answer": "123",
+          "note": "Kamu Benar!"
+        },
+        {
+          "index": 10,
+          "type": 2,
+          "question": "Manakah pernyataan yang dapat mengubah properti name dari object person .",
+          "code": ["var person = { name: \"Robin\", age: 42, height: 1.72};"],
+          "choice": [
+            {
+              "index": 1,
+              "text": " person[\"name\"] = \"Win\";"
+            },
+            {
+              "index": 2,
+              "text": "person.name = \"Christoper\";"
+            },
+            {
+              "index": 3,
+              "text": "person[0] = \"Christoper\";"
+            },
+            {
+              "index": 4,
+              "text": "person[name] = \"Kessie\";"
+            }
+          ],
+          "answer": "12",
+          "note": "Kamu Benar!"
+        },
+        {
+          "index": 11,
+          "type": 2,
+          "question": "Manakah pernyataan yang dapat membuat object:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "var date = new Date();"
+            },
+            {
+              "index": 2,
+              "text": "function bark(){console.log(\"Woof\")}"
+            },
+            {
+              "index": 3,
+              "text": "var number = Math.random();"
+            },
+            {
+              "index": 4,
+              "text": "var person = {name: \"Win\", age:22, height: 146}"
+            }
+          ],
+          "answer": "14",
+          "note": "Kamu Benar!"
+        },
+        {
+          "index": 12,
+          "type": 1,
+          "content": "Bisakah kamu menemukan kesalahan dari kode berikut ini?",
+          "code": [
+            "var dog = {",
+            "name: \"Bexter\"",
+            "bark: function(){",
+            "console.log(\"Woof\")",
+            "}",
+            "eat: function(){",
+            "console.log(\"Munch!\")",
+            "}",
+            "};",
+            "dog.bark();"
+          ],
+          "choice": [
+            {
+              "index": 1,
+              "text": "Method bark() tidak memilki argumen"
+            },
+            {
+              "index": 2,
+              "text": "Object dog tidak menggunakan fungsi konstruktor"
+            },
+            {
+              "index": 3,
+              "text": "Method eat() tidak menghasilkan apapun."
+            },
+            {
+              "index": 4,
+              "text": "Setiap propeti tidak dipisahkan dengan koma."
+            }
+          ],
+          "answer": "4",
+          "note": "Kamu benar!"
+        },
+        {
+          "index": 13,
+          "type": 0,
+          "question": "Bisakah kamu mengurutkan kode dibawah ini untuk membuat suatu object:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "this.bark = function(){"
+            },
+            {
+              "index": 2,
+              "text": "this.name = name;"
+            },
+            {
+              "index": 3,
+              "text": "}"
+            },
+            {
+              "index": 3,
+              "text": "var dog = new Dog(\"Bexter\")"
+            },
+            {
+              "index": 4,
+              "text": "console.log(\"Woof!\");"
+            },
+            {
+              "index": 5,
+              "text": "};"
+            },
+            {
+              "index": 6,
+              "text": "function Dog(name){"
+            }
+          ],
+          "answer": "7215634",
+          "note": "Kamu Benar!"
         }
       ]
     }
