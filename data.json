@@ -5,847 +5,359 @@
   "image": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_530/https://kolabsit.com/wp-content/uploads/2019/07/function-javascript-kolabsit.jpeg",
   "section": [
     {
-      "index": 1,
-      "title": "Javascript Basic",
-      "total": 14,
+      "index": 10,
+      "title": "Object",
+      "total": 13,
       "data": [
         {
           "index": 1,
-          "type": 0,
-          "content": "Selamat Datang di Javascript Course, javascript adalah bahasa pemrograman yang sangat berkembang pesat. Yap, Saat ini penggunaan JavaScript hampir selalu ada di setiap web modern. \nJavaScript biasanya untuk membuat berbagai aplikasi yang dapat berinteraksi dengan user, seperti validasi form HTML, games, kalkulator, fitur chatting, dll. \nOke ayo kita mulai dengan menampilkan sesuatu di konsol :",
-          "code": [
-            "var part1 = `Hello World !!! Kita sekarang belajar `;",
-            "var part2 = `Javascript`;",
-            "__.__(part1 + part2);"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Hello World !!! Kita sekarang belajar  Javascript"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Yeaaay, kamu telah berhasil membuat script yang menampilkan text, tapi sebelum itu apa kamu tahu apa yang dinamakan Script ?",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "type": 1,
+          "content": "Sebelumnya, kita telah belajar banyak tantang variable dan array. Tapi, kenapa kita butuh object? Mari kita membahasnya. Apakah anda ingat variabel name, age dan height?",
+          "code": ["var name = \"Robin\";", "var age = 42;", "var height = 1.72;", "console.log(_);"],
+          "output": ["\"Robin\""],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
-              "text": "log"
+              "text": "weight"
             },
             {
-              "index": 2,
-              "text": "console"
+              "index": 1,
+              "text": "name"
             }
           ],
-          "answer": "21"
+          "answer": "2",
+          "note": "Seharusnya semua variabel diatas bisa menjadi satu bukan? Tapi bagaimana jika kita ingin membuat variabel name, age dan heigth untuk orang yang berbeda?"
         },
         {
           "index": 2,
           "type": 1,
-          "content": "Script adalah program yang berjalan bersama halaman web. Mereka berjalan bersama di Web Browser dan membuat halaman web menjadi lebih dinamis dan powerful.\n Kali ini, waktunya kita coba memasukan script ke halaman web dan kuy beritahu alam semesta apa yang akan kita lakukan !",
-          "code": [
-            "<!doctypye html>",
-            "<html>",
-            "<body>",
-            " <script>",
-            "var part1 = \"Hello World !, Saat ini kita belajar \" ;",
-            "var part2 = \"Javascript\" ;",
-            "__.__( part1 + part2 ) ;",
-            "</script> ",
-            "</body>",
-            "</html>"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": "Hello world !, Saat ini kita belajar Javascript"
-            }
-          ],
-          "note": "Fantastic ! Sekarang kita sudah membuat niat kita diawal dengan sangat jelas, Siap untuk menyelam lebih dalam.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "content": "Object adalah variabel yang memiliki berbagai value atau properties. Kita dapat membuat object dengan sepasang kurung kurawal {}  atau bisa disebut literal object.",
+          "code": ["var person = _;", "person)};"],
+          "output": ["object"],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
-              "text": "console.log"
+              "text": "[]"
             },
             {
               "index": 2,
-              "text": "document.write"
+              "text": "{}"
             }
           ],
-          "answer": "2"
+          "answer": "2",
+          "note": "Kamu benar! Tapi, bukankah array juga memiliki beberapa value?"
         },
         {
           "index": 3,
           "type": 1,
-          "content": "Variable, Yuk berkenalan sedikit dengan variable, jadi variable itu mudahnya adalah sebuah tempat / wadah atau sebuah container yang akan membantu kita. Kalau masih bingung nggak apa apa kita akan lanjutkan penjelasannya di section selanjutnya. \nKita bisa membuat variable dengan keyword var dan sebuah nama atau identitas. Selanjutnya kita akan memberikan sebuah nilai dengan tanda = .",
-          "code": [
-            "var name = \"Robin\" ;",
-            "var age = 42;",
-            "console.log(_);"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Robin"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Sudah sadar bukan ? name  dan age adalah variable yang mengandung informasi atau data. Dan ketika kita masukan variable tersebut kedalam console.log() baru deh ketahuan isinya apa.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "content": "Dibandingkan dengan array, object memilki kelebihan yang penting: yaitu sebuah nama.",
+          "code": ["var person = {name: \"Joe\", age: 42, height: 1.72}", "console._(person);"],
+          "output": ["{name: \"Joe\",, age: 42, height: 1.72}"],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
-              "text": "name"
+              "text": "out"
             },
             {
               "index": 2,
-              "text": "weight"
+              "text": "log"
             }
           ],
-          "answer": "1"
+          "answer": "2",
+          "note": "Kita talah membuat properti diatas dengan nama dan value yang dipisahkan dengan titik dua. Setiap properti kemudian dipisahkan dengan koma."
         },
         {
           "index": 4,
           "type": 1,
-          "content": "Masih seputar variable, sebuah nama dari variable harus unik dan sebaiknya diawali dengan huruf kecil. Tapi beberapa kata tidak bisa digunakan sebagai nama dari variable. Ayo kita cari tahu apa yang bakal terjadi kalau kita melanggar aturan !",
-          "code": ["var _ ;"],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Uncaught SyntaxError : Unexpected token function"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Whooaa, message yang sangat aneh bukan ? oke berarti kita nggak boleh menggunakan keyword ini untuk membuat sebuah variable.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "content": "Kita dapat menggunakan nama untuk mengakses value.",
+          "code": ["var person  = {", "name: \"Robin\",", "age: 42,", "heigth: 1.72", "};", "console.log(_);"],
+          "output": "Robin",
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
-              "text": "variable"
+              "text": "person[0]"
             },
             {
               "index": 2,
-              "text": "var"
+              "text": "person.name"
             }
           ],
-          "answer": "2"
+          "answer": "2",
+          "note": "Kamu benar! Kita dapat mengakses value dengan menggunakan tanda kurung  atau dengan titik."
         },
         {
           "index": 5,
           "type": 1,
-          "content": "Sebenernya banyak cara untuk menampilkan data di Javascript. Dicourse ini kita akan menggunakan browser console dan aktual webpages.",
+          "content": "Kita dapat mengganti value dalam sebuh properti dengan cara memasukan sebuah value yang berbeda.",
           "code": [
-            "console.log(\"Nextbyte\") ;",
-            "document._(\"Yo Broo! Sahabat Nextbyte Gaes \") ;"
+            "var person  = {",
+            "name: \"Robin\",",
+            "age: 42,",
+            "heigth: 1.72",
+            "};",
+            "person._ = 58.0",
+            "console.log(person);"
           ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Nextbyte"
-            },
-            {
-              "type": "browser",
-              "text": "Yo Broo! Sahabat Nextbyte Gaes"
-            }
-          ],
-          "note": "Yaps, kita bisa menempatkan apapun di dalam console.log dan akan tertampilkan di browser console. Dan apapun yang kita tulis di document.write akan tertampil di halaman web.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "output": ["{name: \"Robin\", age: 58.0, height: 1.72}"],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
-              "text": "log"
+              "text": "weight"
             },
             {
               "index": 2,
-              "text": "write"
+              "text": "age"
             }
           ],
-          "answer": "2"
+          "answer": "2",
+          "note": "Kamu benar! Tidak hanya mengubah perperti kita juga dapat menambah properti pada object dengan memasukan nama baru beserta dengan value."
         },
         {
           "index": 6,
-          "type": 0,
-          "content": "Masih banyak type data saat penggunaan variable, kita sudah bertemu dengan tipe data strings yang terdiri daii beberapa karakter. Sekali lagi ayo kita buat sebuah varible string yuk !",
-          "code": ["  _ _  _ \"Nextbyte\" ;", "console.log(name) ;"],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Nextbyte"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
+          "type": 1,
+          "content": "Bagaimana jika kita ingin menghapus sebuah properti? KIta dapat menggunakan sebuah kata kunci untuk menghapusnya.",
+          "code": [
+            "var person  = {",
+            "name: \"Robin\",",
+            "age: 42,",
+            "heigth: 1.72",
+            "};",
+            "_ person.height;",
+            "console.log(person);"
           ],
-          "note": "Nice, String dapat menampung banyak karakter ataupun beragam karakter selama itu ada di antara single atau double quotes .",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "output": ["{name: \"Robin\", age: 58.0}"],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
-              "text": "var"
+              "text": "return"
             },
             {
               "index": 2,
-              "text": "="
-            },
-            {
-              "index": 3,
-              "text": "name"
+              "text": "delete"
             }
           ],
-          "answer": "132"
+          "answer": "2",
+          "note": "Benar! Kata delete menghapus sepasang nama-value yang membentuk sebuah properti."
         },
         {
           "index": 7,
           "type": 1,
-          "content": "Apa kamu ingat dengan Variable Age? itu membuktikan bahwa kita bisa mengisi variable dengan nomor juga, atau kita sebut type data number. Oke yuk kita coba !",
+          "content": "method adalah sebuah fungsi yang sebuah object dan dapat melakukan suatu aksi kepada object itu sendiri.",
           "code": [
-            "var name = \"Nextbyte\" ;",
-            "var age = _ ;",
-            "console.log(age) ;"
+            "var person  = {",
+            "name: \"Robin\",",
+            "age: 42,",
+            "heigth: 1.72,",
+            "speak: function(){",
+            "consolog.log(\"Halo, saya \" + this.name + \"!\")",
+            "}",
+            "};",
+            "person._"
           ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "42"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Sipp, Kita bisa mengisi dengan variable dengan nomer berapapun kok, bisa juga di isi dengan decimal point .",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "output": "Halo, saya robin",
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
-              "text": "42"
+              "text": "speak"
             },
             {
               "index": 2,
-              "text": 42
+              "text": "speak()"
             }
           ],
-          "answer": "2"
+          "answer": "2",
+          "note": "Kamu benar! Kita dapat membuat sebuah method dengan memasukan sebuah fungsi kedalam properti dan dapat menggunkannya seperti fungsi biasa. Kata this menunjuk pada object itu sendiri."
         },
         {
           "index": 8,
           "type": 1,
-          "content": "Oh iya apa kamu memperhatikan bagaimana kita menaruh semicolon atau tanda \" ; \" di akhir di setiap baris yang telah kita tulis ? Secara basic semicolon adalah tanda dimana akhir dari statemenet .",
+          "content": "Bagaimana jika kita ingin membuat object lebih dari satu dengan properti dan method yang sama tetapi dengan value yang berbeda?",
           "code": [
-            "var name ;",
-            "_ ",
-            "name = \"Nextbyte\" ;",
-            "age = 42 ;",
-            "console.log(name) ;",
-            "console.log(age) ;"
+            "function Person(name, age, height){",
+            "this,name = name;",
+            "this.age = age;,",
+            "this.height = height",
+            "this.speak = function(){",
+            "consolog.log(\"Halo, saya \" + this.name + \"!\")",
+            "}",
+            "};",
+            "var p1 = _ Person(\"Robin\", 42, 1.72);",
+            "console.log(p1.name);"
           ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Nextbyte"
-            },
-            {
-              "type": "browser",
-              "text": "42"
-            }
-          ],
-          "note": "Bagus,  kecuali kalau kamu menulis multiple statement di dalam satu baris, semicolon itu optional. Namun menulisnya adalah good practice.",
-          "question": "Tanda __ dapat diganti dengan ?",
-          "choice": [
-            {
-              "index": 1,
-              "text": "var age"
-            },
-            {
-              "index": 2,
-              "text": "var age ;"
-            }
-          ],
-          "answer": "2"
-        },
-        {
-          "index": 9,
-          "type": 1,
-          "content": "Bagaimana jika kalau kita ingin menyampaikan pada siapapun yang melihat script yang telah kita tulis ? Coba deh cek yang ada dibawah ini.",
-          "code": [
-            "/* Script by you */",
-            "name = \"Nextbyte\" ;",
-            "var age = 42 ;",
-            "console.log(_) ;"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Nextbyte"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Yaps, kita dapat menyediakan comments! Comment bisa berisi apapun itu, kenapa ? Karena dia bakal nggak di peduliin sama browser.\n Single-line comment diawali dengan // sampai akhir dari baris. Multi-line comment diawali dengan /* dan diakhir dengan */",
-          "question": "Tanda __ dapat diganti dengan ?",
-          "choice": [
-            {
-              "index": 1,
-              "text": "name"
-            },
-            {
-              "index": 2,
-              "text": "comment"
-            }
-          ],
-          "answer": "1"
-        },
-        {
-          "index": 10,
-          "type": 2,
-          "content": "Oke, saatnya kita melihat apakah kamu mengingat tentang Javascript dan scripts : ",
-          "code": [],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Sempurna ! Javascript adalah bahasa pemrogaman untuk web. Script biasanya berjalan bersama web page untuk membuat mereka lebih dinamis dan powerful.",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "Script membuat web menjadi dinamis dan powerful"
-            },
-            {
-              "index": 2,
-              "text": "Javascript adalah bahasa pemrograman untuk WEB"
-            },
-            {
-              "index": 3,
-              "text": "Javascript tidak bisa digunakan dengan HTML"
-            },
-            {
-              "index": 4,
-              "text": "Script adalah program yang berjalan di web browser"
-            }
-          ],
-          "answer": "124"
-        },
-        {
-          "index": 11,
-          "type": 2,
-          "content": "Sekarang apasih itu variable dan kenapa variable itu berguna ?",
-          "code": [],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Naaaah ! Variable adalah tempat / container  untuk type data yang berbeda-beda dan memiliki identitas yang unik. Semicolons \" ; \" adalah tanda dari akhir sebuah statement.",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "Variable menggunakan identitas yang unik"
-            },
-            {
-              "index": 2,
-              "text": "Variable harus mengandung semicolons"
-            },
-            {
-              "index": 3,
-              "text": "Variable adalah tempat untuk data"
-            },
-            {
-              "index": 4,
-              "text": "Variable dapat menerima type data yang berbeda-beda"
-            }
-          ],
-          "answer": "134"
-        },
-        {
-          "index": 12,
-          "type": 1,
-          "content": "Bagaimana caranya kalau kita ingin membuat variable yang berisi string ?",
-          "code": [],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Mantap ! kita membuat variable dengan menggunakan keyword var dan membuat identitas / nama selanjutnya kita memberikan nilai dengan menggunakan tanda  = .",
-          "question": "Pilih salah satu jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "x = \"Robin\" ;"
-            },
-            {
-              "index": 2,
-              "text": "var age = 42 ;"
-            },
-            {
-              "index": 3,
-              "text": "console.log(\"Nextbyte\") ;"
-            },
-            {
-              "index": 4,
-              "text": "var name = \"Nextbyte\" ;"
-            }
-          ],
-          "answer": "4"
-        },
-        {
-          "index": 13,
-          "type": 2,
-          "content": "Apa sih comment itu ?",
-          "code": [],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Niceee ! Comment tidak dianggap oleh browser dan oleh karena itu comment hanya alat untuk membantu kita dan pembaca script yang lain agar dapat memahami apa yang kita tulis.",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "Bisa single-line maupun multiple-line"
-            },
-            {
-              "index": 2,
-              "text": "Membuat comment dengan keyword var"
-            },
-            {
-              "index": 3,
-              "text": "Tidak dianggap oleh browser"
-            },
-            {
-              "index": 4,
-              "text": "Untuk menampilkan data di web page"
-            }
-          ],
-          "answer": "13"
-        },
-        {
-          "index": 14,
-          "type": 2,
-          "content": "Apa sih comment itu ?",
-          "code": [],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Yapss ! Number dapat berisikan semua angka, bilangan bulat maupun bilangan decimal. Hanya string yang di tulis diantara quotes atau tanda kutip",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "Tidak dapat digunakan dengan console.log"
-            },
-            {
-              "index": 2,
-              "text": "Dapat berisi semua angka, seperti 5."
-            },
-            {
-              "index": 3,
-              "text": "Dapat memiliki nilai decimal atau decimal point, seperti 5.0"
-            },
-            {
-              "index": 4,
-              "text": "Dapat di tulis diantara single or double quotes"
-            }
-          ],
-          "answer": "23"
-        }
-      ]
-    },
-    {
-      "index": 2,
-      "title": "Variables", 
-      "total": 15,
-      "data": [
-        {
-          "index": 1,
-          "type": 1,
-          "content": "Mari kita membahas lebih detail tentang variabel. Untuk membuat variabel, kita perlu menggunakan kata kunci var atau bisa kita sebut dengan deklarasi. Mari kita deklarasikan variabel name;",
-          "code": ["_ name;", "console.log(name)"],
-          "output": "undefined",
-          "question": "Untuk mengisi kekosongan diatas, coba pilih dari opsi dibawah ini dibawah ini;",
-          "choice": [
-            {
-              "index": 1,
-              "text": "document.write"
-            },
-            {
-              "index": 2,
-              "text": "var"
-            }
-          ],
-          "answer": "2",
-          "note": "Kamu benar! Tapi kenapa name menjadi undefined?"
-        },
-        {
-          "index": 2,
-          "type": 1,
-          "content": "Variabel name undefined karena variabel tersebut tidak mempunyai nilai (value). Kita dapat menggunakan tanda sama dengan (=) untuk memberikan nilai ke varaiebel.",
-          "code": [
-            "var name: 'Robin';",
-            "var age;",
-            "age = _;",
-            "console.log(name);",
-            "console.log(age);"
-          ],
-          "output": ["Robin", 42],
+          "output": ["Robin"],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
-              "text": "undefined"
+              "text": "delete"
             },
             {
               "index": 2,
-              "text": 42
-            }
-          ],
-          "answer": "2",
-          "note": "Kamu benar! Kita dapat memberikan nilai ke variabel ketika dideklarasikan atau memberikannya nanti."
-        },
-        {
-          "index": 3,
-          "type": 1,
-          "content": "Strings adalah tipe data yang telah kita sudah gunakan tadi. Untuk membuat string variabel, kita dapat menambahkan nilai yang berupa sekumumpulan karakter dalam tanda kutip (\"\").",
-          "code": ["var string = _;", "console.log(string)"],
-          "output": [],
-          "choice": [
-            {
-              "index": 1,
-              "text": "Rob"
-            },
-            {
-              "index": 2,
-              "text": "\"Rob's String\""
-            }
-          ],
-          "answer": "2",
-          "note": "Kita dapat menggunakan tanda kutip tunggal (contoh: 'Rob') atau tanda kutip ganda (contoh: \"Rob\") bahkan dalam string, asalkan mereka tidak sama dengan tanda kutip diekitarnya (contoh: \"Rob's String\")."
-        },
-        {
-          "index": 4,
-          "type": 1,
-          "content": "Seperti yang kita ketahui, number bisa berbentuk bilangan bulat ataupun desimal. Bilangan bulat dapat disebut Integers. Mari membuat variabel integers.",
-          "code": ["var age = _;", "console.log(age)"],
-          "question": "Tanda _ dapat diisi dengan:",
-          "output": [],
-          "choice": [
-            {
-              "index": 1,
-              "text": "\"42\""
-            },
-            {
-              "index": 2,
-              "text": 42.0
+              "text": "return"
             },
             {
               "index": 3,
-              "text": 42
+              "text": "new"
             }
           ],
           "answer": "3",
-          "note": "Kamu benar!"
-        },
-        {
-          "index": 5,
-          "type": 1,
-          "content": "Untuk melengkapi, mari kita membuat Float, yang merukapan bilangan desimal kedalam variabel height.",
-          "code": ["var height = _;", "console.log(height);"],
-          "question": "Tanda _ dapat diisi dengan:",
-          "answer": "1",
-          "note": " Kamu benar! Jumlah desimal yang dapat dibaca oleh Javascript adalah 17 angka. Itulah kenapa kita tidak bisa melihat angka - angka dari pi dengan cara ini."
-        },
-        {
-          "index": 6,
-          "type": 1,
-          "content": "Sekarang kita telah belajar tentang tipe data. Tapi bagaimana jika kita ingin mengetahui tipe data dari suatu variabel?",
-          "code": [
-            "var name = \"Robin\"",
-            "var age = 42;",
-            "var height = 1.72;",
-            "console.log(typeof(_));"
-          ],
-          "output": ["String"],
-          "question": "Tanda _ dapat diisi dengan:",
-          "choice": [
-            {
-              "index": 1,
-              "text": "weight"
-            },
-            {
-              "index": 2,
-              "text": "name"
-            }
-          ],
-          "answer": "2",
-          "note": "Kamu benar! \"Robin\" adalah string, 42 and 1.72 adalah numbers, tetapi yang membedakan adalah 42 merupakan integers dan 1.72 merupakan float."
-        },
-        {
-          "index": 7,
-          "type": 1,
-          "content": "Jadi, apa kegunaan number? Sebagai contoh, kita dapat menggunakannya dalam operasi aritmatik.",
-          "code": [
-            "var r = 4 _ 2;",
-            "var pi = 3.141592653589793;",
-            "console.log(2 + r * pi);"
-          ],
-          "ouput": [],
-          "choice": [
-            {
-              "index": 1,
-              "text": "#"
-            },
-            {
-              "index": 2,
-              "text": "+"
-            }
-          ],
-          "answer": "2",
-          "note": "Kamu benar! kita dapat menggunakan +, -, * and / yang dapat disebut operasi aritmatik."
-        },
-        {
-          "index": 8,
-          "content": "Tanda  ++ , atau bisa disebut increment, menambahkan bilangan dengan 1. Sebaliknya, decrement mengurangi bilangan dengan 1. Mari kita coba:",
-          "type": 1,
-          "code": ["var age = 42;", "age_", "console.log(age)"],
-          "output": [43],
-          "question": "Tanda _ dapat diisi dengan:",
-          "choice": [
-            {
-              "index": 1,
-              "text": "+1"
-            },
-            {
-              "index": 2,
-              "text": "++"
-            }
-          ],
-          "answer": "2",
-          "note": "Kamu benar!"
+          "note": "Benar! dengan membuat fungsi konstruktor, kita dapat menggunakan kata new   untuk membuat berbagai object sesuai dengan keinginan kita."
         },
         {
           "index": 9,
-          "type": 1,
-          "content": "Operator berikut ini juga dapat merubah nilai dari variabel. Tanda  +=  juga bisa menambahkan angka. Lalu bagaimana untuk mengurangi angka?",
-          "code": [
-            "var heigth = 1.72;",
-            "heigth __ 0.2;",
-            "console.log(heigth);"
-          ],
-          "output": 1.52,
-          "question": "Tanda __ dapat diisi dengan:",
+          "type": 2,
+          "question": "Manakah pernyataan tentang object yang benar?",
           "choice": [
             {
               "index": 1,
-              "text": "-+"
+              "text": "Dapat memiliki method ."
             },
             {
               "index": 2,
-              "text": "-="
+              "text": "Variabel yang memiliki properti."
+            },
+            {
+              "index": 3,
+              "text": "Kita membuatnya dengan literal array, sepasang tanda kurung."
+            },
+            {
+              "index": 4,
+              "text": "Ketika sudah dibuat, kita tidak dapat mengubah objek."
             }
           ],
-          "answer": "2",
-          "note": " Kamu benar! Tandam -= adalah cara singkat dari height = heigth - 0.2."
+          "answer": "123",
+          "note": "Kamu Benar!"
         },
         {
           "index": 10,
-          "type": 1,
-          "content": "Seperti menambahkan number dengan number. Kita juga bisa menambahkan sesama string.",
-          "code": [
-            "var a = \"Hari ini cuaca sangat\";",
-            "var b = \"cerah.\";",
-            "var c _ a + b;",
-            "console.log(c);"
-          ],
-          "output": "\"Hari ini cuaca sangat cerah.\"",
+          "type": 2,
+          "question": "Manakah pernyataan yang dapat mengubah properti name dari object person .",
+          "code": ["var person = { name: \"Robin\", age: 42, height: 1.72};"],
           "choice": [
             {
               "index": 1,
-              "text": "+"
+              "text": " person[\"name\"] = \"Win\";"
             },
             {
               "index": 2,
-              "text": "="
+              "text": "person.name = \"Christoper\";"
+            },
+            {
+              "index": 3,
+              "text": "person[0] = \"Christoper\";"
+            },
+            {
+              "index": 4,
+              "text": "person[name] = \"Kessie\";"
             }
           ],
-          "answer": "2",
-          "note": "Kamu benar! Dengan menambahkan string berarti sama saja dengan menyatukan mereka. Kita tidak bisa menggunakan tanda - pada operator string"
+          "answer": "12",
+          "note": "Kamu Benar!"
         },
         {
           "index": 11,
           "type": 2,
-          "question": "Waktunya kuis. Mana pernyataan yang benar:",
+          "question": "Manakah pernyataan yang dapat membuat object:",
           "choice": [
             {
               "index": 1,
-              "text": "var name = \"Robin\";"
+              "text": "var date = new Date();"
             },
             {
               "index": 2,
-              "text": ["var age = 42;", "age = 42;"]
+              "text": "function bark(){console.log(\"Woof\")}"
             },
             {
               "index": 3,
-              "text": "var undefined;"
-            }
-          ],
-          "answer": "123",
-          "note": "Kamu benar! Untuk mendeklarasikan variabel, kita menggunakan var."
-        },
-        {
-          "index": 12,
-          "type": 2,
-          "question": "Apa yang terjadi dengan menambahkan dua variabel dengan tanda +?",
-          "choice": [
-            {
-              "index": 1,
-              "text": "Kita dapat menggunakan + untuk string dan number."
-            },
-            {
-              "index": 2,
-              "text": "Secara umum, operator aritmatik dapat bekerja untuk string dan number."
-            },
-            {
-              "index": 3,
-              "text": "Menambhkan dua string dapat menghasilkan satu string."
+              "text": "var number = Math.random();"
             },
             {
               "index": 4,
-              "text": "Dapat menambahkan numbers."
+              "text": "var person = {name: \"Win\", age:22, height: 146}"
             }
           ],
-          "answer": "134",
+          "answer": "14",
+          "note": "Kamu Benar!"
+        },
+        {
+          "index": 12,
+          "type": 1,
+          "content": "Bisakah kamu menemukan kesalahan dari kode berikut ini?",
+          "code": [
+            "var dog = {",
+            "name: \"Bexter\"",
+            "bark: function(){",
+            "console.log(\"Woof\")",
+            "}",
+            "eat: function(){",
+            "console.log(\"Munch!\")",
+            "}",
+            "};",
+            "dog.bark();"
+          ],
+          "choice": [
+            {
+              "index": 1,
+              "text": "Method bark() tidak memilki argumen"
+            },
+            {
+              "index": 2,
+              "text": "Object dog tidak menggunakan fungsi konstruktor"
+            },
+            {
+              "index": 3,
+              "text": "Method eat() tidak menghasilkan apapun."
+            },
+            {
+              "index": 4,
+              "text": "Setiap propeti tidak dipisahkan dengan koma."
+            }
+          ],
+          "answer": "4",
           "note": "Kamu benar!"
         },
         {
           "index": 13,
-          "type": 2,
-          "question": "Variabel mana yang berisi numbers",
-          "choice": [
-            {
-              "index": 1,
-              "text": "var age = \"42\";"
-            },
-            {
-              "index": 2,
-              "text": "var pi = 3.141592653589793;"
-            },
-            {
-              "index": 3,
-              "text": "var height = 1.72;"
-            },
-            {
-              "index": 4,
-              "text": "var radius;"
-            }
-          ],
-          "answer": "23",
-          "note": "Kamu Benar!"
-        },
-        {
-          "index": 14,
           "type": 0,
-          "question": "Bisakah anda mengurutkan kode berikut agar menampilkan 42 tahun dalam jam (termasuk tahun kabisat)?",
+          "question": "Bisakah kamu mengurutkan kode dibawah ini untuk membuat suatu object:",
           "choice": [
             {
               "index": 1,
-              "text": "var age = 42;"
+              "text": "this.bark = function(){"
             },
             {
               "index": 2,
-              "text": "var days = age * 365;"
+              "text": "this.name = name;"
             },
             {
               "index": 3,
-              "text": "console.log(hours);"
+              "text": "}"
+            },
+            {
+              "index": 3,
+              "text": "var dog = new Dog(\"Bexter\")"
             },
             {
               "index": 4,
-              "text": "var age;"
+              "text": "console.log(\"Woof!\");"
             },
             {
               "index": 5,
-              "text": "days = (age / 4)    //tahun kabisat."
+              "text": "};"
             },
             {
               "index": 6,
-              "text": "var hours = days * 24"
+              "text": "function Dog(name){"
             }
           ],
-          "answer": "412563",
-          "note": "Kamu benar! Pertama buat variabel age, masukan dengan nilai 42. Lalu buat variabel days, lalu tambah dengan (age / 4), buat variabel hours dan tampilkan dengan console.log(hours)."
-        },
-        {
-          "index": 15,
-          "type": 1,
-          "content": "Apa output yang akan ditampilakan dalam kode berikut?",
-          "code": ["var pi = 3.141592653589793;", "console.log(typeof(pi))"],
-          "choice": [
-            {
-              "index": 1,
-              "text": "number"
-            },
-            {
-              "index": 2,
-              "text": 3.141592653589793
-            },
-            {
-              "index": 2,
-              "text": "typeof(pi)"
-            },
-            {
-              "index": 3,
-              "text": "string"
-            }
-          ],
-          "answer": "1",
+          "answer": "7215634",
           "note": "Kamu Benar!"
         }
       ]
