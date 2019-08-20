@@ -501,7 +501,7 @@
     },
     {
       "index": 2,
-      "title": "Variables", 
+      "title": "Variables",
       "total": 15,
       "data": [
         {
@@ -847,6 +847,326 @@
           ],
           "answer": "1",
           "note": "Kamu Benar!"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Boolean",
+      "total": 15,
+      "data": [
+        {
+          "index": 1,
+          "type": 1,
+          "content": "Ada satu tipe data penting yang belum kita belum bahas sebelumnya dan berguna sebagai pembanding.",
+          "code": [
+            "var equality1 = 3 =_ 3;",
+            "var equality2 = \"Apples\" == \"Oranges\";",
+            "console.log(equality1);",
+            "console.log(equality2);"
+          ],
+          "output": [true, false],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "-"
+            },
+            {
+              "index": 2,
+              "text": "="
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Tanda == menentukan persamaan antara dua nilai. Jika kedua nilai sama maka output menghasilkan true , sebaliknya akan menghasilkan false"
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "content": "true dan false adalah boolean. Ketika kita check, apakah suatu nilai lebih besar atau lebih kecil dari nilai lainnya, kita juga akan mendapatkan hasil boolean.",
+          "code": ["var boolean = 3 _ 6;", "console.log(boolean);"],
+          "output": [false],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "#1"
+            },
+            {
+              "index": 2,
+              "text": ">"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar"
+        },
+        {
+          "index": 3,
+          "type": 1,
+          "content": "Kita juga bisa menggunakan tanda <= dan >= untuk membandingkan nilai. Mari mencoba dan log true pada console.",
+          "code": ["var boolean = 3 >= _;", "console.log(boolean);"],
+          "output": [true],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": 5
+            },
+            {
+              "index": 2,
+              "text": 0
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar!"
+        },
+        {
+          "index": 4,
+          "type": 1,
+          "content": "Operator != akan menghasilkan true jika nilai yang kita bandingkan berbeda dan tidak sama.",
+          "code": ["var boolean = 3 != _;", "console.log(boolean);"],
+          "output": [true],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": 3
+            },
+            {
+              "index": 2,
+              "text": 1
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Jika nilai sama maka operator != akan menghasilkan false ."
+        },
+        {
+          "index": 5,
+          "type": 1,
+          "content": "Sebelum kita lanjut lebih jauh. Mari kita lihat operator pembanding yang lebih spesial yang mewajibkan nilai dan tipe data yang sama.",
+          "code": ["var boolean = 3 ___ \"3\";", "console.log(boolean);"],
+          "output": [false],
+          "choice": [
+            {
+              "index": 1,
+              "text": "=="
+            },
+            {
+              "index": 2,
+              "text": "="
+            },
+            {
+              "index": 3,
+              "text": "==="
+            }
+          ],
+          "answer": "3",
+          "note": "Tanda === akan mengahsilakan true jika kedua nilai benar - benar sama persis."
+        },
+        {
+          "index": 6,
+          "type": 1,
+          "content": "Jika kita ingin memastikan kedua perbandingan bertemu sebelum kita megnhasilkan true , kita dapat menggunakan operator && atau bisa disebut and.",
+          "code": ["var b = 5 < 10 __ 10 < 15;", "console.log(b);"],
+          "output": [true],
+          "choice": [
+            {
+              "index": 1,
+              "text": "!!!"
+            },
+            {
+              "index": 2,
+              "text": "&&"
+            }
+          ],
+          "answer": "2",
+          "note": "Operator && membutuhkan setiap kondisi menghasilkan boolean yang sama untuk menghasilkan output true , sabaliknya akan menghasilkan false ."
+        },
+        {
+          "index": 7,
+          "type": 1,
+          "content": "Sebagai alternatif, jika kita membutuhkan satu dari dua perbandingan untuk menghasilkan true , kita bisa menggunakan operator || atau bisa disebut or.",
+          "code": ["var b = 5 > 10 || 10 _ 15;", "console.log(b);"],
+          "output": [false],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "!"
+            },
+            {
+              "index": 2,
+              "text": ">"
+            }
+          ],
+          "answer": "2",
+          "note": " Operator || akan menghasilkan true jika satu dari antara perbandingan memiliki hasil true."
+        },
+        {
+          "index": 8,
+          "type": 1,
+          "content": "Operator terakhir yang akan kita bahas adalah !! atau bisa disebut opposite.",
+          "code": [
+            "var boolean = true;",
+            "var opposite = __;",
+            "console.log(opposite);"
+          ],
+          "output": [false],
+          "question": "Tanda __ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "!!boolean"
+            },
+            {
+              "index": 2,
+              "text": "!boolean"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Tanda seru (!) bisa disebut dengan operator not. Jika suatu kondisi memiliki hasil true maka tanda !  akan membuatnya menjadi false dan sebaliknya."
+        },
+        {
+          "index": 9,
+          "type": 0,
+          "content": "Bagaimana dengan cara pendek? Operator kondisional akan memasukan nilai ke suatu variabel berdasarkan suatu kondisi yang mengahsilkan ouput true atau false .",
+          "code": [
+            "var time = 7;",
+            "var advice = time _ 10 ? \"Waktunya tidur\" : \"Jangan tidur dulu\";"
+          ],
+          "output": ["\"Jangan tidur dulu\""],
+          "question": "Urutkan opsi dibawah ini untuk mengisi __",
+          "choice": [
+            {
+              "index": 1,
+              "text": "="
+            },
+            {
+              "index": 2,
+              "text": ">"
+            }
+          ],
+          "answer": "21",
+          "note": "Kamu benar! Operator ini memasukan nilai ke variabel advice berdasarkan hasil dari kondisi. Ketika kondisi menghasilkan true, nilai yang akan dimasukan adalah nilai setelah tanda ? , jika false maka nilai yang akan dimasukan adalah nilai setelah tanda : ."
+        },
+        {
+          "index": "10",
+          "type": 1,
+          "content": "Walaupun membandingkan antara dua string dapat dilakukan dengan operator ==  dan != , contoh dibawah membuahkan hasil yang tidak kita duga.",
+          "code": ["var b = \"4\" __ \"33\";", "console.log(b);"],
+          "output": [true],
+          "question": "Tanda __ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": ">>"
+            },
+            {
+              "index": 2,
+              "text": ">"
+            }
+          ],
+          "answer": "2",
+          "note": "Ketika kita membandingkan dua string, Javascript menggunakan urutan alphabet. Sehingga \"4\" lebih besar dari \"3\", angka yang mengawali \"33\"."
+        },
+        {
+          "index": 11,
+          "type": 2,
+          "question": "Manakah dari perbandingan berikut yang menghasilkan false .",
+          "choice": [
+            {
+              "index": 1,
+              "text": "10 < 1000"
+            },
+            {
+              "index": 2,
+              "text": "\"Apel\" == \"Jeruk\""
+            },
+            {
+              "index": 3,
+              "text": "\"A\" > \"Z\""
+            },
+            {
+              "index": 4,
+              "text": "10 == 10.0"
+            }
+          ],
+          "answer": "23",
+          "note": "Kamu benar!"
+        },
+        {
+          "index": 12,
+          "type": 1,
+          "question": "Kapan kita harus menggunakan operator and.",
+          "choice": [
+            {
+              "index": 1,
+              "text": "Ketika kita membutuhkan hasil dari semua kondisi sama untuk menghasilkan true ."
+            },
+            {
+              "index": 2,
+              "text": "Ketika kita ingin membandingkan nilai dari tipe data yang berbeda."
+            },
+            {
+              "index": 3,
+              "text": "Ketika hanya membutuhkan salah satu hasil dari setiap kondisi untuk menghasilkan true ."
+            },
+            {
+              "index": 4,
+              "text": "Ketika kita mau check apakah kedua string sama."
+            }
+          ],
+          "answer": "1",
+          "note": "Kamu Bnear!"
+        },
+        {
+          "index": 14,
+          "type": 0,
+          "choice": [
+            {
+              "index": 1,
+              "text": "console.log(inequality);"
+            },
+            {
+              "index": 2,
+              "text": "var income = 15000000;"
+            },
+            {
+              "index": 3,
+              "text": "var equality = income == 10000000;"
+            },
+            {
+              "index": 4,
+              "text": "var inequality = !equality;"
+            }
+          ],
+          "answer": "2341",
+          "note": "Kamu benar!"
+        },
+        {
+          "index": 15,
+          "type": 2,
+          "question": "Apa itu operator kondisional?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "Kita menggunakan tanda !  sebelum nilai boolean."
+            },
+            {
+              "index": 2,
+              "text": "Dapat memasukan nilai berdasarkan hasil kondisi."
+            },
+            {
+              "index": 3,
+              "text": "Nilai setelah tanda : akan dimasukan kedalam variabel jika hasil kondisi adalah true"
+            },
+            {
+              "index": 4,
+              "text": "Nilai setalah tanda ? akan dimasukan kedalam variabel jiak hasil kondisi adalah true"
+            }
+          ],
+          "answer": "24",
+          "note": "Kamu benar!"
         }
       ]
     }
