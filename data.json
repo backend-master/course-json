@@ -6,7 +6,7 @@
   "section": [
     {
       "index": 1,
-      "title": "Get Started",
+      "title": "Javascript Basic",
       "total": 14,
       "data": [
         {
@@ -496,6 +496,357 @@
             }
           ],
           "answer": "23"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Variables", 
+      "total": 15,
+      "data": [
+        {
+          "index": 1,
+          "type": 1,
+          "content": "Mari kita membahas lebih detail tentang variabel. Untuk membuat variabel, kita perlu menggunakan kata kunci var atau bisa kita sebut dengan deklarasi. Mari kita deklarasikan variabel name;",
+          "code": ["_ name;", "console.log(name)"],
+          "output": "undefined",
+          "question": "Untuk mengisi kekosongan diatas, coba pilih dari opsi dibawah ini dibawah ini;",
+          "choice": [
+            {
+              "index": 1,
+              "text": "document.write"
+            },
+            {
+              "index": 2,
+              "text": "var"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Tapi kenapa name menjadi undefined?"
+        },
+        {
+          "index": 2,
+          "type": 1,
+          "content": "Variabel name undefined karena variabel tersebut tidak mempunyai nilai (value). Kita dapat menggunakan tanda sama dengan (=) untuk memberikan nilai ke varaiebel.",
+          "code": [
+            "var name: 'Robin';",
+            "var age;",
+            "age = _;",
+            "console.log(name);",
+            "console.log(age);"
+          ],
+          "output": ["Robin", 42],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "undefined"
+            },
+            {
+              "index": 2,
+              "text": 42
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Kita dapat memberikan nilai ke variabel ketika dideklarasikan atau memberikannya nanti."
+        },
+        {
+          "index": 3,
+          "type": 1,
+          "content": "Strings adalah tipe data yang telah kita sudah gunakan tadi. Untuk membuat string variabel, kita dapat menambahkan nilai yang berupa sekumumpulan karakter dalam tanda kutip (\"\").",
+          "code": ["var string = _;", "console.log(string)"],
+          "output": [],
+          "choice": [
+            {
+              "index": 1,
+              "text": "Rob"
+            },
+            {
+              "index": 2,
+              "text": "\"Rob's String\""
+            }
+          ],
+          "answer": "2",
+          "note": "Kita dapat menggunakan tanda kutip tunggal (contoh: 'Rob') atau tanda kutip ganda (contoh: \"Rob\") bahkan dalam string, asalkan mereka tidak sama dengan tanda kutip diekitarnya (contoh: \"Rob's String\")."
+        },
+        {
+          "index": 4,
+          "type": 1,
+          "content": "Seperti yang kita ketahui, number bisa berbentuk bilangan bulat ataupun desimal. Bilangan bulat dapat disebut Integers. Mari membuat variabel integers.",
+          "code": ["var age = _;", "console.log(age)"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "output": [],
+          "choice": [
+            {
+              "index": 1,
+              "text": "\"42\""
+            },
+            {
+              "index": 2,
+              "text": 42.0
+            },
+            {
+              "index": 3,
+              "text": 42
+            }
+          ],
+          "answer": "3",
+          "note": "Kamu benar!"
+        },
+        {
+          "index": 5,
+          "type": 1,
+          "content": "Untuk melengkapi, mari kita membuat Float, yang merukapan bilangan desimal kedalam variabel height.",
+          "code": ["var height = _;", "console.log(height);"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "answer": "1",
+          "note": " Kamu benar! Jumlah desimal yang dapat dibaca oleh Javascript adalah 17 angka. Itulah kenapa kita tidak bisa melihat angka - angka dari pi dengan cara ini."
+        },
+        {
+          "index": 6,
+          "type": 1,
+          "content": "Sekarang kita telah belajar tentang tipe data. Tapi bagaimana jika kita ingin mengetahui tipe data dari suatu variabel?",
+          "code": [
+            "var name = \"Robin\"",
+            "var age = 42;",
+            "var height = 1.72;",
+            "console.log(typeof(_));"
+          ],
+          "output": ["String"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "weight"
+            },
+            {
+              "index": 2,
+              "text": "name"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! \"Robin\" adalah string, 42 and 1.72 adalah numbers, tetapi yang membedakan adalah 42 merupakan integers dan 1.72 merupakan float."
+        },
+        {
+          "index": 7,
+          "type": 1,
+          "content": "Jadi, apa kegunaan number? Sebagai contoh, kita dapat menggunakannya dalam operasi aritmatik.",
+          "code": [
+            "var r = 4 _ 2;",
+            "var pi = 3.141592653589793;",
+            "console.log(2 + r * pi);"
+          ],
+          "ouput": [],
+          "choice": [
+            {
+              "index": 1,
+              "text": "#"
+            },
+            {
+              "index": 2,
+              "text": "+"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! kita dapat menggunakan +, -, * and / yang dapat disebut operasi aritmatik."
+        },
+        {
+          "index": 8,
+          "content": "Tanda  ++ , atau bisa disebut increment, menambahkan bilangan dengan 1. Sebaliknya, decrement mengurangi bilangan dengan 1. Mari kita coba:",
+          "type": 1,
+          "code": ["var age = 42;", "age_", "console.log(age)"],
+          "output": [43],
+          "question": "Tanda _ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "+1"
+            },
+            {
+              "index": 2,
+              "text": "++"
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar!"
+        },
+        {
+          "index": 9,
+          "type": 1,
+          "content": "Operator berikut ini juga dapat merubah nilai dari variabel. Tanda  +=  juga bisa menambahkan angka. Lalu bagaimana untuk mengurangi angka?",
+          "code": [
+            "var heigth = 1.72;",
+            "heigth __ 0.2;",
+            "console.log(heigth);"
+          ],
+          "output": 1.52,
+          "question": "Tanda __ dapat diisi dengan:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "-+"
+            },
+            {
+              "index": 2,
+              "text": "-="
+            }
+          ],
+          "answer": "2",
+          "note": " Kamu benar! Tandam -= adalah cara singkat dari height = heigth - 0.2."
+        },
+        {
+          "index": 10,
+          "type": 1,
+          "content": "Seperti menambahkan number dengan number. Kita juga bisa menambahkan sesama string.",
+          "code": [
+            "var a = \"Hari ini cuaca sangat\";",
+            "var b = \"cerah.\";",
+            "var c _ a + b;",
+            "console.log(c);"
+          ],
+          "output": "\"Hari ini cuaca sangat cerah.\"",
+          "choice": [
+            {
+              "index": 1,
+              "text": "+"
+            },
+            {
+              "index": 2,
+              "text": "="
+            }
+          ],
+          "answer": "2",
+          "note": "Kamu benar! Dengan menambahkan string berarti sama saja dengan menyatukan mereka. Kita tidak bisa menggunakan tanda - pada operator string"
+        },
+        {
+          "index": 11,
+          "type": 2,
+          "question": "Waktunya kuis. Mana pernyataan yang benar:",
+          "choice": [
+            {
+              "index": 1,
+              "text": "var name = \"Robin\";"
+            },
+            {
+              "index": 2,
+              "text": ["var age = 42;", "age = 42;"]
+            },
+            {
+              "index": 3,
+              "text": "var undefined;"
+            }
+          ],
+          "answer": "123",
+          "note": "Kamu benar! Untuk mendeklarasikan variabel, kita menggunakan var."
+        },
+        {
+          "index": 12,
+          "type": 2,
+          "question": "Apa yang terjadi dengan menambahkan dua variabel dengan tanda +?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "Kita dapat menggunakan + untuk string dan number."
+            },
+            {
+              "index": 2,
+              "text": "Secara umum, operator aritmatik dapat bekerja untuk string dan number."
+            },
+            {
+              "index": 3,
+              "text": "Menambhkan dua string dapat menghasilkan satu string."
+            },
+            {
+              "index": 4,
+              "text": "Dapat menambahkan numbers."
+            }
+          ],
+          "answer": "134",
+          "note": "Kamu benar!"
+        },
+        {
+          "index": 13,
+          "type": 2,
+          "question": "Variabel mana yang berisi numbers",
+          "choice": [
+            {
+              "index": 1,
+              "text": "var age = \"42\";"
+            },
+            {
+              "index": 2,
+              "text": "var pi = 3.141592653589793;"
+            },
+            {
+              "index": 3,
+              "text": "var height = 1.72;"
+            },
+            {
+              "index": 4,
+              "text": "var radius;"
+            }
+          ],
+          "answer": "23",
+          "note": "Kamu Benar!"
+        },
+        {
+          "index": 14,
+          "type": 0,
+          "question": "Bisakah anda mengurutkan kode berikut agar menampilkan 42 tahun dalam jam (termasuk tahun kabisat)?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "var age = 42;"
+            },
+            {
+              "index": 2,
+              "text": "var days = age * 365;"
+            },
+            {
+              "index": 3,
+              "text": "console.log(hours);"
+            },
+            {
+              "index": 4,
+              "text": "var age;"
+            },
+            {
+              "index": 5,
+              "text": "days = (age / 4)    //tahun kabisat."
+            },
+            {
+              "index": 6,
+              "text": "var hours = days * 24"
+            }
+          ],
+          "answer": "412563",
+          "note": "Kamu benar! Pertama buat variabel age, masukan dengan nilai 42. Lalu buat variabel days, lalu tambah dengan (age / 4), buat variabel hours dan tampilkan dengan console.log(hours)."
+        },
+        {
+          "index": 15,
+          "type": 1,
+          "content": "Apa output yang akan ditampilakan dalam kode berikut?",
+          "code": ["var pi = 3.141592653589793;", "console.log(typeof(pi))"],
+          "choice": [
+            {
+              "index": 1,
+              "text": "number"
+            },
+            {
+              "index": 2,
+              "text": 3.141592653589793
+            },
+            {
+              "index": 2,
+              "text": "typeof(pi)"
+            },
+            {
+              "index": 3,
+              "text": "string"
+            }
+          ],
+          "answer": "1",
+          "note": "Kamu Benar!"
         }
       ]
     }
