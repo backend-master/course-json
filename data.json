@@ -5,67 +5,63 @@
   "image": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_530/https://kolabsit.com/wp-content/uploads/2019/07/function-javascript-kolabsit.jpeg",
   "section": [
     {
-      "index": 4,
-      "title": "Conditional Statements",
-      "total": 15,
+      "index": 9,
+      "title": "Functions",
+      "total": 12,
       "data": [
         {
           "index": 1,
-          "type": 1,
-          "content": "Sekarang kita sudah mengetahui tentang booleans, bagaimana kalau kita gunakan itu sebagai penentu melakukan perintah ?. \nkata kunci if memperbolehkan kita untuk mengeksekusi sebagian dari kode kita berdasarkan conditions. Tanpa basa basi ayo segera kita coba",
+          "type": 0,
+          "content": "Untuk lebih singkat, functions adalah code block yang melakukan tugas yang spesifik. Tapi kenapa dia berguna ?",
           "code": [
-            "var temperature = 50 ;",
-            "if (temperature > 100) {",
-            "console.log(\"Huft, Panas sekali ya !\")",
-            "}"
+            "var r = 12 ;",
+            "var luasLingkaran = r * r * _._ ;",
+            "console.log(_)"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": ""
+              "text": "452.3893421169302"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Oke Sip ! Script yang kita buat tidak menghasilkan output apapun karena if akan mengeksekusi jika kondisinya terpenuhi",
+          "note": "Bukan kah masuk akal kalau kita menuliskan kode setiap saat ketika kita ingin menghitung luas lingkaran ? Yaah tidak juga sih, disitulah functions akan lebih berguna dan efisien.",
           "question": "Tanda __ dapat diganti dengan ?",
           "choice": [
             {
               "index": 1,
-              "text": "if"
+              "text": "luasLingkaran"
             },
             {
               "index": 2,
-              "text": "bool"
+              "text": "PI"
+            },
+            {
+              "index": 3,
+              "text": "Math"
             }
           ],
-          "answer": "1"
+          "answer": "321"
         },
         {
           "index": 2,
           "type": 1,
-          "content": "Kita bisa menggunakan kata kunci else jika kita ingin mengeksekusi code block yang berbeda jika kondisi dari if tidak terpenuhi atau me-return nilai false",
-          "code": [
-            "var temperature = 50 ;",
-            "if (temperature > 100) {",
-            "console.log(\"Huft, Panas sekali ya !\")",
-            "} _ {",
-            "console.log(\"Kok nggak panas gini sih hmm\")",
-            "}"
-          ],
+          "content": "Dan untuk membuat sebuah fungsi, kita cukup menggunkan kata kunci functions, nama yang unik untuk nama fungsi serta sepasang tanda kurung (). Sekali saja kita sudah membuatnya kita bisa menggunakan fungsi tersebut kapanpun yang kita inginkan.",
+          "code": ["_ sayHello() {", "console.log(\"Hello Nextbyte\");", "}"],
           "output": [
             {
               "type": "script.js",
-              "text": "Kok nggak panas gini sih hmm"
+              "text": ""
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Oke kamu sudah mulai paham ! else statement akan jalan kalau if statement tidak jalan atau kondisinya tidak terpenuhi.",
+          "note": "Sesimpel itu loh ! Apapun yang kita tulis diantara tanda kurung ini {} , akan menjadi bagian dari fungsi tersebut. Tapi kenapa kok nggak muncul apa apa ya di console ?",
           "question": "Tanda __ dapat diganti dengan ?",
           "choice": [
             {
@@ -74,11 +70,7 @@
             },
             {
               "index": 2,
-              "text": "else"
-            },
-            {
-              "index": 3,
-              "text": "if"
+              "text": "function"
             }
           ],
           "answer": "2"
@@ -86,130 +78,111 @@
         {
           "index": 3,
           "type": 1,
-          "content": "Tapi bagaimana jika dua skenario kondisi masih belum cukup ? Yaps kita bisa menggunakan else if keyword untuk kondisi yang lain.",
+          "content": "Oh iyaa, kalau kita sudah membuat sebuah fungsi kita harus memanggilnya agar fungsi itu jalan.",
           "code": [
-            "var temperature = 50 ;",
-            "if (temperature > 100) {",
-            "console.log(\"Huft, Panas sekali ya !\")",
-            "} _ (temperature < 22) {",
-            "console.log(\"Whaat ?? Kok Dingin ya\")",
-            "} else {",
-            "console.log(\"Kok nggak panas gini sih hmm\")",
-            "}"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Whaat ?? Kok Dingin ya"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Kalian lihat kan ? sebuah else if statement memperbolehkan kita untuk menambahkan suatu kondisi baru dan akan berjalan jika if yang pertama kondisinya tidak ditemukan.",
-          "question": "Tanda __ dapat diganti dengan ?",
-          "choice": [
-            {
-              "index": 1,
-              "text": "if"
-            },
-            {
-              "index": 2,
-              "text": "else if"
-            }
-          ],
-          "answer": "2"
-        },
-        {
-          "index": 4,
-          "type": 0,
-          "content": "Kita dapat menambahkan berapapun jumlahnya else if sampai tak terhingga alias unlimited.",
-          "code": [
-            "var name = \"Nextbyte\" ;",
-            "if (name == \"Nextbyte\") {",
-            "console.log(\"Hello Nextbyte !\")",
-            "} _ _ (name == \"Kamu\") {",
-            "console.log(\"Hello Kamu !\")",
-            "} else if (name == \"Dia\") {",
-            "console.log(\"Hello Dia !\")",
-            "} else {",
-            "console.log(\"Loh kamu siapa ?\")",
-            "}"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Hello Nextbyte !"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Oke Sipp ! if statement harus di awali dengan if dan diakhir dengan else namun ketika kita ingin menambah suatu kondisi kita juga bisa menambahi else if diantaranya.",
-          "question": "Tanda __ dapat diganti dengan ?",
-          "choice": [
-            {
-              "index": 1,
-              "text": "if"
-            },
-            {
-              "index": 2,
-              "text": "else"
-            }
-          ],
-          "answer": "21"
-        },
-        {
-          "index": 5,
-          "type": 1,
-          "content": "Kita juga bisa menambahkan if statement ke dalam if statement yang lain. Untuk mengurangi beberapa kali dalam pengecekan kondisi. \nAyo kita coba jika number adalah digit bagian dari 0 dan 9",
-          "code": [
-            "var number = -5 ;",
-            "if (number >= 0) {",
-            "_(number < 10){",
-            "console.log(\"Ya ini adalah digit !\")",
-            "} else {",
-            "console.log(\"Bukan digit woi !\") ;",
+            "function sayHello() {",
+            "console.log(\"Hello Nextbyte\");",
             "}",
-            "}"
+            "__"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": ""
+              "text": "Hello Nextbyte"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Yaps ! if yang ada didalam akan berjalan jika if yang ada diluarnya berjalan atau kondisinya true. Ini biasa disebut dengan nested if",
+          "note": "Akhirnya tampil juga, kita bisa menggunkan fungsi tersebut dengan memanggil nama-nya di ikuti dengan tanda kurung ().",
           "question": "Tanda __ dapat diganti dengan ?",
           "choice": [
             {
               "index": 1,
-              "text": "if"
+              "text": "sayHello()"
             },
             {
               "index": 2,
-              "text": "else"
+              "text": "sayHello"
             }
           ],
           "answer": "1"
         },
         {
-          "index": 6,
+          "index": 4,
           "type": 1,
-          "content": "Kadang kadang kita bisa mendapatkan functionality yang sama dengan method yang simple seperti menggunakan logical operator. \nSekali lagi kita akan coba jika n adalah digit diantara 0 dan 9",
+          "content": "Apa kamu ingat ketika kita memasukan code seperti console.log(\"Hello Nextbyte\") di dalam fungsi ? ternyata kita bisa memodifikasi output-an apa yang kita inginkan dengan menambahkan parameters di dalam fungsi kita.",
           "code": [
-            "var n = 5;",
-            "if (n >= 0 _ _ n < 10) {",
-            "console.log(\"Ini dia digit !\")",
-            "} else {",
-            "console.log(\"Bukan digit !\")",
-            "}"
+            "function luasLingkaran(radius) {",
+            "var result = radius * radius * Math.Pi",
+            "console.log(result)",
+            "}",
+            "luasLingkaran(__) ;"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "314.1592653589793"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Kalian lihat kan ? Parameter adalah temporary variables atau variable sementara, dia akan menampung nilai berapapun yang akan kita inputkan dan akan di proses di dalam fungsi tersebut.",
+          "question": "Tanda __ dapat diganti dengan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "\"sepuluh\""
+            },
+            {
+              "index": 2,
+              "text": 10
+            }
+          ],
+          "answer": "2"
+        },
+        {
+          "index": 5,
+          "type": 0,
+          "content": "Dengan menggunakan method slice(), kita dapat mengeluarkan bagian dari string loh.",
+          "code": [
+            "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
+            "console.log(_._(5,9));"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "kamu"
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Yaps ! Angka yang kita tulis di method slice() adalah posisi start dan posisi end dari string yang akan kita extract. \nOiyaa kamu tahu nggak kalau kita menggunakan negative value maka posisi yang di hitung akan dimulai di akhir dari string",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "slice"
+            },
+            {
+              "index": 2,
+              "text": "s"
+            }
+          ],
+          "answer": "21"
+        },
+        {
+          "index": 6,
+          "type": 0,
+          "content": "Method substr() hampir sama dengan method slice(). Bedanya adalah di nilai kedua yang kita inputkan berguna untuk menentukan panjang spesifik dari bagian string yang ingin kita ekstrak.",
+          "code": [
+            "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
+            "console.log(_._(5));"
           ],
           "output": [
             {
@@ -221,185 +194,168 @@
               "text": ""
             }
           ],
-          "note": "Nicee ! dengan logika and kita bisa mengurangi kompleksitas dari conditional statement.",
-          "question": "Tanda __ dapat diganti dengan ?",
+          "note": "Nicee ! Sekali lagi, angka yang kedua itu optional. Jika kita tidak menulisnya maka bagian bagian string akan ditampilkan sampai ke ujung string asli.",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
           "choice": [
             {
               "index": 1,
-              "text": "||"
+              "text": "s"
             },
             {
               "index": 2,
-              "text": "&&"
+              "text": "substr()"
             }
           ],
-          "answer": "2"
+          "answer": "12"
         },
         {
           "index": 7,
-          "type": 1,
-          "content": "Tapi ketika kita punya banyak sekali kondisi namun dengan variable, lebih baik sih memakai switch atau switch statement.",
+          "type": 0,
+          "content": "Kita juga bisa menggunakan method replace() untuk mencari dan mengganti kemunculan string yang ada didalam string tersebut. \nOke untuk lebih jelas lagi ayo coba kita takluk kan yang satu ini :",
           "code": [
-            "var name = \"Parker\";",
-            " _ (name){",
-            " case \"Parker\" :",
-            "console.log(\"Spiderman\") ;",
-            "break;",
-            "case \"Roger\" :",
-            "console.log(\"Captain America\") ;",
-            "break;",
-            "case \"Stark\" :",
-            "console.log(\"Ironman\") ;",
-            "break;",
-            "default:",
-            "console.log(\"Manusia Biasa\") ;",
-            "}"
+            "var g1 = \"Hallo Dunia ! .\" ;",
+            "var g2 = _._(\"Dunia\", \"Kamu\") ;",
+            "console.log(g2);"
           ],
           "output": [
             {
               "type": "script.js",
-              "text": "Spiderman"
+              "text": "Hallo Kamu !"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Nah !! Switch statement  mencari kondisi yang match atau sama dan kita mendefinisikannya dengan kata kunci case . Dan di akhir dari case kita menggunakan break untuk keluar dari statement. \nKalian tahu kalau default case menggunakan kata kunci default, akan berjalan ketika tidak ada kondisi case yang terpenuhi. ",
+          "note": "Nah sekarang kalian tahu kan ? replace() akan mencari nilai yang di inputkan dan akan menggantikan-nya.",
+          "question": "Tanda __ dapat diganti dengan urutan ?",
+          "choice": [
+            {
+              "index": 1,
+              "text": "replace"
+            },
+            {
+              "index": 2,
+              "text": "g1"
+            }
+          ],
+          "answer": "21"
+        },
+        {
+          "index": 8,
+          "type": 1,
+          "content": "Kita bisa membuat string menjadi huruf kecil semua atau lowercase letter dengan menggunakan toLowerCase() . Dan juga nantinya ada cara untuk mengubah huruf menjadi besar semua atau uppercase letter. \nAyo kita rubah semua huruf menjadi uppercase yuk !",
+          "code": [
+            "var g1 = \"Hallo Dunia ! .\" ;",
+            "var g2 = g1._ ;",
+            "console.log(g2);"
+          ],
+          "output": [
+            {
+              "type": "script.js",
+              "text": "HALLO DUNIA ! ."
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "note": "Nice bukan ? Tidak ada yang lebih baik dari pada salam dengan uppercase letter hehe",
           "question": "Tanda __ dapat diganti dengan ?",
           "choice": [
             {
               "index": 1,
-              "text": "if"
+              "text": "toLowerCase()"
             },
             {
               "index": 2,
-              "text": "switch"
+              "text": "toUpperCase()"
             }
           ],
           "answer": "2"
         },
         {
-          "index": 8,
-          "type": 0,
-          "content": "Kenapa kata kunci break itu sangat penting. Yah soalnya kalau kita tidak menggunakan break maka kondisi yang ada dibawahnya akan dijalankan semua.",
-          "code": [
-            "var name = \"Parker\";",
-            " _ (name){",
-            " _ \"Parker\" :",
-            "console.log(\"Spiderman\") ;",
-            "break;",
-            "case \"Roger\" :",
-            "console.log(\"Captain America\") ;",
-            "break;",
-            "case \"Stark\" :",
-            "console.log(\"Ironman\") ;",
-            "break;",
-            "default:",
-            "console.log(\"Manusia Biasa\") ;",
-            "}"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": "Spiderman\nCaptain America\nIronman\nManusia Biasa"
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Whoooaaa ! Itulah kenapa kita menggunkan break di setiap case, kecuali di default case.",
-          "question": "Tanda __ dapat diganti dengan ?",
-          "choice": [
-            {
-              "index": 1,
-              "text": "case"
-            },
-            {
-              "index": 2,
-              "text": "switch"
-            }
-          ],
-          "answer": "21"
-        },
-        {
           "index": 9,
-          "type": 0,
-          "content": "Ketika kita menggunakan nilai non-boolean, mereka akan secara otomatis di convert menjadi data boolean.",
-          "code": [
-            "var value = \"Parker\" ;",
-            "_ (_) {",
-            "console.log(\"Terpicu\") ;",
-            "} else {",
-            "console.log(\"Tidak Terpicu\") ;",
-            "}"
-          ],
+          "type": 2,
+          "content": "Coba tebak dari beberapa statement yang ada dibawah ini mana yang benar tentang string ?",
+          "code": [],
           "output": [
             {
               "type": "script.js",
-              "text": "Terpicu"
+              "text": ""
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Mantap ! jika nilai non-boolean mempunyai isi atau real value, kondisinya akan menghasilkan nilai true",
+          "note": "Jawaban yang bagus ! String terdiri dari urutan character yang kita buat diantara quotes. Oh iya length itu bukan lah method tapi property.",
           "question": "Tanda __ dapat diganti dengan ?",
           "choice": [
             {
               "index": 1,
-              "text": "value"
+              "text": "Kita menggunakan string untuk operator matematika"
             },
             {
               "index": 2,
-              "text": "if"
+              "text": "Membuat string diantara single atau double quotes"
+            },
+            {
+              "index": 3,
+              "text": "Method length() mengembalikan jumlah karakter yang ada di suatu string"
+            },
+            {
+              "index": 4,
+              "text": "String terdiri dari urutan berbagai character"
             }
           ],
-          "answer": "21"
+          "answer": "24"
         },
         {
           "index": 10,
-          "type": 0,
-          "content": "Apakah itu berarti setiap nilai non-boolean mengembalikan true ketika itu merupakan bagian dari suatu kondisi ?",
-          "code": [
-            "var value = 0 ;",
-            "_ (_) {",
-            "console.log(\"Terpicu\") ;",
-            "} else {",
-            "console.log(\"Tidak Terpicu\") ;",
-            "}"
-          ],
+          "type": 2,
+          "content": "Diantara banyak statement dibawah mana statement untuk membuat string ?",
+          "code": [],
           "output": [
             {
               "type": "script.js",
-              "text": "Tidak Terpicu"
+              "text": ""
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Nicee ! Tidak semua nilai seperti 0 , \"\" dan undefined yang tidak mempunyai real value akan mengembalikan nilai false. Tapi jika kamu menulis string \"false\" itu akan menghasilkan nilai true karena itu adalah string yang bertuliskan false",
+          "note": "Sepertinya kamu sudah menguasainya ! Kita membuat string diantara single atau double quotes. Jika kita ingin menggunakan quotes diantara string kita bisa menggunakan escape character",
           "question": "Urutkan jawaban dengan benar : ",
           "choice": [
             {
               "index": 1,
-              "text": "value"
+              "text": "var name = \"\";"
             },
             {
               "index": 2,
-              "text": "if"
+              "text": "var string ;"
+            },
+            {
+              "index": 3,
+              "text": "var venue = 'Nextbyte\\'s Cafe' ;"
+            },
+            {
+              "index": 4,
+              "text": "var quote = \"Hello World!\" - Nextbyte\";"
             }
           ],
-          "answer": "21"
+          "answer": "13"
         },
         {
           "index": 11,
           "type": 2,
-          "content": "Statement mana yang benar tentang conditions dan conditional statement ?",
-          "code": [],
+          "content": "Statement mana yang menggabungkan / menambahkan s1  dan s2 ?",
+          "code": [
+            "var s1 = \"Hallo Dunia ! Namaku \" ;",
+            "var s2 = \"Joe\" ;"
+          ],
           "output": [
             {
               "type": "script.js",
@@ -410,213 +366,109 @@
               "text": ""
             }
           ],
-          "note": "Nice sekali ! Dengan conditional statement seperti if atau switch kita bisa melakukan perintah yang berbeda-beda berdasarkan kondisi",
+          "note": "Nice sekali ! Kamu dapat menggunakan method concat() atau assignment operators untuk menambahkan atau menggabungkan string.",
           "question": "Pilih salah satu atau lebih jawaban yang benar : ",
           "choice": [
             {
               "index": 1,
-              "text": "Kita bisa melakukan perintah yang berbeda-beda berdasarkan kondisi"
+              "text": "var s = s1.substr(s2) ;"
             },
             {
               "index": 2,
-              "text": "if statement adalah conditional statement"
+              "text": "s1 += s2 ;"
             },
             {
               "index": 3,
-              "text": "Switch statement tidak terhitung di conditional statement"
+              "text": "var s = s1.concat(s2) ;"
             },
             {
               "index": 4,
-              "text": "Nilai kembalian dari sebuah kondisi adalah boolean"
+              "text": "var s = s1 + s2 ;"
             }
           ],
-          "answer": "124"
+          "answer": "234"
         },
         {
           "index": 12,
-          "type": 1,
-          "content": "Coba urutkan code diabawah ini dengan benar !",
+          "type": 2,
+          "content": "Statement mana yang memberikan nilai g menjadi \"Hallo Nexbtyte!\"  ?",
           "code": [],
           "output": [
             {
               "type": "script.js",
-              "text": "Van"
+              "text": ""
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Booooom ! Kita membuat variable pasangger selanjutnya kita menggunakan conditional statement if dan kita lanjutkan dengan else if kita akhir i dengan else dan menutup conditional statement.",
-          "question": "Urutkan jawaban dengan benar : ",
+          "note": "Luar Biasa ! kita dapat menggunkan replace() atau slice() , atau kalau pingin lebih simple tinggal masukan saja Hallo Nextbyte! ke dalam g",
+          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
           "choice": [
             {
               "index": 1,
-              "text": "1. console.log(\"Car\"); "
+              "text": "g = \"Hello Nextbyte!\" ;"
             },
             {
               "index": 2,
-              "text": "2. if (passagers > 8){"
+              "text": "g = g.replace(\"World\", \"Nextbyte\") ;"
             },
             {
               "index": 3,
-              "text": "3. } else {"
+              "text": "g = g.slice(0,5) ;\n g += \"Nextbyte!\" ;"
             },
             {
               "index": 4,
-              "text": "4. }"
-            },
-            {
-              "index": 5,
-              "text": "5. } else if (passangers > 4) {"
-            },
-            {
-              "index": 6,
-              "text": "6. var passangers = 6;"
-            },
-            {
-              "index": 7,
-              "text": "7. console.log(\"Van\") ;"
-            },
-            {
-              "index": 8,
-              "text": "8. console.log(\"Bus\") ;"
+              "text": "g += \"Nextbyte!\" ;"
             }
           ],
-          "answer": "6 2 8 5 7 3 1 4"
+          "answer": "123"
         },
         {
           "index": 13,
-          "type": 1,
-          "content": "Apa output yang akan ditampilkan oleh kode dibawah ini ?",
-          "code": [
-            "var value = \"false\" ;",
-            "if (value) {",
-            "console.log(\"Terpicu\") ;",
-            "} else {",
-            "console.log(\"Tidak Terpicu\") ;",
-            "}"
-          ],
+          "type": 0,
+          "content": " Coba tampilkan \"NEXTBYTE GENERATIONS\" dengan mengurutkan pilihan yang ada dibawah  ?",
+          "code": [],
           "output": [
             {
               "type": "script.js",
-              "text": "Terpicu"
+              "text": "NEXTBYTE GENERATIONS"
             },
             {
               "type": "browser",
               "text": ""
             }
           ],
-          "note": "Itu benar ! itu tidak akan terjadi masalah jika itu adalah variable string, selama nilai nya bukan \"\" dia akan menghasilkan nilai true.",
+          "note": "Nice ! Kita dapat membuat name dan menggunakan concat() untuk menambahkan data. Selanjutnya menggunakan if statement untuk menngkonversi name menjadi uppercase letter lalu tutup if statement dan terakhir menggunkan console.log() untuk nenampilkan data akhir.",
           "question": "Pilih salah satu jawaban yang benar : ",
           "choice": [
             {
               "index": 1,
-              "text": "Terpicu"
+              "text": "var name = \"Nextbyte\" ;"
             },
             {
               "index": 2,
-              "text": "Tidak Terpicu"
-            }
-          ],
-          "answer": "1"
-        },
-        {
-          "index": 14,
-          "type": 1,
-          "content": "Apa kamu bisa mencari kesalahan konsep di area conditional statement dalam code dibawah ini ?",
-          "code": [
-            "var value ;",
-            "if (value) {",
-            "console.log(\"Terpicu\") ;",
-            "} else {",
-            "console.log(\"Tidak Terpicu\") ;",
-            "}"
-          ],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Itu benar ! Conditional statement jadi tidak berguna karena variable nya undefined. Else statement itu optional dan kita juga bisa membandingkan string",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "Kita tidak dapat membandingkan string di kondisi"
-            },
-            {
-              "index": 2,
-              "text": "Tidak ada else statement"
+              "text": "name = name.concat(\"generations\") ;"
             },
             {
               "index": 3,
-              "text": "Masalahnya adalah variable nya undefined"
+              "text": "console.log(name) ;"
             },
             {
               "index": 4,
-              "text": "Tiketnya terlalu mahal"
-            }
-          ],
-          "answer": "3"
-        },
-        {
-          "index": 15,
-          "type": 0,
-          "content": "Oke saatnya mencoba switch statement  !",
-          "code": [],
-          "output": [
-            {
-              "type": "script.js",
-              "text": ""
-            },
-            {
-              "type": "browser",
-              "text": ""
-            }
-          ],
-          "note": "Yesss ! Kita membuat variable season selanjutnya kita menggunakan conditional statement switch dan jangan lupa dengan menambahkan break. Dan yang terakhir kita tambahkan dengan default case",
-          "question": "Pilih salah satu atau lebih jawaban yang benar : ",
-          "choice": [
-            {
-              "index": 1,
-              "text": "1. console.log(\"Musim Panas\");"
-            },
-            {
-              "index": 2,
-              "text": "2. }"
-            },
-            {
-              "index": 3,
-              "text": "3. switch (season)"
-            },
-            {
-              "index": 4,
-              "text": "4. break;"
+              "text": "}"
             },
             {
               "index": 5,
-              "text": "5. default:"
+              "text": "name = name.toUpperCase() ;"
             },
             {
               "index": 6,
-              "text": "6. case \"Summer\" :"
-            },
-            {
-              "index": 7,
-              "text": "7. console.log(\"Musim yang Lain\") ;"
-            },
-            {
-              "index": 8,
-              "text": "8. var season = \"Summer\" ;"
+              "text": "if (name.length > 5) {"
             }
           ],
-          "answer": "8 3 6 1 4 5 7 2"
+          "answer": "126543"
         }
       ]
     }
