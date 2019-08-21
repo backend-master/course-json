@@ -14,8 +14,8 @@
           "type": 0,
           "content": "Selamat Datang di Javascript Course, javascript adalah bahasa pemrograman yang sangat berkembang pesat. Yap, Saat ini penggunaan JavaScript hampir selalu ada di setiap web modern. \nJavaScript biasanya untuk membuat berbagai aplikasi yang dapat berinteraksi dengan user, seperti validasi form HTML, games, kalkulator, fitur chatting, dll. \nOke ayo kita mulai dengan menampilkan sesuatu di konsol :",
           "code": [
-            "var part1 = `Hello World !!! Kita sekarang belajar `;",
-            "var part2 = `Javascript`;",
+            "var part1 = \"Hello World !!! Kita sekarang belajar \";",
+            "var part2 = \"Javascript\";",
             "__.__(part1 + part2);"
           ],
           "output": [
@@ -3018,7 +3018,7 @@
               "text": ""
             }
           ],
-          "note": "Cantik! itu hal yang sama dengan menetapkan nilai pada indeks `things.length`",
+          "note": "Cantik! itu hal yang sama dengan menetapkan nilai pada indeks 'things.length'",
           "question": "Untuk mengisi kekosongan yang ada diatas, pilih jawaban yang ada dibawah;",
           "choice": [
             {
