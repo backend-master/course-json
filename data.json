@@ -1096,7 +1096,7 @@
         },
         {
           "index": 12,
-          "type": 1,
+          "type": 4,
           "question": "Kapan kita harus menggunakan operator and.",
           "choice": [
             {
