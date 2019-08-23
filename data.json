@@ -824,7 +824,7 @@
         },
         {
           "index": 15,
-          "type": 1,
+          "type": 4,
           "content": "Apa output yang akan ditampilakan dalam kode berikut?",
           "code": ["var pi = 3.141592653589793;", "console.log(typeof(pi))"],
           "choice": [
@@ -1181,7 +1181,7 @@
           "content": "Sekarang kita sudah mengetahui tentang booleans, bagaimana kalau kita gunakan itu sebagai penentu melakukan perintah ?. \nkata kunci if memperbolehkan kita untuk mengeksekusi sebagian dari kode kita berdasarkan conditions. Tanpa basa basi ayo segera kita coba",
           "code": [
             "var temperature = 50 ;",
-            "if (temperature > 100) {",
+            "__ (temperature > 100) {",
             "console.log(\"Huft, Panas sekali ya !\")",
             "}"
           ],
@@ -1653,7 +1653,7 @@
         },
         {
           "index": 13,
-          "type": 1,
+          "type": 4,
           "content": "Apa output yang akan ditampilkan oleh kode dibawah ini ?",
           "code": [
             "var value = \"false\" ;",
@@ -1689,7 +1689,7 @@
         },
         {
           "index": 14,
-          "type": 1,
+          "type": 4,
           "content": "Apa kamu bisa mencari kesalahan konsep di area conditional statement dalam code dibawah ini ?",
           "code": [
             "var value ;",
@@ -1902,7 +1902,7 @@
           "type": 1,
           "content": "Cara yang lebih bagus untuk menghadapi masalah ini adalah menyelipkan tanda \\ sebelum tanda kutip atau quotes di antara isi string. Cara ini biasa kita sebut escaping.",
           "code": [
-            "var quotes1 = \"\" ;",
+            "var quotes1 = \"__\" ;",
             "var quotes2 = '\\\"Nextbyte know when to start - Nextbyte\\\"' ;",
             "console.log(quotes1)",
             "console.log(quotes2)"
@@ -2572,7 +2572,7 @@
         },
         {
           "index": 10,
-          "type": 1,
+          "type": 4,
           "content": "Apa yang akan ditampilkan cuplikan kode ini di console?",
           "code": ["var number = 5 * 'Surprise';", "console.log(number);"],
           "output": [
@@ -2609,7 +2609,7 @@
         },
         {
           "index": 11,
-          "type": 1,
+          "type": 4,
           "content": "Dapatkah Anda menemukan kesalaha dalam cuplikan kode berikut ini.",
           "code": [
             "var order = \"Give me 12.3 lbs of MCIntosh apples\";",
@@ -3311,7 +3311,7 @@
         },
         {
           "index": 17,
-          "type": 1,
+          "type": 4,
           "content": "Apa yang tidak boleh dilakukan dalam script ini?",
           "code": [
             "var sentence = 'I have several leather-bound books in my appartment.';",
@@ -3793,7 +3793,7 @@
         },
         {
           "index": 11,
-          "type": 1,
+          "type": 4,
           "content": "Manakah dari kode berikut yang akan muncul di console?",
           "code": [
             "var numbers = [2.0, 4.0, 7.5, 8.0, 11.5, 21.0];",
@@ -4273,7 +4273,7 @@
         },
         {
           "index": 11,
-          "type": 1,
+          "type": 4,
           "content": "Apa masalah pada kode berikut?",
           "code": [
             "function calculatorPeriphery(){",
@@ -4653,7 +4653,7 @@
         },
         {
           "index": 12,
-          "type": 1,
+          "type": 4,
           "content": "Bisakah kamu menemukan kesalahan dari kode berikut ini?",
           "code": [
             "var dog = {",
