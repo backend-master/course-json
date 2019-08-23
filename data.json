@@ -388,7 +388,7 @@
         },
         {
           "index": 12,
-          "type": 1,
+          "type": 4,
           "content": "Bagaimana caranya kalau kita ingin membuat variable yang berisi string ?",
           "code": [],
           "output": [
