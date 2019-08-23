@@ -89,7 +89,7 @@
           "code": [
             "var name = \"Robin\" ;",
             "var age = 42;",
-            "console.log(_);"
+            "console.log(__);"
           ],
           "output": [
             {
@@ -119,7 +119,7 @@
           "index": 4,
           "type": 1,
           "content": "Masih seputar variable, sebuah nama dari variable harus unik dan sebaiknya diawali dengan huruf kecil. Tapi beberapa kata tidak bisa digunakan sebagai nama dari variable. Ayo kita cari tahu apa yang bakal terjadi kalau kita melanggar aturan !",
-          "code": ["var _ ;"],
+          "code": ["var __ ;"],
           "output": [
             {
               "type": "script.js",
@@ -150,7 +150,7 @@
           "content": "Sebenernya banyak cara untuk menampilkan data di Javascript. Dicourse ini kita akan menggunakan browser console dan aktual webpages.",
           "code": [
             "console.log(\"Nextbyte\") ;",
-            "document._(\"Yo Broo! Sahabat Nextbyte Gaes \") ;"
+            "document.__(\"Yo Broo! Sahabat Nextbyte Gaes \") ;"
           ],
           "output": [
             {
@@ -180,7 +180,7 @@
           "index": 6,
           "type": 0,
           "content": "Masih banyak type data saat penggunaan variable, kita sudah bertemu dengan tipe data strings yang terdiri daii beberapa karakter. Sekali lagi ayo kita buat sebuah varible string yuk !",
-          "code": ["  _ _  _ \"Nextbyte\" ;", "console.log(name) ;"],
+          "code": ["  __ __  __ \"Nextbyte\" ;", "console.log(name) ;"],
           "output": [
             {
               "type": "script.js",
@@ -215,7 +215,7 @@
           "content": "Apa kamu ingat dengan Variable Age? itu membuktikan bahwa kita bisa mengisi variable dengan nomor juga, atau kita sebut type data number. Oke yuk kita coba !",
           "code": [
             "var name = \"Nextbyte\" ;",
-            "var age = _ ;",
+            "var age = __ ;",
             "console.log(age) ;"
           ],
           "output": [
@@ -248,7 +248,7 @@
           "content": "Oh iya apa kamu memperhatikan bagaimana kita menaruh semicolon atau tanda \" ; \" di akhir di setiap baris yang telah kita tulis ? Secara basic semicolon adalah tanda dimana akhir dari statemenet .",
           "code": [
             "var name ;",
-            "_ ",
+            "__ ",
             "name = \"Nextbyte\" ;",
             "age = 42 ;",
             "console.log(name) ;",
@@ -286,7 +286,7 @@
             "/* Script by you */",
             "name = \"Nextbyte\" ;",
             "var age = 42 ;",
-            "console.log(_) ;"
+            "console.log(__) ;"
           ],
           "output": [
             {
@@ -508,7 +508,7 @@
           "index": 1,
           "type": 1,
           "content": "Mari kita membahas lebih detail tentang variabel. Untuk membuat variabel, kita perlu menggunakan kata kunci var atau bisa kita sebut dengan deklarasi. Mari kita deklarasikan variabel name;",
-          "code": ["_ name;", "console.log(name)"],
+          "code": ["__ name;", "console.log(name)"],
           "output": "undefined",
           "question": "Untuk mengisi kekosongan diatas, coba pilih dari opsi dibawah ini dibawah ini;",
           "choice": [
@@ -531,12 +531,12 @@
           "code": [
             "var name: 'Robin';",
             "var age;",
-            "age = _;",
+            "age = __;",
             "console.log(name);",
             "console.log(age);"
           ],
           "output": ["Robin", 42],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -554,7 +554,7 @@
           "index": 3,
           "type": 1,
           "content": "Strings adalah tipe data yang telah kita sudah gunakan tadi. Untuk membuat string variabel, kita dapat menambahkan nilai yang berupa sekumumpulan karakter dalam tanda kutip (\"\").",
-          "code": ["var string = _;", "console.log(string)"],
+          "code": ["var string = __;", "console.log(string)"],
           "output": [],
           "choice": [
             {
@@ -573,8 +573,8 @@
           "index": 4,
           "type": 1,
           "content": "Seperti yang kita ketahui, number bisa berbentuk bilangan bulat ataupun desimal. Bilangan bulat dapat disebut Integers. Mari membuat variabel integers.",
-          "code": ["var age = _;", "console.log(age)"],
-          "question": "Tanda _ dapat diisi dengan:",
+          "code": ["var age = __;", "console.log(age)"],
+          "question": "Tanda __ dapat diisi dengan:",
           "output": [],
           "choice": [
             {
@@ -597,8 +597,8 @@
           "index": 5,
           "type": 1,
           "content": "Untuk melengkapi, mari kita membuat Float, yang merukapan bilangan desimal kedalam variabel height.",
-          "code": ["var height = _;", "console.log(height);"],
-          "question": "Tanda _ dapat diisi dengan:",
+          "code": ["var height = __;", "console.log(height);"],
+          "question": "Tanda __ dapat diisi dengan:",
           "answer": "1",
           "note": " Kamu benar! Jumlah desimal yang dapat dibaca oleh Javascript adalah 17 angka. Itulah kenapa kita tidak bisa melihat angka - angka dari pi dengan cara ini."
         },
@@ -610,10 +610,10 @@
             "var name = \"Robin\"",
             "var age = 42;",
             "var height = 1.72;",
-            "console.log(typeof(_));"
+            "console.log(typeof(__));"
           ],
           "output": ["String"],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -632,7 +632,7 @@
           "type": 1,
           "content": "Jadi, apa kegunaan number? Sebagai contoh, kita dapat menggunakannya dalam operasi aritmatik.",
           "code": [
-            "var r = 4 _ 2;",
+            "var r = 4 __ 2;",
             "var pi = 3.141592653589793;",
             "console.log(2 + r * pi);"
           ],
@@ -654,9 +654,9 @@
           "index": 8,
           "content": "Tanda  ++ , atau bisa disebut increment, menambahkan bilangan dengan 1. Sebaliknya, decrement mengurangi bilangan dengan 1. Mari kita coba:",
           "type": 1,
-          "code": ["var age = 42;", "age_", "console.log(age)"],
+          "code": ["var age = 42;", "age__", "console.log(age)"],
           "output": [43],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -701,7 +701,7 @@
           "code": [
             "var a = \"Hari ini cuaca sangat\";",
             "var b = \"cerah.\";",
-            "var c _ a + b;",
+            "var c __ a + b;",
             "console.log(c);"
           ],
           "output": "\"Hari ini cuaca sangat cerah.\"",
@@ -860,13 +860,13 @@
           "type": 1,
           "content": "Ada satu tipe data penting yang belum kita belum bahas sebelumnya dan berguna sebagai pembanding.",
           "code": [
-            "var equality1 = 3 =_ 3;",
+            "var equality1 = 3 =__ 3;",
             "var equality2 = \"Apples\" == \"Oranges\";",
             "console.log(equality1);",
             "console.log(equality2);"
           ],
           "output": [true, false],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -884,9 +884,9 @@
           "index": 2,
           "type": 1,
           "content": "true dan false adalah boolean. Ketika kita check, apakah suatu nilai lebih besar atau lebih kecil dari nilai lainnya, kita juga akan mendapatkan hasil boolean.",
-          "code": ["var boolean = 3 _ 6;", "console.log(boolean);"],
+          "code": ["var boolean = 3 __ 6;", "console.log(boolean);"],
           "output": [false],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -904,9 +904,9 @@
           "index": 3,
           "type": 1,
           "content": "Kita juga bisa menggunakan tanda <= dan >= untuk membandingkan nilai. Mari mencoba dan log true pada console.",
-          "code": ["var boolean = 3 >= _;", "console.log(boolean);"],
+          "code": ["var boolean = 3 >= __;", "console.log(boolean);"],
           "output": [true],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -924,9 +924,9 @@
           "index": 4,
           "type": 1,
           "content": "Operator != akan menghasilkan true jika nilai yang kita bandingkan berbeda dan tidak sama.",
-          "code": ["var boolean = 3 != _;", "console.log(boolean);"],
+          "code": ["var boolean = 3 != __;", "console.log(boolean);"],
           "output": [true],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -944,7 +944,7 @@
           "index": 5,
           "type": 1,
           "content": "Sebelum kita lanjut lebih jauh. Mari kita lihat operator pembanding yang lebih spesial yang mewajibkan nilai dan tipe data yang sama.",
-          "code": ["var boolean = 3 ___ \"3\";", "console.log(boolean);"],
+          "code": ["var boolean = 3 __ \"3\";", "console.log(boolean);"],
           "output": [false],
           "choice": [
             {
@@ -986,9 +986,9 @@
           "index": 7,
           "type": 1,
           "content": "Sebagai alternatif, jika kita membutuhkan satu dari dua perbandingan untuk menghasilkan true , kita bisa menggunakan operator || atau bisa disebut or.",
-          "code": ["var b = 5 > 10 || 10 _ 15;", "console.log(b);"],
+          "code": ["var b = 5 > 10 || 10 __ 15;", "console.log(b);"],
           "output": [false],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -1032,7 +1032,7 @@
           "content": "Bagaimana dengan cara pendek? Operator kondisional akan memasukan nilai ke suatu variabel berdasarkan suatu kondisi yang mengahsilkan ouput true atau false .",
           "code": [
             "var time = 7;",
-            "var advice = time _ 10 ? \"Waktunya tidur\" : \"Jangan tidur dulu\";"
+            "var advice = time __ 10 ? \"Waktunya tidur\" : \"Jangan tidur dulu\";"
           ],
           "output": ["\"Jangan tidur dulu\""],
           "question": "Urutkan opsi dibawah ini untuk mengisi __",
@@ -1217,7 +1217,7 @@
             "var temperature = 50 ;",
             "if (temperature > 100) {",
             "console.log(\"Huft, Panas sekali ya !\")",
-            "} _ {",
+            "} __ {",
             "console.log(\"Kok nggak panas gini sih hmm\")",
             "}"
           ],
@@ -1257,7 +1257,7 @@
             "var temperature = 50 ;",
             "if (temperature > 100) {",
             "console.log(\"Huft, Panas sekali ya !\")",
-            "} _ (temperature < 22) {",
+            "} __ (temperature < 22) {",
             "console.log(\"Whaat ?? Kok Dingin ya\")",
             "} else {",
             "console.log(\"Kok nggak panas gini sih hmm\")",
@@ -1295,7 +1295,7 @@
             "var name = \"Nextbyte\" ;",
             "if (name == \"Nextbyte\") {",
             "console.log(\"Hello Nextbyte !\")",
-            "} _ _ (name == \"Kamu\") {",
+            "} __ __ (name == \"Kamu\") {",
             "console.log(\"Hello Kamu !\")",
             "} else if (name == \"Dia\") {",
             "console.log(\"Hello Dia !\")",
@@ -1334,7 +1334,7 @@
           "code": [
             "var number = -5 ;",
             "if (number >= 0) {",
-            "_(number < 10){",
+            "__(number < 10){",
             "console.log(\"Ya ini adalah digit !\")",
             "} else {",
             "console.log(\"Bukan digit woi !\") ;",
@@ -1371,7 +1371,7 @@
           "content": "Kadang kadang kita bisa mendapatkan functionality yang sama dengan method yang simple seperti menggunakan logical operator. \nSekali lagi kita akan coba jika n adalah digit diantara 0 dan 9",
           "code": [
             "var n = 5;",
-            "if (n >= 0 _ _ n < 10) {",
+            "if (n >= 0 __ __ n < 10) {",
             "console.log(\"Ini dia digit !\")",
             "} else {",
             "console.log(\"Bukan digit !\")",
@@ -1407,7 +1407,7 @@
           "content": "Tapi ketika kita punya banyak sekali kondisi namun dengan variable, lebih baik sih memakai switch atau switch statement.",
           "code": [
             "var name = \"Parker\";",
-            " _ (name){",
+            " __ (name){",
             " case \"Parker\" :",
             "console.log(\"Spiderman\") ;",
             "break;",
@@ -1451,8 +1451,8 @@
           "content": "Kenapa kata kunci break itu sangat penting. Yah soalnya kalau kita tidak menggunakan break maka kondisi yang ada dibawahnya akan dijalankan semua.",
           "code": [
             "var name = \"Parker\";",
-            " _ (name){",
-            " _ \"Parker\" :",
+            " __ (name){",
+            " __ \"Parker\" :",
             "console.log(\"Spiderman\") ;",
             "break;",
             "case \"Roger\" :",
@@ -1495,7 +1495,7 @@
           "content": "Ketika kita menggunakan nilai non-boolean, mereka akan secara otomatis di convert menjadi data boolean.",
           "code": [
             "var value = \"Parker\" ;",
-            "_ (_) {",
+            "__ (__) {",
             "console.log(\"Terpicu\") ;",
             "} else {",
             "console.log(\"Tidak Terpicu\") ;",
@@ -1531,7 +1531,7 @@
           "content": "Apakah itu berarti setiap nilai non-boolean mengembalikan true ketika itu merupakan bagian dari suatu kondisi ?",
           "code": [
             "var value = 0 ;",
-            "_ (_) {",
+            "__ (__) {",
             "console.log(\"Terpicu\") ;",
             "} else {",
             "console.log(\"Tidak Terpicu\") ;",
@@ -1798,7 +1798,7 @@
           "code": [
             "var part1 = \"Dunia harus tahu \" ;",
             "var part2 = \"Nextbyte\" ;",
-            "var s = part1._(part2) ;",
+            "var s = part1.__(part2) ;",
             "console.log(s)"
           ],
           "output": [
@@ -1937,7 +1937,7 @@
           "content": "Dengan menggunakan method slice(), kita dapat mengeluarkan bagian dari string loh.",
           "code": [
             "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
-            "console.log(_._(5,9));"
+            "console.log(__.__(5,9));"
           ],
           "output": [
             {
@@ -1969,7 +1969,7 @@
           "content": "Method substr() hampir sama dengan method slice(). Bedanya adalah di nilai kedua yang kita inputkan berguna untuk menentukan panjang spesifik dari bagian string yang ingin kita ekstrak. ",
           "code": [
             "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
-            "console.log(_._(5));"
+            "console.log(__.__(5));"
           ],
           "output": [
             {
@@ -2001,7 +2001,7 @@
           "content": "Kita juga bisa menggunakan method replace() untuk mencari dan mengganti kemunculan string yang ada didalam string tersebut. \n Oke untuk lebih jelas lagi ayo coba kita takluk kan yang satu ini :",
           "code": [
             "var g1 = \"Hallo Dunia ! .\" ;",
-            "var g2 = _._(\"Dunia\", \"Kamu\") ;",
+            "var g2 = __.__(\"Dunia\", \"Kamu\") ;",
             "console.log(g2);"
           ],
           "output": [
@@ -2034,7 +2034,7 @@
           "content": "Kita bisa membuat string menjadi huruf kecil semua atau lowercase letter dengan menggunakan toLowerCase() . Dan juga nantinya ada cara untuk mengubah huruf menjadi besar semua atau uppercase letter. \nAyo kita rubah semua huruf menjadi uppercase yuk !",
           "code": [
             "var g1 = \"Hallo Dunia ! .\" ;",
-            "var g2 = g1._ ;",
+            "var g2 = g1.__ ;",
             "console.log(g2);"
           ],
           "output": [
@@ -2442,7 +2442,7 @@
           "index": 6,
           "type": 0,
           "content": "Matematika adalah objek yang berisi beberapa constant seperti Math.PI dan method seperti Math.random() yang membantu kita memecahkan masalah matematika",
-          "code": ["  _ _  _ \"Nextbyte\" ;", "console.log(name) ;"],
+          "code": ["  __ __  __ \"Nextbyte\" ;", "console.log(name) ;"],
           "output": [
             {
               "type": "script.js",
@@ -3409,14 +3409,14 @@
           "type": 0,
           "content": "Sesuatu yang kita ingin hindari ketika menulis code dan alasan yang sderhana adalah barisan kode yang melakukan tindakan yang sangat mirip / berulang",
           "code": [
-            "var numbers _ [3, 7, 14, 15, 22, 41];",
+            "var numbers __ [3, 7, 14, 15, 22, 41];",
             "numbers[0]++;",
             "numbers[1]++;",
             "numbers[2]++;",
             "numbers[3]++;",
             "numbers[4]++;",
             "numbers[5]++;",
-            "console.log(_)"
+            "console.log(__)"
           ],
           "output": [
             {
@@ -3519,7 +3519,7 @@
           "code": [
             "var things = ['raindrops', 'roses', 'whiskers', 'kittens'];",
             "for( thing in things ){",
-            "console.log(_);",
+            "console.log(__);",
             "}"
           ],
           "output": [
@@ -3611,7 +3611,7 @@
             }
           ],
           "note": "Lihat? do-while-loop berjalan setidaknya sekali, bahkan juka kondisinya adalah false. Itu karena perulangan terjadi sebelum mengecek kondisinya.",
-          "question": "Tanda _ dapat diisi dengan: ",
+          "question": "Tanda __ dapat diisi dengan: ",
           "choice": [
             {
               "index": 1,
@@ -3926,8 +3926,8 @@
           "content": "Untuk lebih singkat, functions adalah code block yang melakukan tugas yang spesifik. Tapi kenapa dia berguna ?",
           "code": [
             "var r = 12 ;",
-            "var luasLingkaran = r * r * _._ ;",
-            "console.log(_)"
+            "var luasLingkaran = r * r * __.__ ;",
+            "console.log(__)"
           ],
           "output": [
             {
@@ -3961,7 +3961,7 @@
           "index": 2,
           "type": 1,
           "content": "Dan untuk membuat sebuah fungsi, kita cukup menggunkan kata kunci functions, nama yang unik untuk nama fungsi serta sepasang tanda kurung (). Sekali saja kita sudah membuatnya kita bisa menggunakan fungsi tersebut kapanpun yang kita inginkan.",
-          "code": ["_ sayHello() {", "console.log(\"Hello Nextbyte\");", "}"],
+          "code": ["__ sayHello() {", "console.log(\"Hello Nextbyte\");", "}"],
           "output": [
             {
               "type": "script.js",
@@ -4061,7 +4061,7 @@
           "content": "Dengan menggunakan method slice(), kita dapat mengeluarkan bagian dari string loh.",
           "code": [
             "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
-            "console.log(_._(5,9));"
+            "console.log(__.__(5,9));"
           ],
           "output": [
             {
@@ -4093,7 +4093,7 @@
           "content": "Method substr() hampir sama dengan method slice(). Bedanya adalah di nilai kedua yang kita inputkan berguna untuk menentukan panjang spesifik dari bagian string yang ingin kita ekstrak.",
           "code": [
             "var s = \"Halo kamu yang disana ! Namaku Nextbyte.\" ;",
-            "console.log(_._(5));"
+            "console.log(__.__(5));"
           ],
           "output": [
             {
@@ -4125,7 +4125,7 @@
           "content": "Kita juga bisa menggunakan method replace() untuk mencari dan mengganti kemunculan string yang ada didalam string tersebut. \nOke untuk lebih jelas lagi ayo coba kita takluk kan yang satu ini :",
           "code": [
             "var g1 = \"Hallo Dunia ! .\" ;",
-            "var g2 = _._(\"Dunia\", \"Kamu\") ;",
+            "var g2 = __.__(\"Dunia\", \"Kamu\") ;",
             "console.log(g2);"
           ],
           "output": [
@@ -4158,7 +4158,7 @@
           "content": "Kita bisa membuat string menjadi huruf kecil semua atau lowercase letter dengan menggunakan toLowerCase() . Dan juga nantinya ada cara untuk mengubah huruf menjadi besar semua atau uppercase letter. \nAyo kita rubah semua huruf menjadi uppercase yuk !",
           "code": [
             "var g1 = \"Hallo Dunia ! .\" ;",
-            "var g2 = g1._ ;",
+            "var g2 = g1.__ ;",
             "console.log(g2);"
           ],
           "output": [
@@ -4367,10 +4367,10 @@
             "var name = \"Robin\";",
             "var age = 42;",
             "var height = 1.72;",
-            "console.log(_);"
+            "console.log(__);"
           ],
           "output": ["\"Robin\""],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4388,9 +4388,9 @@
           "index": 2,
           "type": 1,
           "content": "Object adalah variabel yang memiliki berbagai value atau properties. Kita dapat membuat object dengan sepasang kurung kurawal {}  atau bisa disebut literal object.",
-          "code": ["var person = _;", "person)};"],
+          "code": ["var person = __;", "person)};"],
           "output": ["object"],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4410,10 +4410,10 @@
           "content": "Dibandingkan dengan array, object memilki kelebihan yang penting: yaitu sebuah nama.",
           "code": [
             "var person = {name: \"Joe\", age: 42, height: 1.72}",
-            "console._(person);"
+            "console.__(person);"
           ],
           "output": ["{name: \"Joe\",, age: 42, height: 1.72}"],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4437,10 +4437,10 @@
             "age: 42,",
             "heigth: 1.72",
             "};",
-            "console.log(_);"
+            "console.log(__);"
           ],
           "output": "Robin",
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4464,11 +4464,11 @@
             "age: 42,",
             "heigth: 1.72",
             "};",
-            "person._ = 58.0",
+            "person.__ = 58.0",
             "console.log(person);"
           ],
           "output": ["{name: \"Robin\", age: 58.0, height: 1.72}"],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4492,11 +4492,11 @@
             "age: 42,",
             "heigth: 1.72",
             "};",
-            "_ person.height;",
+            "__ person.height;",
             "console.log(person);"
           ],
           "output": ["{name: \"Robin\", age: 58.0}"],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4523,10 +4523,10 @@
             "consolog.log(\"Halo, saya \" + this.name + \"!\")",
             "}",
             "};",
-            "person._"
+            "person.__"
           ],
           "output": "Halo, saya robin",
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4553,11 +4553,11 @@
             "consolog.log(\"Halo, saya \" + this.name + \"!\")",
             "}",
             "};",
-            "var p1 = _ Person(\"Robin\", 42, 1.72);",
+            "var p1 = __ Person(\"Robin\", 42, 1.72);",
             "console.log(p1.name);"
           ],
           "output": ["Robin"],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
