@@ -221,7 +221,7 @@
           "output": [
             {
               "type": "script.js",
-              "text": "42"
+              "text": 42
             },
             {
               "type": "browser",
@@ -233,7 +233,7 @@
           "choice": [
             {
               "index": 1,
-              "text": "42"
+              "text": "\"42\""
             },
             {
               "index": 2,
@@ -261,7 +261,7 @@
             },
             {
               "type": "browser",
-              "text": "42"
+              "text": 42
             }
           ],
           "note": "Bagus,  kecuali kalau kamu menulis multiple statement di dalam satu baris, semicolon itu optional. Namun menulisnya adalah good practice.",
