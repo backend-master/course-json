@@ -2442,7 +2442,12 @@
           "index": 6,
           "type": 0,
           "content": "Matematika adalah objek yang berisi beberapa constant seperti Math.PI dan method seperti Math.random() yang membantu kita memecahkan masalah matematika",
-          "code": ["  __ __  __ \"Nextbyte\" ;", "console.log(name) ;"],
+          "code": [
+            "var number = __.__ ;",
+            "var random = Math.random() ;",
+            "console.log(number) ;",
+            "console.log(random) ;"
+          ],
           "output": [
             {
               "type": "script.js",
