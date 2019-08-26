@@ -19,7 +19,12 @@
             "console.log(equality1);",
             "console.log(equality2);"
           ],
-          "output": [true, false],
+          "output": [
+            {
+              "type": "Scripts.js",
+              "text": [true, false]
+            }
+          ],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -39,7 +44,12 @@
           "type": 1,
           "content": "true dan false adalah boolean. Ketika kita check, apakah suatu nilai lebih besar atau lebih kecil dari nilai lainnya, kita juga akan mendapatkan hasil boolean.",
           "code": ["var boolean = 3 _ 6;", "console.log(boolean);"],
-          "output": [false],
+          "output": [
+            {
+              "type": "Scripts.js",
+              "text": false
+            }
+          ],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -59,7 +69,12 @@
           "type": 1,
           "content": "Kita juga bisa menggunakan tanda <= dan >= untuk membandingkan nilai. Mari mencoba dan log true pada console.",
           "code": ["var boolean = 3 >= _;", "console.log(boolean);"],
-          "output": [true],
+          "output": [
+            {
+              "type": "Scripts.js",
+              "output": true
+            }
+          ],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -79,7 +94,12 @@
           "type": 1,
           "content": "Operator != akan menghasilkan true jika nilai yang kita bandingkan berbeda dan tidak sama.",
           "code": ["var boolean = 3 != _;", "console.log(boolean);"],
-          "output": [true],
+          "output": [
+            {
+              "output": "Script.js",
+              "text": true
+            }
+          ],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -99,7 +119,12 @@
           "type": 1,
           "content": "Sebelum kita lanjut lebih jauh. Mari kita lihat operator pembanding yang lebih spesial yang mewajibkan nilai dan tipe data yang sama.",
           "code": ["var boolean = 3 ___ \"3\";", "console.log(boolean);"],
-          "output": [false],
+          "output": [
+            {
+              "output": "Script.js",
+              "text": false
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -122,7 +147,12 @@
           "type": 1,
           "content": "Jika kita ingin memastikan kedua perbandingan bertemu sebelum kita megnhasilkan true , kita dapat menggunakan operator && atau bisa disebut and.",
           "code": ["var b = 5 < 10 __ 10 < 15;", "console.log(b);"],
-          "output": [true],
+          "output": [
+            {
+              "type": "Scripts.js",
+              "text": true
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -141,7 +171,12 @@
           "type": 1,
           "content": "Sebagai alternatif, jika kita membutuhkan satu dari dua perbandingan untuk menghasilkan true , kita bisa menggunakan operator || atau bisa disebut or.",
           "code": ["var b = 5 > 10 || 10 _ 15;", "console.log(b);"],
-          "output": [false],
+          "output": [
+            {
+              "type": "Scripts.js",
+              "text": false
+            }
+          ],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -201,7 +236,12 @@
           "type": 1,
           "content": "Walaupun membandingkan antara dua string dapat dilakukan dengan operator ==  dan != , contoh dibawah membuahkan hasil yang tidak kita duga.",
           "code": ["var b = \"4\" __ \"33\";", "console.log(b);"],
-          "output": [true],
+          "output": [
+            {
+              "output": "Script.js",
+              "text": true
+            }
+          ],
           "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
