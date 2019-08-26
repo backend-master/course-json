@@ -13,11 +13,13 @@
           "index": 1,
           "type": 1,
           "content": "Mari kita membahas lebih detail tentang variabel. Untuk membuat variabel, kita perlu menggunakan kata kunci var atau bisa kita sebut dengan deklarasi. Mari kita deklarasikan variabel name;",
-          "code": [
-            "_ name;",
-            "console.log(name)"
+          "code": ["_ name;", "console.log(name)"],
+          "output": [
+            {
+              "type": "Script.js",
+              "output": "undefined"
+            }
           ],
-          "output": "undefined",
           "question": "Untuk mengisi kekosongan diatas, coba pilih dari opsi dibawah ini dibawah ini;",
           "choice": [
             {
@@ -36,16 +38,12 @@
           "index": 2,
           "type": 1,
           "content": "Variabel name undefined karena variabel tersebut tidak mempunyai nilai (value). Kita dapat menggunakan tanda sama dengan (=) untuk memberikan nilai ke varaiebel.",
-          "code": [
-            "var name: 'Robin';",
-            "var age;",
-            "age = _;",
-            "console.log(name);",
-            "console.log(age);"
-          ],
+          "code": ["var name: 'Robin';", "var age;", "age = _;", "console.log(name);", "console.log(age);"],
           "output": [
-            "Robin",
-            42
+            {
+              "type": "Script.js",
+              "text": ["Robin", 42]
+            }
           ],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
@@ -59,17 +57,19 @@
             }
           ],
           "answer": "2",
-          "note": "Kamu benar! Kita dapat memberikan nilai ke variabel ketika dideklarasikan atau memberikannya nanti." 
+          "note": "Kamu benar! Kita dapat memberikan nilai ke variabel ketika dideklarasikan atau memberikannya nanti."
         },
         {
           "index": 3,
           "type": 1,
-          "content": "Strings adalah tipe data yang telah kita sudah gunakan tadi. Untuk membuat string variabel, kita dapat menambahkan nilai yang berupa sekumumpulan karakter dalam tanda kutip ("").",
-          "code": [
-            "var string = _;",
-            "console.log(string)"
+          "content": "Strings adalah tipe data yang telah kita sudah gunakan tadi. Untuk membuat string variabel, kita dapat menambahkan nilai yang berupa sekumumpulan karakter dalam tanda kutip (\"\").",
+          "code": ["var string = _;", "console.log(string)"],
+          "output": [
+            {
+              "type": "Script.js",
+              "text": ""
+            }
           ],
-          "output": [],
           "choice": [
             {
               "index": 1,
@@ -87,16 +87,18 @@
           "index": 4,
           "type": 1,
           "content": "Seperti yang kita ketahui, number bisa berbentuk bilangan bulat ataupun desimal. Bilangan bulat dapat disebut Integers. Mari membuat variabel integers.",
-          "code": [
-            "var age = _;",
-            "console.log(age)"
-          ],
+          "code": ["var age = _;", "console.log(age)"],
           "question": "Tanda _ dapat diisi dengan:",
-          "output": [],
+          "output": [
+            {
+              "type": "Script.js",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
-              "text": "\"42\"",
+              "text": "\"42\""
             },
             {
               "index": 2,
@@ -115,8 +117,10 @@
           "type": 1,
           "content": "Untuk melengkapi, mari kita membuat Float, yang merukapan bilangan desimal kedalam variabel height.",
           "code": [
-            "var height = _;",
-            "console.log(height);"
+            {
+              "type": "Script.js",
+              "text": ["var height = _;", "console.log(height);"]
+            }
           ],
           "question": "Tanda _ dapat diisi dengan:",
           "answer": "1",
@@ -126,14 +130,12 @@
           "index": 6,
           "type": 1,
           "content": "Sekarang kita telah belajar tentang tipe data. Tapi bagaimana jika kita ingin mengetahui tipe data dari suatu variabel?",
-          "code": [
-            "var name = \"Robin\"",
-            "var age = 42;",
-            "var height = 1.72;",
-            "console.log(typeof(_));"
-          ],
+          "code": ["var name = \"Robin\"", "var age = 42;", "var height = 1.72;", "console.log(typeof(_));"],
           "output": [
-            "String"
+            {
+              "type": "Script.js",
+              "text": ["String"]
+            }
           ],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
@@ -153,12 +155,13 @@
           "index": 7,
           "type": 1,
           "content": "Jadi, apa kegunaan number? Sebagai contoh, kita dapat menggunakannya dalam operasi aritmatik.",
-          "code": [
-            "var r = 4 _ 2;",
-            "var pi = 3.141592653589793;",
-            "console.log(2 + r * pi);"
+          "code": ["var r = 4 _ 2;", "var pi = 3.141592653589793;", "console.log(2 + r * pi);"],
+          "ouput": [
+            {
+              "type": "Script.js",
+              "text": ""
+            }
           ],
-          "ouput": [],
           "choice": [
             {
               "index": 1,
@@ -176,12 +179,13 @@
           "index": 8,
           "content": "Tanda  ++ , atau bisa disebut increment, menambahkan bilangan dengan 1. Sebaliknya, decrement mengurangi bilangan dengan 1. Mari kita coba:",
           "type": 1,
-          "code": [
-            "var age = 42;",
-            "age_",
-            "console.log(age)"
+          "code": ["var age = 42;", "age_", "console.log(age)"],
+          "output": [
+            {
+              "type": "Script.js",
+              "text": 43
+            }
           ],
-          "output": [43],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -200,12 +204,13 @@
           "index": 9,
           "type": 1,
           "content": "Operator berikut ini juga dapat merubah nilai dari variabel. Tanda  +=  juga bisa menambahkan angka. Lalu bagaimana untuk mengurangi angka?",
-          "code": [
-            "var heigth = 1.72;",
-            "heigth __ 0.2;",
-            "console.log(heigth);"
+          "code": ["var heigth = 1.72;", "heigth __ 0.2;", "console.log(heigth);"],
+          "output": [
+            {
+              "type": "Script.js",
+              "text": 1.52
+            }
           ],
-          "output": 1.52,
           "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
@@ -224,13 +229,13 @@
           "index": 10,
           "type": 1,
           "content": "Seperti menambahkan number dengan number. Kita juga bisa menambahkan sesama string.",
-          "code": [
-            "var a = \"Hari ini cuaca sangat\";",
-            "var b = \"cerah.\";",
-            "var c _ a + b;",
-            "console.log(c);"
+          "code": ["var a = \"Hari ini cuaca sangat\";", "var b = \"cerah.\";", "var c _ a + b;", "console.log(c);"],
+          "output": [
+            {
+              "type": "Script.js",
+              "text": "\"Hari ini cuaca sangat cerah.\""
+            }
           ],
-          "output": "\"Hari ini cuaca sangat cerah.\"",
           "choice": [
             {
               "index": 1,
@@ -255,14 +260,13 @@
             },
             {
               "index": 2,
-              "text": ["var age = 42;",
-              "age = 42;"]
+              "text": ["var age = 42;", "age = 42;"]
             },
             {
               "index": 3,
               "text": "var undefined;"
             }
-          ] ,
+          ],
           "answer": "123",
           "note": "Kamu benar! Untuk mendeklarasikan variabel, kita menggunakan var."
         },
@@ -353,10 +357,7 @@
           "index": 15,
           "type": 1,
           "content": "Apa output yang akan ditampilakan dalam kode berikut?",
-          "code": [
-            "var pi = 3.141592653589793;",
-            "console.log(typeof(pi))"
-          ],
+          "code": ["var pi = 3.141592653589793;", "console.log(typeof(pi))"],
           "choice": [
             {
               "index": 1,
