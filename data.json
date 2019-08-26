@@ -508,8 +508,17 @@
           "index": 1,
           "type": 1,
           "content": "Mari kita membahas lebih detail tentang variabel. Untuk membuat variabel, kita perlu menggunakan kata kunci var atau bisa kita sebut dengan deklarasi. Mari kita deklarasikan variabel name;",
-          "code": ["__ name;", "console.log(name)"],
-          "output": "undefined",
+          "code": ["_ name;", "console.log(name)"],
+          "output": [
+            {
+              "type": "script",
+              "output": "undefined"
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "question": "Untuk mengisi kekosongan diatas, coba pilih dari opsi dibawah ini dibawah ini;",
           "choice": [
             {
@@ -531,12 +540,21 @@
           "code": [
             "var name: 'Robin';",
             "var age;",
-            "age = __;",
+            "age = _;",
             "console.log(name);",
             "console.log(age);"
           ],
-          "output": ["Robin", 42],
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            {
+              "type": "script",
+              "text": ["Robin", 42]
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -554,8 +572,17 @@
           "index": 3,
           "type": 1,
           "content": "Strings adalah tipe data yang telah kita sudah gunakan tadi. Untuk membuat string variabel, kita dapat menambahkan nilai yang berupa sekumumpulan karakter dalam tanda kutip (\"\").",
-          "code": ["var string = __;", "console.log(string)"],
-          "output": [],
+          "code": ["var string = _;", "console.log(string)"],
+          "output": [
+            {
+              "type": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -573,9 +600,18 @@
           "index": 4,
           "type": 1,
           "content": "Seperti yang kita ketahui, number bisa berbentuk bilangan bulat ataupun desimal. Bilangan bulat dapat disebut Integers. Mari membuat variabel integers.",
-          "code": ["var age = __;", "console.log(age)"],
-          "question": "Tanda __ dapat diisi dengan:",
-          "output": [],
+          "code": ["var age = _;", "console.log(age)"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "output": [
+            {
+              "type": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -597,8 +633,17 @@
           "index": 5,
           "type": 1,
           "content": "Untuk melengkapi, mari kita membuat Float, yang merukapan bilangan desimal kedalam variabel height.",
-          "code": ["var height = __;", "console.log(height);"],
-          "question": "Tanda __ dapat diisi dengan:",
+          "code": [
+            {
+              "type": "script",
+              "text": ["var height = _;", "console.log(height);"]
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "answer": "1",
           "note": " Kamu benar! Jumlah desimal yang dapat dibaca oleh Javascript adalah 17 angka. Itulah kenapa kita tidak bisa melihat angka - angka dari pi dengan cara ini."
         },
@@ -610,10 +655,19 @@
             "var name = \"Robin\"",
             "var age = 42;",
             "var height = 1.72;",
-            "console.log(typeof(__));"
+            "console.log(typeof(_));"
           ],
-          "output": ["String"],
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            {
+              "type": "script",
+              "text": ["String"]
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -632,11 +686,20 @@
           "type": 1,
           "content": "Jadi, apa kegunaan number? Sebagai contoh, kita dapat menggunakannya dalam operasi aritmatik.",
           "code": [
-            "var r = 4 __ 2;",
+            "var r = 4 _ 2;",
             "var pi = 3.141592653589793;",
             "console.log(2 + r * pi);"
           ],
-          "ouput": [],
+          "ouput": [
+            {
+              "type": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -654,9 +717,18 @@
           "index": 8,
           "content": "Tanda  ++ , atau bisa disebut increment, menambahkan bilangan dengan 1. Sebaliknya, decrement mengurangi bilangan dengan 1. Mari kita coba:",
           "type": 1,
-          "code": ["var age = 42;", "age__", "console.log(age)"],
-          "output": [43],
-          "question": "Tanda __ dapat diisi dengan:",
+          "code": ["var age = 42;", "age_", "console.log(age)"],
+          "output": [
+            {
+              "type": "script",
+              "text": 43
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -679,7 +751,16 @@
             "heigth __ 0.2;",
             "console.log(heigth);"
           ],
-          "output": 1.52,
+          "output": [
+            {
+              "type": "script",
+              "text": 1.52
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
@@ -701,10 +782,19 @@
           "code": [
             "var a = \"Hari ini cuaca sangat\";",
             "var b = \"cerah.\";",
-            "var c __ a + b;",
+            "var c _ a + b;",
             "console.log(c);"
           ],
-          "output": "\"Hari ini cuaca sangat cerah.\"",
+          "output": [
+            {
+              "type": "script",
+              "text": "\"Hari ini cuaca sangat cerah.\""
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -722,6 +812,16 @@
           "index": 11,
           "type": 2,
           "question": "Waktunya kuis. Mana pernyataan yang benar:",
+          "output": [
+            {
+              "type": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -743,6 +843,16 @@
           "index": 12,
           "type": 2,
           "question": "Apa yang terjadi dengan menambahkan dua variabel dengan tanda +?",
+          "output": [
+            {
+              "type": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -768,6 +878,16 @@
           "index": 13,
           "type": 2,
           "question": "Variabel mana yang berisi numbers",
+          "output": [
+            {
+              "type": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -791,8 +911,18 @@
         },
         {
           "index": 14,
-          "type": 3,
+          "type": 0,
           "question": "Bisakah anda mengurutkan kode berikut agar menampilkan 42 tahun dalam jam (termasuk tahun kabisat)?",
+          "output": [
+            {
+              "type": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -824,9 +954,19 @@
         },
         {
           "index": 15,
-          "type": 4,
+          "type": 1,
           "content": "Apa output yang akan ditampilakan dalam kode berikut?",
           "code": ["var pi = 3.141592653589793;", "console.log(typeof(pi))"],
+          "output": [
+            {
+              "type": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "output": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -860,13 +1000,22 @@
           "type": 1,
           "content": "Ada satu tipe data penting yang belum kita belum bahas sebelumnya dan berguna sebagai pembanding.",
           "code": [
-            "var equality1 = 3 =__ 3;",
+            "var equality1 = 3 =_ 3;",
             "var equality2 = \"Apples\" == \"Oranges\";",
             "console.log(equality1);",
             "console.log(equality2);"
           ],
-          "output": [true, false],
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            {
+              "type": "script",
+              "text": [true, false]
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -884,9 +1033,18 @@
           "index": 2,
           "type": 1,
           "content": "true dan false adalah boolean. Ketika kita check, apakah suatu nilai lebih besar atau lebih kecil dari nilai lainnya, kita juga akan mendapatkan hasil boolean.",
-          "code": ["var boolean = 3 __ 6;", "console.log(boolean);"],
-          "output": [false],
-          "question": "Tanda __ dapat diisi dengan:",
+          "code": ["var boolean = 3 _ 6;", "console.log(boolean);"],
+          "output": [
+            {
+              "type": "script",
+              "text": false
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -904,9 +1062,18 @@
           "index": 3,
           "type": 1,
           "content": "Kita juga bisa menggunakan tanda <= dan >= untuk membandingkan nilai. Mari mencoba dan log true pada console.",
-          "code": ["var boolean = 3 >= __;", "console.log(boolean);"],
-          "output": [true],
-          "question": "Tanda __ dapat diisi dengan:",
+          "code": ["var boolean = 3 >= _;", "console.log(boolean);"],
+          "output": [
+            {
+              "type": "script",
+              "output": true
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -924,9 +1091,18 @@
           "index": 4,
           "type": 1,
           "content": "Operator != akan menghasilkan true jika nilai yang kita bandingkan berbeda dan tidak sama.",
-          "code": ["var boolean = 3 != __;", "console.log(boolean);"],
-          "output": [true],
-          "question": "Tanda __ dapat diisi dengan:",
+          "code": ["var boolean = 3 != _;", "console.log(boolean);"],
+          "output": [
+            {
+              "output": "script",
+              "text": true
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -944,8 +1120,17 @@
           "index": 5,
           "type": 1,
           "content": "Sebelum kita lanjut lebih jauh. Mari kita lihat operator pembanding yang lebih spesial yang mewajibkan nilai dan tipe data yang sama.",
-          "code": ["var boolean = 3 __ \"3\";", "console.log(boolean);"],
-          "output": [false],
+          "code": ["var boolean = 3 ___ \"3\";", "console.log(boolean);"],
+          "output": [
+            {
+              "output": "script",
+              "text": false
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -968,7 +1153,16 @@
           "type": 1,
           "content": "Jika kita ingin memastikan kedua perbandingan bertemu sebelum kita megnhasilkan true , kita dapat menggunakan operator && atau bisa disebut and.",
           "code": ["var b = 5 < 10 __ 10 < 15;", "console.log(b);"],
-          "output": [true],
+          "output": [
+            {
+              "type": "script",
+              "text": true
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -986,9 +1180,18 @@
           "index": 7,
           "type": 1,
           "content": "Sebagai alternatif, jika kita membutuhkan satu dari dua perbandingan untuk menghasilkan true , kita bisa menggunakan operator || atau bisa disebut or.",
-          "code": ["var b = 5 > 10 || 10 __ 15;", "console.log(b);"],
-          "output": [false],
-          "question": "Tanda __ dapat diisi dengan:",
+          "code": ["var b = 5 > 10 || 10 _ 15;", "console.log(b);"],
+          "output": [
+            {
+              "type": "script",
+              "text": false
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -1011,7 +1214,16 @@
             "var opposite = __;",
             "console.log(opposite);"
           ],
-          "output": [false],
+          "output": [
+            {
+              "type": "script",
+              "text": false
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
           "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
@@ -1032,9 +1244,18 @@
           "content": "Bagaimana dengan cara pendek? Operator kondisional akan memasukan nilai ke suatu variabel berdasarkan suatu kondisi yang mengahsilkan ouput true atau false .",
           "code": [
             "var time = 7;",
-            "var advice = time __ 10 ? \"Waktunya tidur\" : \"Jangan tidur dulu\";"
+            "var advice = time _ 10 ? \"Waktunya tidur\" : \"Jangan tidur dulu\";"
           ],
-          "output": ["\"Jangan tidur dulu\""],
+          "output": [
+            {
+              "type": "script",
+              "text": "\"Jangan tidur dulu\""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
           "question": "Urutkan opsi dibawah ini untuk mengisi __",
           "choice": [
             {
@@ -1054,7 +1275,16 @@
           "type": 1,
           "content": "Walaupun membandingkan antara dua string dapat dilakukan dengan operator ==  dan != , contoh dibawah membuahkan hasil yang tidak kita duga.",
           "code": ["var b = \"4\" __ \"33\";", "console.log(b);"],
-          "output": [true],
+          "output": [
+            {
+              "output": "script",
+              "text": true
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
           "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
@@ -1072,7 +1302,18 @@
         {
           "index": 11,
           "type": 2,
+          "content": "",
           "question": "Manakah dari perbandingan berikut yang menghasilkan false .",
+          "output": [
+            {
+              "output": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -1096,8 +1337,18 @@
         },
         {
           "index": 12,
-          "type": 4,
+          "type": 1,
           "question": "Kapan kita harus menggunakan operator and.",
+          "output": [
+            {
+              "output": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -1122,6 +1373,16 @@
         {
           "index": 14,
           "type": 3,
+          "output": [
+            {
+              "output": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -1147,6 +1408,16 @@
           "index": 15,
           "type": 2,
           "question": "Apa itu operator kondisional?",
+          "output": [
+            {
+              "output": "script",
+              "text": ""
+            },
+            {
+              "type": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -4372,10 +4643,19 @@
             "var name = \"Robin\";",
             "var age = 42;",
             "var height = 1.72;",
-            "console.log(__);"
+            "console.log(_);"
           ],
-          "output": ["\"Robin\""],
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            {
+              "script": "script.js",
+              "text": "\"Robin\""
+            },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4393,9 +4673,15 @@
           "index": 2,
           "type": 1,
           "content": "Object adalah variabel yang memiliki berbagai value atau properties. Kita dapat membuat object dengan sepasang kurung kurawal {}  atau bisa disebut literal object.",
-          "code": ["var person = __;", "person)};"],
-          "output": ["object"],
-          "question": "Tanda __ dapat diisi dengan:",
+          "code": ["var person = _;", "person)};"],
+          "output": [
+            { "script": "script.js", "text": "object" },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4415,10 +4701,19 @@
           "content": "Dibandingkan dengan array, object memilki kelebihan yang penting: yaitu sebuah nama.",
           "code": [
             "var person = {name: \"Joe\", age: 42, height: 1.72}",
-            "console.__(person);"
+            "console._(person);"
           ],
-          "output": ["{name: \"Joe\",, age: 42, height: 1.72}"],
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            {
+              "type": "script.js",
+              "text": "{name: \"Joe\",, age: 42, height: 1.72}"
+            },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4442,10 +4737,16 @@
             "age: 42,",
             "heigth: 1.72",
             "};",
-            "console.log(__);"
+            "console.log(_);"
           ],
-          "output": "Robin",
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            { "type": "script.js", "text": "Robin" },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4469,11 +4770,20 @@
             "age: 42,",
             "heigth: 1.72",
             "};",
-            "person.__ = 58.0",
+            "person._ = 58.0",
             "console.log(person);"
           ],
-          "output": ["{name: \"Robin\", age: 58.0, height: 1.72}"],
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            {
+              "type": "script.js",
+              "text": "{name: \"Robin\", age: 58.0, height: 1.72}"
+            },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4497,11 +4807,17 @@
             "age: 42,",
             "heigth: 1.72",
             "};",
-            "__ person.height;",
+            "_ person.height;",
             "console.log(person);"
           ],
-          "output": ["{name: \"Robin\", age: 58.0}"],
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            { "type": "script.js", "text": "{name: \"Robin\", age: 58.0}" },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4528,10 +4844,16 @@
             "consolog.log(\"Halo, saya \" + this.name + \"!\")",
             "}",
             "};",
-            "person.__"
+            "person._"
           ],
-          "output": "Halo, saya robin",
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            { "type": "script.js", "text": "Halo, saya robin" },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4558,11 +4880,17 @@
             "consolog.log(\"Halo, saya \" + this.name + \"!\")",
             "}",
             "};",
-            "var p1 = __ Person(\"Robin\", 42, 1.72);",
+            "var p1 = _ Person(\"Robin\", 42, 1.72);",
             "console.log(p1.name);"
           ],
-          "output": ["Robin"],
-          "question": "Tanda __ dapat diisi dengan:",
+          "output": [
+            { "type": "script.js", "text": "Robin" },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
+          "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -4584,6 +4912,16 @@
           "index": 9,
           "type": 2,
           "question": "Manakah pernyataan tentang object yang benar?",
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -4610,6 +4948,16 @@
           "type": 2,
           "question": "Manakah pernyataan yang dapat mengubah properti name dari object person .",
           "code": ["var person = { name: \"Robin\", age: 42, height: 1.72};"],
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -4635,6 +4983,16 @@
           "index": 11,
           "type": 2,
           "question": "Manakah pernyataan yang dapat membuat object:",
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
@@ -4658,8 +5016,18 @@
         },
         {
           "index": 12,
-          "type": 4,
+          "type": 1,
           "content": "Bisakah kamu menemukan kesalahan dari kode berikut ini?",
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
           "code": [
             "var dog = {",
             "name: \"Bexter\"",
@@ -4697,6 +5065,16 @@
           "index": 13,
           "type": 3,
           "question": "Bisakah kamu mengurutkan kode dibawah ini untuk membuat suatu object:",
+          "output": [
+            {
+              "type": "script.js",
+              "text": ""
+            },
+            {
+              "script": "browser",
+              "text": ""
+            }
+          ],
           "choice": [
             {
               "index": 1,
