@@ -14,7 +14,7 @@
           "type": 1,
           "content": "Sebelumnya, kita telah belajar banyak tantang variable dan array. Tapi, kenapa kita butuh object? Mari kita membahasnya. Apakah anda ingat variabel name, age dan height?",
           "code": ["var name = \"Robin\";", "var age = 42;", "var height = 1.72;", "console.log(_);"],
-          "output": ["\"Robin\""],
+          "output": [{ "script": "script.js", "text": "\"Robin\"" }],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -34,7 +34,7 @@
           "type": 1,
           "content": "Object adalah variabel yang memiliki berbagai value atau properties. Kita dapat membuat object dengan sepasang kurung kurawal {}  atau bisa disebut literal object.",
           "code": ["var person = _;", "person)};"],
-          "output": ["object"],
+          "output": [{ "script": "script.js", "text": "object" }],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -54,7 +54,7 @@
           "type": 1,
           "content": "Dibandingkan dengan array, object memilki kelebihan yang penting: yaitu sebuah nama.",
           "code": ["var person = {name: \"Joe\", age: 42, height: 1.72}", "console._(person);"],
-          "output": ["{name: \"Joe\",, age: 42, height: 1.72}"],
+          "output": [{ "type": "script.js", "text": "{name: \"Joe\",, age: 42, height: 1.72}" }],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -74,7 +74,7 @@
           "type": 1,
           "content": "Kita dapat menggunakan nama untuk mengakses value.",
           "code": ["var person  = {", "name: \"Robin\",", "age: 42,", "heigth: 1.72", "};", "console.log(_);"],
-          "output": "Robin",
+          "output": [{ "type": "script.js", "text": "Robin" }],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -102,7 +102,7 @@
             "person._ = 58.0",
             "console.log(person);"
           ],
-          "output": ["{name: \"Robin\", age: 58.0, height: 1.72}"],
+          "output": [{ "type": "script.js", "text": "{name: \"Robin\", age: 58.0, height: 1.72}" }],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -130,7 +130,7 @@
             "_ person.height;",
             "console.log(person);"
           ],
-          "output": ["{name: \"Robin\", age: 58.0}"],
+          "output": [{ "type": "script.js", "text": "{name: \"Robin\", age: 58.0}" }],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -160,7 +160,7 @@
             "};",
             "person._"
           ],
-          "output": "Halo, saya robin",
+          "output": [{ "type": "script.js", "text": "Halo, saya robin" }],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
@@ -191,7 +191,7 @@
             "var p1 = _ Person(\"Robin\", 42, 1.72);",
             "console.log(p1.name);"
           ],
-          "output": ["Robin"],
+          "output": [{ "type": "script.js", "text": "Robin" }],
           "question": "Tanda _ dapat diisi dengan:",
           "choice": [
             {
