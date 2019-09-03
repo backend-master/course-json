@@ -2,7 +2,8 @@
   "index": 1,
   "name": "Javascript",
   "detail": "Javascript adalah bahasa pemrograman yang berjalan pada Web Browser. Mudah digunakan dan sangat powerfull dalam waktu yang sama. Mulai dengan belajar dari Level dasar sampai ke level advance seperti HTML DOM dll.",
-  "image": "https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_530/https://kolabsit.com/wp-content/uploads/2019/07/function-javascript-kolabsit.jpeg",
+  "image": "javascript_course.png",
+  "color": "0xFFffa502",
   "section": [
     {
       "index": 1,
@@ -21,7 +22,7 @@
           "output": [
             {
               "type": "script.js",
-              "text": "Hello World !!! Kita sekarang belajar  Javascript"
+              "text": "Hello World !!! Kita sekarang belajar Javascript"
             },
             {
               "type": "browser",
@@ -65,7 +66,7 @@
             },
             {
               "type": "browser",
-              "text": "Hello world !, Saat ini kita belajar Javascript"
+              "text": "<!doctypye html><html><body><script>var part1 = \"Hello World !, Saat ini kita belajar \" ;var part2 = \"Javascript\" ;__( part1 + part2 ) ;</script></body></html>"
             }
           ],
           "note": "Fantastic ! Sekarang kita sudah membuat niat kita diawal dengan sangat jelas, Siap untuk menyelam lebih dalam.",
@@ -159,7 +160,7 @@
             },
             {
               "type": "browser",
-              "text": "Yo Broo! Sahabat Nextbyte Gaes"
+              "text": "<!doctypye html><html><body>Yo Broo! Sahabat Nextbyte Gaes </body></html>"
             }
           ],
           "note": "Yaps, kita bisa menempatkan apapun di dalam console.log dan akan tertampilkan di browser console. Dan apapun yang kita tulis di document.write akan tertampil di halaman web.",
@@ -257,11 +258,11 @@
           "output": [
             {
               "type": "script.js",
-              "text": "Nextbyte"
+              "text": "Nextbyte\n42"
             },
             {
               "type": "browser",
-              "text": 42
+              "text": ""
             }
           ],
           "note": "Bagus,  kecuali kalau kamu menulis multiple statement di dalam satu baris, semicolon itu optional. Namun menulisnya adalah good practice.",
@@ -508,15 +509,15 @@
           "index": 1,
           "type": 1,
           "content": "Mari kita membahas lebih detail tentang variabel. Untuk membuat variabel, kita perlu menggunakan kata kunci var atau bisa kita sebut dengan deklarasi. Mari kita deklarasikan variabel name;",
-          "code": ["_ name;", "console.log(name)"],
+          "code": ["__ name;", "console.log(name)"],
           "output": [
             {
               "type": "script",
-              "output": "undefined"
+              "text": "undefined"
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "question": "Untuk mengisi kekosongan diatas, coba pilih dari opsi dibawah ini dibawah ini;",
@@ -540,21 +541,21 @@
           "code": [
             "var name: 'Robin';",
             "var age;",
-            "age = _;",
+            "age = __;",
             "console.log(name);",
             "console.log(age);"
           ],
           "output": [
             {
               "type": "script",
-              "text": ["Robin", 42]
+              "text": ["Robin\n42"]
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -572,15 +573,16 @@
           "index": 3,
           "type": 1,
           "content": "Strings adalah tipe data yang telah kita sudah gunakan tadi. Untuk membuat string variabel, kita dapat menambahkan nilai yang berupa sekumumpulan karakter dalam tanda kutip (\"\").",
-          "code": ["var string = _;", "console.log(string)"],
+          "question": "Tanda _ dapat diisi dengan:",
+          "code": ["var string = __;", "console.log(string)"],
           "output": [
             {
               "type": "script",
-              "text": ""
+              "text": "Rob's String"
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "choice": [
@@ -600,16 +602,16 @@
           "index": 4,
           "type": 1,
           "content": "Seperti yang kita ketahui, number bisa berbentuk bilangan bulat ataupun desimal. Bilangan bulat dapat disebut Integers. Mari membuat variabel integers.",
-          "code": ["var age = _;", "console.log(age)"],
+          "code": ["var age = __;", "console.log(age)"],
           "question": "Tanda _ dapat diisi dengan:",
           "output": [
             {
               "type": "script",
-              "text": ""
+              "text": "42"
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "choice": [
@@ -633,14 +635,29 @@
           "index": 5,
           "type": 1,
           "content": "Untuk melengkapi, mari kita membuat Float, yang merukapan bilangan desimal kedalam variabel height.",
-          "code": [
+          "code": ["var height = __;", "console.log(height);"],
+          "output": [
             {
               "type": "script",
-              "text": ["var height = _;", "console.log(height);"]
+              "text": "1.72"
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
+            }
+          ],
+          "choice": [
+            {
+              "index": 1,
+              "text": 1
+            },
+            {
+              "index": 2,
+              "text": 1.72
+            },
+            {
+              "index": 3,
+              "text": "\"1.72\""
             }
           ],
           "question": "Tanda _ dapat diisi dengan:",
@@ -655,19 +672,19 @@
             "var name = \"Robin\"",
             "var age = 42;",
             "var height = 1.72;",
-            "console.log(typeof(_));"
+            "console.log(typeof(__));"
           ],
           "output": [
             {
               "type": "script",
-              "text": ["String"]
+              "text": "String"
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
-          "question": "Tanda _ dapat diisi dengan:",
+          "question": "Tanda __ dapat diisi dengan:",
           "choice": [
             {
               "index": 1,
@@ -685,19 +702,20 @@
           "index": 7,
           "type": 1,
           "content": "Jadi, apa kegunaan number? Sebagai contoh, kita dapat menggunakannya dalam operasi aritmatik.",
+          "question": "Tanda _ dapat diisi dengan:",
           "code": [
-            "var r = 4 _ 2;",
+            "var r = 4 __ 2;",
             "var pi = 3.141592653589793;",
             "console.log(2 + r * pi);"
           ],
-          "ouput": [
+          "output": [
             {
               "type": "script",
-              "text": ""
+              "text": "20.84955592153876"
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "choice": [
@@ -717,7 +735,7 @@
           "index": 8,
           "content": "Tanda  ++ , atau bisa disebut increment, menambahkan bilangan dengan 1. Sebaliknya, decrement mengurangi bilangan dengan 1. Mari kita coba:",
           "type": 1,
-          "code": ["var age = 42;", "age_", "console.log(age)"],
+          "code": ["var age = 42;", "age__", "console.log(age)"],
           "output": [
             {
               "type": "script",
@@ -725,7 +743,7 @@
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "question": "Tanda _ dapat diisi dengan:",
@@ -758,7 +776,7 @@
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "question": "Tanda __ dapat diisi dengan:",
@@ -779,10 +797,11 @@
           "index": 10,
           "type": 1,
           "content": "Seperti menambahkan number dengan number. Kita juga bisa menambahkan sesama string.",
+          "question": "Tanda _ dapat diisi dengan:",
           "code": [
             "var a = \"Hari ini cuaca sangat\";",
             "var b = \"cerah.\";",
-            "var c _ a + b;",
+            "var c __ a + b;",
             "console.log(c);"
           ],
           "output": [
@@ -811,6 +830,8 @@
         {
           "index": 11,
           "type": 2,
+          "code": [],
+          "content": "",
           "question": "Waktunya kuis. Mana pernyataan yang benar:",
           "output": [
             {
@@ -819,7 +840,7 @@
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "choice": [
@@ -829,7 +850,7 @@
             },
             {
               "index": 2,
-              "text": ["var age = 42;", "age = 42;"]
+              "text": "var age = 42;\nage = 42;"
             },
             {
               "index": 3,
@@ -842,6 +863,8 @@
         {
           "index": 12,
           "type": 2,
+          "code": [],
+          "content": "",
           "question": "Apa yang terjadi dengan menambahkan dua variabel dengan tanda +?",
           "output": [
             {
@@ -850,7 +873,7 @@
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "choice": [
@@ -877,6 +900,8 @@
         {
           "index": 13,
           "type": 2,
+          "code": [],
+          "content": "",
           "question": "Variabel mana yang berisi numbers",
           "output": [
             {
@@ -885,7 +910,7 @@
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "choice": [
@@ -911,7 +936,9 @@
         },
         {
           "index": 14,
-          "type": 0,
+          "type": 3,
+          "code": [],
+          "content": "",
           "question": "Bisakah anda mengurutkan kode berikut agar menampilkan 42 tahun dalam jam (termasuk tahun kabisat)?",
           "output": [
             {
@@ -920,7 +947,7 @@
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "choice": [
@@ -954,8 +981,9 @@
         },
         {
           "index": 15,
-          "type": 1,
+          "type": 4,
           "content": "Apa output yang akan ditampilakan dalam kode berikut?",
+          "question": "",
           "code": ["var pi = 3.141592653589793;", "console.log(typeof(pi))"],
           "output": [
             {
@@ -964,7 +992,7 @@
             },
             {
               "type": "browser",
-              "output": ""
+              "text": ""
             }
           ],
           "choice": [
@@ -977,11 +1005,11 @@
               "text": 3.141592653589793
             },
             {
-              "index": 2,
+              "index": 3,
               "text": "typeof(pi)"
             },
             {
-              "index": 3,
+              "index": 4,
               "text": "string"
             }
           ],
@@ -1008,7 +1036,7 @@
           "output": [
             {
               "type": "script",
-              "text": [true, false]
+              "text": "true\nfalse"
             },
             {
               "type": "browser",
@@ -1066,7 +1094,7 @@
           "output": [
             {
               "type": "script",
-              "output": true
+              "text": true
             },
             {
               "type": "browser",
@@ -1277,7 +1305,7 @@
           "code": ["var b = \"4\" __ \"33\";", "console.log(b);"],
           "output": [
             {
-              "output": "script",
+              "type": "script",
               "text": true
             },
             {
@@ -1302,6 +1330,7 @@
         {
           "index": 11,
           "type": 2,
+          "code": [],
           "content": "",
           "question": "Manakah dari perbandingan berikut yang menghasilkan false .",
           "output": [
@@ -1337,11 +1366,13 @@
         },
         {
           "index": 12,
-          "type": 1,
+          "type": 3,
+          "code": [],
+          "content": "",
           "question": "Kapan kita harus menggunakan operator and.",
           "output": [
             {
-              "output": "script",
+              "type": "script",
               "text": ""
             },
             {
@@ -1373,9 +1404,12 @@
         {
           "index": 14,
           "type": 3,
+          "code": [],
+          "content": "Coba urutkan data dibawah ini menjadi urutan yang benar :",
+          "question": "",
           "output": [
             {
-              "output": "script",
+              "type": "script",
               "text": ""
             },
             {
@@ -1407,10 +1441,12 @@
         {
           "index": 15,
           "type": 2,
+          "code": [],
+          "content": "",
           "question": "Apa itu operator kondisional?",
           "output": [
             {
-              "output": "script",
+              "type": "script",
               "text": ""
             },
             {
@@ -2747,7 +2783,7 @@
           "index": 7,
           "type": 1,
           "content": "Objek lain, Date, memungkinkan kita bekerja dengan tanggal dan waktu. apa yang berbeda antara Date dan Math adalah kita menggunakan keyword new untuk membuat instance",
-          "code": ["var date = __ Date('1985-10-21');", "ocument.write(date);"],
+          "code": ["var date = __ Date('1985-10-21');", "document.write(date);"],
           "output": [
             {
               "type": "script.js",
@@ -2755,7 +2791,7 @@
             },
             {
               "type": "browser",
-              "text": "Mon Oct 21 1985 00:00:00 GMT"
+              "text": "<!doctypye html><html><body>Mon Oct 21 1985 00:00:00 GMT</body></html>"
             }
           ],
           "note": "Hore! Date terdiri dari satu tahun, satu bulan, satu hari, satu jam, satu menit, satu detik, dan milidetik",
@@ -4675,7 +4711,10 @@
           "content": "Object adalah variabel yang memiliki berbagai value atau properties. Kita dapat membuat object dengan sepasang kurung kurawal {}  atau bisa disebut literal object.",
           "code": ["var person = _;", "person)};"],
           "output": [
-            { "script": "script.js", "text": "object" },
+            {
+              "script": "script.js",
+              "text": "object"
+            },
             {
               "script": "browser",
               "text": ""
@@ -4740,7 +4779,10 @@
             "console.log(_);"
           ],
           "output": [
-            { "type": "script.js", "text": "Robin" },
+            {
+              "type": "script.js",
+              "text": "Robin"
+            },
             {
               "script": "browser",
               "text": ""
@@ -4811,7 +4853,10 @@
             "console.log(person);"
           ],
           "output": [
-            { "type": "script.js", "text": "{name: \"Robin\", age: 58.0}" },
+            {
+              "type": "script.js",
+              "text": "{name: \"Robin\", age: 58.0}"
+            },
             {
               "script": "browser",
               "text": ""
@@ -4847,7 +4892,10 @@
             "person._"
           ],
           "output": [
-            { "type": "script.js", "text": "Halo, saya robin" },
+            {
+              "type": "script.js",
+              "text": "Halo, saya robin"
+            },
             {
               "script": "browser",
               "text": ""
@@ -4884,7 +4932,10 @@
             "console.log(p1.name);"
           ],
           "output": [
-            { "type": "script.js", "text": "Robin" },
+            {
+              "type": "script.js",
+              "text": "Robin"
+            },
             {
               "script": "browser",
               "text": ""
@@ -4911,6 +4962,8 @@
         {
           "index": 9,
           "type": 2,
+          "code": [],
+          "content": "",
           "question": "Manakah pernyataan tentang object yang benar?",
           "output": [
             {
@@ -4946,6 +4999,7 @@
         {
           "index": 10,
           "type": 2,
+          "content": "",
           "question": "Manakah pernyataan yang dapat mengubah properti name dari object person .",
           "code": ["var person = { name: \"Robin\", age: 42, height: 1.72};"],
           "output": [
@@ -4982,6 +5036,8 @@
         {
           "index": 11,
           "type": 2,
+          "code": [],
+          "content": "",
           "question": "Manakah pernyataan yang dapat membuat object:",
           "output": [
             {
@@ -5017,6 +5073,7 @@
         {
           "index": 12,
           "type": 1,
+          "question": "",
           "content": "Bisakah kamu menemukan kesalahan dari kode berikut ini?",
           "output": [
             {
@@ -5064,6 +5121,8 @@
         {
           "index": 13,
           "type": 3,
+          "code": [],
+          "content": "",
           "question": "Bisakah kamu mengurutkan kode dibawah ini untuk membuat suatu object:",
           "output": [
             {
